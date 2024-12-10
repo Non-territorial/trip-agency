@@ -1,11 +1,5 @@
 {
-  "buildCommand": "yarn build",
-  "outputDirectory": "out",
   "framework": "nextjs",
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/"
-    }
-  ]
+  "buildCommand": "next build",
+  "outputDirectory": ".next"
 }
