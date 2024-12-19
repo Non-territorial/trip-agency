@@ -1,0 +1,49 @@
+# Ignore macOS system files
+.DS_Store
+
+# Ignore node_modules directory (if using Node.js)
+node_modules/
+
+# Ignore build/ and dist/ directories (common for static site generators or build tools)
+build/
+dist/
+
+# Ignore environment variable files
+.env
+.env.local
+.env.*.local
+
+# Ignore log files
+*.log
+
+# Ignore npm-debug log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore temporary files
+*.tmp
+*.swp
+*.swo
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.iml
+
+# Ignore OS-generated files
+Thumbs.db
+Desktop.ini
+
+# Ignore compiled code (if applicable)
+*.out
+*.class
+*.o
+*.so
+
+# Ignore specific file extensions (if not needed in the repository)
+*.bak
+*.orig
+
+# Ignore uploaded content (optional, adjust as needed)
+uploads/
