@@ -14,7 +14,7 @@ body, html {
     left: 0;
     width: 100%;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.90);
+    background-color: rgba(0, 0, 0, 0.95);
     color: #fff;
     font-weight: 300;
     display: flex;
@@ -144,63 +144,8 @@ body, html {
     display: none; /* Hides the control bar */
 }
 
-/* Bottom Menu Container */
-.bottom-menu {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #000; /* Black background */
-    color: #fff;
-    padding: 10px 20px;
-    z-index: 1000;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-/* Trigger Button */
-.menu-trigger {
-    cursor: pointer;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    background: #444; /* Slightly lighter background for the trigger */
-    border-radius: 50%;
-    text-align: center;
-}
 
-/* Menu Content */
-.menu-content {
-    display: none; /* Hidden by default */
-    flex-direction: column;
-    position: absolute;
-    bottom: 60px; /* Position above the bottom menu */
-    left: 20px; /* Aligns with padding of the bottom menu */
-    background: #222; /* Dropdown background */
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    z-index: 1001;
-}
-
-.menu-content a {
-    text-decoration: none;
-    color: #fff;
-    margin: 5px 0;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-}
-
-.menu-content a:hover {
-    color: #ffcc00; /* Highlight on hover */
-}
 
 /* Styling for the Japanese text */
 .jp-text {
@@ -237,4 +182,215 @@ body, html {
     max-width: 445px; /* Restrict the paragraph width for better readability */
     margin: 0; /* Reset default margin */
     display: block;
+}
+
+.monteverde {
+    position: relative; /* Ensures the section is a containing block for positioned elements */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width of the viewport */
+    display: flex; /* Enables flexbox for centering content */
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    color: white; /* Text color */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
+    url('https://gateway.pinata.cloud/ipfs/bafybeifwo6255tgipknzbblcub7k63tvcbzsyjwqjobye3gka7v5yo56uu');
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    z-index: 1; /* Ensures this section layers correctly */
+    text-align: left; /* Align text to the left */
+    padding: 40px; /* Adds padding around text */
+    opacity: 0.98;
+}
+
+.content-wrapper {
+    position: relative; /* Ensure the text stays on top of the background */
+    z-index: 2; /* Ensures the content is above the background */
+    max-width: 800px; /* Optional: Limits the width of the content */
+}
+
+.title {
+    font-family: 'IBM Plex Mono', monospace; /* Ensure consistent font */
+    font-size: 1.2rem; /* Small title size */
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: -20px;
+}
+
+.heading {
+    font-family: 'IBM Plex Mono', monospace; /* Ensure consistent font */
+    font-size: 2.5rem; /* Larger heading size */
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-family: 'IBM Plex Mono', monospace; /* Ensure consistent font */
+    font-size: 22px;
+    line-height: 1.4; /* Adjust for better readability */
+    max-width: 550px;
+}
+.room {
+    position: relative; /* Makes the section a containing block */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full viewport width */
+    color: white; /* Text color */
+    background-image: url('https://gateway.pinata.cloud/ipfs/bafybeiaob6p3sygp5asch6zzrhmuuvbczgsc7j4rk5tbw2iwfmo2tj2jke');
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: flex; /* Enables flexbox for content alignment */
+    justify-content: flex-start; /* Aligns content to the left */
+    align-items: flex-end; /* Aligns content to the bottom */
+    padding: 40px; /* Adds padding around the text */
+    z-index: 1; /* Ensures the section layers correctly */
+}
+
+.text-block {
+    margin-bottom: 80px; /* Adjust the space above the menu button */
+    margin-left: 20px; /* Ensures some space from the left */
+    font-family: 'IBM Plex Mono', monospace; /* Ensure consistent font */
+    text-align: left; /* Align text to the left */
+}
+
+.title1 {
+    font-size: 1.2rem; /* Small title size */
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: -20px;
+}
+
+.heading1 {
+    font-size: 2.5rem; /* Larger heading size */
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.description1 {
+    font-size: 1.1rem;
+    line-height: 1.4; /* Adjust for better readability */
+}
+
+
+.cuisine {
+    position: relative; /* Ensures the section is a containing block for positioned elements */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width of the viewport */
+    display: flex; /* Enables flexbox for centering content */
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    color: white; /* Text color */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
+    url('https://gateway.pinata.cloud/ipfs/bafybeiax4kjofi7p747xicnpptskklv4cyyopw6pevkknvdslkhme5tzb4');
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    z-index: 1; /* Ensures this section layers correctly */
+    text-align: left; /* Align text to the left */
+    padding: 40px; /* Adds padding around text */
+    opacity: 0.98;
+}
+
+
+.contact {
+    position: relative; /* Ensures the section is a containing block for positioned elements */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width of the viewport */
+    display: flex; /* Enables flexbox for centering content */
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    color: white; /* Text color */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
+    url('https://gateway.pinata.cloud/ipfs/bafybeihvjjbyhw3minhh7xky6ojmq2hpvmcsdqdl7drb7zzwhlgc4cucb4');
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    z-index: 1; /* Ensures this section layers correctly */
+    text-align: left; /* Align text to the left */
+    padding: 40px; /* Adds padding around text */
+    opacity: 0.98;
+}
+
+/* Bottom Navbar */
+.bottom-navbar {
+    position: fixed;
+    bottom: 0; /* Aligns the navbar to the bottom of the page */
+    left: 0;
+    width: 100%; /* Full width */
+    height: 60px; /* Navbar height */
+    background-color: rgba(0, 0, 0, 0.95); /* Matching the top navbar background */
+    display: flex;
+    justify-content: flex-end; /* Aligns the menu trigger to the right */
+    align-items: center; /* Centers the trigger vertically */
+    z-index: 999; /* Ensures it stays above most elements */
+  }
+
+/* Bottom Menu Container */
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #000; /* Black background */
+    color: #fff;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Trigger Button */
+.menu-trigger {
+    display: flex;
+    flex-direction: column; /* Stack the spans vertically */
+    justify-content: space-evenly;
+    align-items: center; /* Center the spans horizontally */
+    width: 40px; /* Adjust the button size */
+    height: 40px; /* Keep it circular */
+    background-color: black; /* Black background */
+    border: 1px solid white;
+    border-radius: 50%; /* Make it circular */
+    position: fixed; /* Fixed position */
+    bottom: 10px; /* Adjust position above the bottom bar */
+    right: 20px; /* Distance from the right edge */
+    z-index: 1000; /* Ensure it's above other content */
+    cursor: pointer; /* Add a pointer cursor */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Add a shadow for better visibility */
+}
+
+.menu-trigger span {
+    display: block;
+    width: 25px; /* Length of each line */
+    height: 3px; /* Thickness of each line */
+    background-color: white; /* White color for lines */
+    border-radius: 2px; /* Rounded edges for better aesthetics */
+    transition: all 0.3s ease; /* Smooth animations on hover or click */
+}
+/* Menu Content */
+.menu-content {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    position: absolute;
+    bottom: 65px; /* Position above the bottom menu */
+    right: 50px; /* Aligns with padding of the bottom menu */
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0.95); /* Dropdown background */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+}
+
+.menu-content a {
+    text-decoration: none;
+    color: #fff;
+    margin: 5px 0;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.menu-content a:hover {
+    color: #ffcc00; /* Highlight on hover */
 }
