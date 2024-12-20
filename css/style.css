@@ -394,3 +394,18 @@ body, html {
 .menu-content a:hover {
     color: #ffcc00; /* Highlight on hover */
 }
+
+.email-link {
+    color: #ffffff; /* White color for the email link */
+    text-decoration: none; /* Removes underline */
+    font-family: 'IBM Plex Mono', monospace; /* Matches other text styling */
+    font-size: 1.2rem; /* Slightly larger font size for visibility */
+    font-weight: 400; /* Normal weight */
+    margin-top: 20px; /* Space above the email link */
+    display: inline-block; /* Ensures proper spacing */
+}
+
+.email-link:hover {
+    text-decoration: underline; /* Adds underline on hover */
+    color: #cccccc; /* Light gray color on hover */
+}
