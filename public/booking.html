@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Agency</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet">
+    <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+    <style>
+        body {
+            position: relative;
+            background-color: #121212;
+            color: rgba(255, 255, 255, 0.9);
+            font-family: 'IBM Plex Mono', monospace;
+    
+        }
+
+        .book-section {
+            background-color: rgba(0, 0, 0, 0.9);
+            border-radius: 15px;
+            padding: 20px;
+            width: 90%;
+            max-width: 600px;
+            margin: 40px auto;
+            color: rgba(255, 255, 255, 0.9);
+            font-family: 'IBM Plex Mono', monospace;
+        }
+
+        .book-section h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            text-align: center;
+            color: rgba(255, 255, 255);
+        }
+
+        .book-section p {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-family: 'IBM Plex Mono', monospace;
+        }
+
+        .book-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .book-section input, .book-section textarea {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #000;
+            border-radius: 25px;
+            color: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            font-family: 'IBM Plex Mono', monospace;
+        }
+
+        .book-section textarea {
+            height: 120px;
+        }
+
+        .book-section button {
+            padding: 12px 25px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: black;
+            border: 1px solid white;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .book-section button:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        #form-message {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .book-section {
+                width: 95%;
+            }
+
+            .book-section h2 {
+                font-size: 28px;
+            }
+
+            .book-section input, .book-section textarea {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            .book-section button {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-left">
+            <a href="/" class="brand">TRIP<span class="agency">AGENCY</span></a>
+        </div>
+        <div class="navbar-right">
+            <a href="booking.html" class="booking">BOOK</a>
+        </div>
+    </header>
+
+    <div id="book" class="book-section">
+        <h2>Inquire about our trips</h2>
+        <p>Ask anything you like</p>
+        <form id="book-form">
+            <input
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                required
+            />
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            />
+            <input
+                type="text"
+                name="trip"
+                placeholder="Trip you are interested in"
+                required
+            />
+            <input
+                type="number"
+                name="guests"
+                placeholder="Number of guests"
+                min="1"
+                required
+            />
+            <textarea
+                name="message"
+                placeholder="Write your message here"
+            ></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="form-message"></p>
+    </div>
+
+
+    <div class="bottom-menu">
+        <nav class="bottom-navbar">
+            <div class="menu-trigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        
+        <div class="menu-content">
+            <a href="/">Home</a>
+            <a href="index.html#monte-argentario">Trips</a> <!-- Links to the vertical section -->
+            <a href="index.html#about">About</a> <!-- Links to the vertical section -->
+            <a href="index.html#contact">Contact</a> <!-- Links to a separate page -->
+            <a href="t&c.html">T&C</a> <!-- Links to a separate page -->
+        </div>
+    </div>
+</body>
+</html>

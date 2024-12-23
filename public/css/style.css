@@ -5,6 +5,7 @@ body, html {
     font-family: 'IBM Plex Mono', monospace;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 /* Navbar */
@@ -75,53 +76,12 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     background: #f9f9f9;
     box-sizing: border-box;
 }
 
-
-/* Horizontal Scroll Sections */
-.horizontal-section {
-    height: 100vh; /* Full screen height */
-    display: flex;
-    flex-direction: row; /* Horizontal layout */
-    align-items: center;
-    justify-content: flex-start;
-    overflow-x: scroll; /* Enable horizontal scrolling */
-    overflow-y: hidden; /* Disable vertical scrolling */
-    scroll-snap-type: x mandatory; /* Snap effect for horizontal scroll */
-    background: #eaeaea;
-}
-
-.horizontal-container {
-    display: flex;
-    flex-direction: row;
-    width: max-content; /* Expands to fit content */
-    height: 100%; /* Full height of the section */
-}
-
-.horizontal-item {
-    min-width: 100vw; /* Full width of the viewport */
-    height: 100%; /* Full height of the viewport */
-    flex: none; /* Prevent shrinking */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    background-color: #fff;
-    border-right: 1px solid #ccc;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-/* Optional: Horizontal Snap Support */
-.horizontal-container::-webkit-scrollbar {
-    display: none; /* Hide horizontal scrollbars */
-}
-
-/* Content */
-
+/* Video Sections */
 .video-section {
     position: relative;
     width: 100%;
@@ -134,11 +94,12 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 100%; /* Fills horizontally */
-    min-height: 100%; /* Fills vertically */
+    min-width: 100%;
+    min-height: 100%;
     object-fit: cover; /* Ensures the video maintains aspect ratio */
     z-index: -1; /* Places the video behind any content */
 }
+
 
 .video-js .vjs-control-bar {
     display: none; /* Hides the control bar */
@@ -153,36 +114,10 @@ body, html {
     font-size: 16px; /* Adjust size to match the desired appearance */
     color: rgba(0, 0, 0, 0.90); /* Gray color for subtle appearance */
     text-align: left; /* Align to left */
-    margin-left: -12px; /* Align with the H of the heading */
     display: block; /* Ensure it stays above the heading */
     margin-bottom: -20px;
 }
 
-
-/* Styling for the main heading */
-.h1 {
-    font-size: 38px; /* Larger font size for the heading */
-    font-weight: 700; 
-    font-family: 'IBM Plex Mono', monospace; 
-    color: rgba(0, 0, 0, 0.90); /* Black color */
-    line-height: 1.5; /* Reduce line height for closer spacing */
-    margin-bottom: 10px; /* Adjust spacing below the heading */
-    margin-left: -12px;
-    text-align: left; /* Align to left */
-}
-
-/* Styling for the paragraph */
-.p {
-    font-size: 22px; /* Slightly smaller size for the paragraph */
-    font-weight: 400; /* Regular weight */
-    font-family: 'IBM Plex Mono', monospace; /* Ensure proper font family */
-    color: rgba(0, 0, 0, 0.90); /* Dark gray color */
-    line-height: 1.5; /* Adjust line spacing */
-    text-align: left; /* Align to left */
-    max-width: 445px; /* Restrict the paragraph width for better readability */
-    margin: 0; /* Reset default margin */
-    display: block;
-}
 
 .monteverde {
     position: relative; /* Ensures the section is a containing block for positioned elements */
@@ -204,9 +139,10 @@ body, html {
 }
 
 .content-wrapper {
-    position: relative; /* Ensure the text stays on top of the background */
-    z-index: 2; /* Ensures the content is above the background */
-    max-width: 800px; /* Optional: Limits the width of the content */
+    display: flex;
+    flex-direction: column; /* Stacks the children vertically */
+    align-items: flex-start; /* Align content to the left */
+    gap: none; /* Adds spacing between sections */
 }
 
 .title {
@@ -281,7 +217,7 @@ body, html {
     align-items: center; /* Vertically centers the content */
     color: white; /* Text color */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
-    url('https://gateway.pinata.cloud/ipfs/bafybeiax4kjofi7p747xicnpptskklv4cyyopw6pevkknvdslkhme5tzb4');
+    url('https://gateway.pinata.cloud/ipfs/bafybeih5cbdbpuatv4b3lczzft2t2xcbps7itnsbr2hd3q2rue3mp2uroy');
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -362,7 +298,7 @@ body, html {
 
 .menu-trigger span {
     display: block;
-    width: 25px; /* Length of each line */
+    width: 20px; /* Length of each line */
     height: 3px; /* Thickness of each line */
     background-color: white; /* White color for lines */
     border-radius: 2px; /* Rounded edges for better aesthetics */
@@ -401,11 +337,194 @@ body, html {
     font-family: 'IBM Plex Mono', monospace; /* Matches other text styling */
     font-size: 1.2rem; /* Slightly larger font size for visibility */
     font-weight: 400; /* Normal weight */
-    margin-top: 20px; /* Space above the email link */
+   
     display: inline-block; /* Ensures proper spacing */
 }
 
 .email-link:hover {
     text-decoration: underline; /* Adds underline on hover */
     color: #cccccc; /* Light gray color on hover */
+}
+
+.terms-content {
+    margin: 100px auto; /* Adds spacing from the navbar */
+    max-width: 800px; /* Limit content width for readability */
+    line-height: 1.6; /* Improves text readability */
+    color: #333; /* Text color */
+    font-family: 'IBM Plex Mono', monospace; /* Consistent font */
+    text-align: left;
+}
+
+.terms-content h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.terms-content h2 {
+    font-size: 20px;
+    margin-top: 40px;
+    
+    
+}
+
+.terms-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+.newsletter-section {
+    width: 100%; /* Ensures it aligns with the width of the contact block */
+    max-width: none; /* Overrides the max-width */
+    margin-top: 10px; /* Reduce spacing between sections */
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.newsletter-section h2 {
+    font-size: 38px;
+    margin-bottom: 10px; 
+    color: rgba(255, 255, 255);
+}
+
+.newsletter-section form {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+
+.newsletter-section input {
+    width: 70%;
+    padding: 8px;
+    font-size: 16px;
+    background-color: #000;
+    border-radius: 25px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.newsletter-section button {
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#form-message {
+    margin-top: 10px;
+    font-size: 22px;
+    color: rgb(227, 166, 23);
+}
+
+.vertical-section-img {
+    display: flex;
+    align-items: flex-start; /* Align the items at the top */
+    gap: 20px; /* Add spacing between image and text */
+    padding: 40px;
+    max-width: 1200px; /* Limit the section's width */
+    margin: 0 auto; /* Center align the section */
+    box-sizing: border-box;
+}
+
+.image-container {
+    flex: 1; /* Allocate space proportionally */
+    max-width: 50%; /* Restrict image container to half the width */
+}
+
+.image-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop or resize gracefully */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.details-block {
+    flex: 1; /* Allocate space proportionally */
+    font-family: 'IBM Plex Mono', monospace; /* Consistent font */
+    padding: 20px; /* Add padding around the text */
+    background-color: #fff; /* Optional: Add a background color */
+    
+}
+
+.details-heading {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.details-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.details-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #000;
+}
+
+.details-label {
+    font-size: 1rem;
+    font-weight: normal;
+    flex: 1;
+}
+
+.details-value {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: right;
+    flex: 1;
+}
+
+.info-section {
+    position: relative; /* Proper containment for child elements */
+    height: 110vh; 
+    width: 100%; /* Full width of the viewport */
+    display: flex; /* Enables flexbox for layout */
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; /* Stacks items in a single column */
+    color: black; /* Text color */
+    background-color: white; /* Solid white background */
+    background-size: cover;
+    text-align: center; /* Aligns text to the left */
+    padding: 10px; /* Padding around the section */
+    font-weight: 300; /* Light font weight for content */
+}
+
+.info-item {
+    width: 20%; /* Ensures full-width items */
+    padding: 0;
+    border-bottom: 1px solid #000;
+    margin: 0;
+}
+
+.info-item h3 {
+    font-size: 16px;
+    color: black; /* Text color for headers */
+    font-weight: 300;
+    cursor: pointer; /* Indicates interactivity for dropdown */
+    text-align: left;
+}
+
+.dropdown-toggle span {
+    font-weight: normal;
+    margin-left: 5px;
+    color: black;
+}
+
+.info-item-content {
+    display: none; /* Content is hidden initially */
+    transition: all 0.3s ease-in-out; /* Smooth dropdown animation */
+    margin-top: 10px; /* Spacing between header and content */
+    font-size: 14px; /* Font size for content */
+    color: black; /* Content text color */
+    text-align: left;
+    margin-bottom: 16px; /* Adjust this value for the desired spacing */
+    line-height: 1.4; /* Optional: Adjust line spacing for better readability */
 }
