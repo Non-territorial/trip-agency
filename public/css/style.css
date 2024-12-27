@@ -106,8 +106,6 @@ body, html {
 }
 
 
-
-
 /* Styling for the Japanese text */
 .jp-text {
     font-family: 'Noto Sans JP', sans-serif; 
@@ -119,24 +117,7 @@ body, html {
 }
 
 
-.monteverde {
-    position: relative; /* Ensures the section is a containing block for positioned elements */
-    height: 100vh; /* Full viewport height */
-    width: 100%; /* Full width of the viewport */
-    display: flex; /* Enables flexbox for centering content */
-    justify-content: center; /* Horizontally centers the content */
-    align-items: center; /* Vertically centers the content */
-    color: white; /* Text color */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
-    url('https://gateway.pinata.cloud/ipfs/bafybeifwo6255tgipknzbblcub7k63tvcbzsyjwqjobye3gka7v5yo56uu');
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    z-index: 1; /* Ensures this section layers correctly */
-    text-align: left; /* Align text to the left */
-    padding: 40px; /* Adds padding around text */
-    opacity: 0.98;
-}
+
 
 .content-wrapper {
     display: flex;
@@ -145,13 +126,7 @@ body, html {
     gap: none; /* Adds spacing between sections */
 }
 
-.title {
-    font-family: 'IBM Plex Mono', monospace; /* Ensure consistent font */
-    font-size: 1.2rem; /* Small title size */
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: -20px;
-}
+
 
 .heading {
     font-family: 'IBM Plex Mono', monospace; /* Ensure consistent font */
@@ -207,7 +182,32 @@ body, html {
     line-height: 1.4; /* Adjust for better readability */
 }
 
+.monteverde {
+    position: relative; /* Ensures the section is a containing block for positioned elements */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width of the viewport */
+    display: flex; /* Enables flexbox for centering content */
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    color: white; /* Text color */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
+    url('https://gateway.pinata.cloud/ipfs/bafybeifwo6255tgipknzbblcub7k63tvcbzsyjwqjobye3gka7v5yo56uu');
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    z-index: 1; /* Ensures this section layers correctly */
+    text-align: left; /* Align text to the left */
+    padding: 40px; /* Adds padding around text */
+    opacity: 0.98;
+}
 
+.title {
+    font-family: 'IBM Plex Mono', monospace; /* Ensure consistent font */
+    font-size: 1.2rem; /* Small title size */
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: -20px;
+}
 .cuisine {
     position: relative; /* Ensures the section is a containing block for positioned elements */
     height: 100vh; /* Full viewport height */
@@ -650,25 +650,29 @@ input[type="number"] {
 /* General Mobile Adjustments */
 @media (max-width: 600px) {
 
-    /* Navbar */
-    .navbar {
-        flex-direction: column;
-        padding: 10px;
-        height: auto;
-        text-align: center;
+    html {
+        scroll-behavior: smooth; /* Enable smooth scrolling */
     }
 
-    .navbar a {
-        margin-bottom: 10px; /* Space between links */
-        font-size: 1rem; /* Smaller font size */
+    /* Navbar */
+    .navbar {
+        height: auto; /* Adjust height for smaller screens */
+        flex-direction: row; /* Keep the row layout */
+        padding: 6px; /* Reduce padding */
     }
 
     .brand {
-        font-size: 1.4rem; /* Adjust brand size */
+        font-size: 1rem; /* Adjust size for mobile */
     }
 
     .agency {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
+    }
+
+    .booking {
+        font-size: 0.7rem; /* Adjust size */
+        padding: 2px 15px; /* Adjust padding */
+        margin-bottom: 20px;
     }
 
     /* Vertical Sections */
@@ -679,149 +683,274 @@ input[type="number"] {
 
     /* Video Sections */
     .video-section {
-        height: 50vh; /* Reduce video height on smaller screens */
+        height: 60vh; /* Reduce video height on smaller screens */
     }
 
     #my-video {
         min-width: 100%;
-        min-height: 50vh;
+        min-height: 60vh;
     }
 
-    /* Monteverde Section */
-    .monteverde {
-        flex-direction: column;
-        padding: 20px;
-        text-align: center;
+    .jp-text {
+        font-size: 14px; /* Slightly smaller font size for mobile */
+        text-align: left; /* Align Japanese text to the left */
+        margin-bottom: -20px; /* Reduce space between Japanese text and heading */
+        margin-top: 50px;
     }
 
     .content-wrapper {
-        gap: 10px;
-    }
-
-    .title {
-        font-size: 1rem;
+        padding: 15px; /* Add padding for better spacing on smaller screens */
     }
 
     .heading {
-        font-size: 2rem;
+        font-size: 1.8rem; /* Slightly smaller heading size for mobile */
+        margin-bottom: 10px; /* Reduce spacing below the heading */
+        text-align: left; /* Align heading to the left */
     }
 
     .description {
-        font-size: 1rem;
-        line-height: 1.2;
+        font-size: 16px; /* Reduce font size for better readability */
+        line-height: 1.5; /* Adjust line spacing */
+        max-width: 100%; /* Allow full width for content on smaller screens */
+        text-align: left; /* Align description to the left */
+        margin-top: 10px; /* Add some space above the description */
     }
-
     /* Room Section */
     .room {
-        flex-direction: column;
-        padding: 20px;
+        position: relative; /* Ensure proper containment for positioned elements */
+        display: flex;
+        justify-content: flex-start; /* Align items to the left */
+        align-items: flex-end; /* Align items to the bottom */
+        height: 100vh; /* Full viewport height */
+        padding: 20px; /* Add some padding around */
+        color: white; /* Ensure text is visible */
+        background-size: cover; /* Cover the background */
+        background-position: center; /* Center the background */
+        background-repeat: no-repeat; /* Prevent tiling */
     }
-
+    
     .text-block {
-        margin-bottom: 20px;
-        margin-left: 0;
+        position: absolute; /* Position it within the .room */
+        bottom: -10px; /* Add spacing from the bottom */
+        left: -15px; /* Add spacing from the left */
+        text-align: left; /* Align text to the left */
+        background: rgba(0, 0, 0, 0.4); /* Optional: Semi-transparent background */
+        padding: 5px; /* Padding for better readability */
+        border-radius: 8px; /* Add rounded corners for aesthetics */
     }
-
+    
     .title1 {
-        font-size: 1rem;
+        font-size: 0.7rem;
+        margin-bottom: -10px; /* Small spacing between title and heading */
     }
-
+    
     .heading1 {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
+        margin-bottom: 5px; /* Small spacing below heading */
     }
-
+    
     .description1 {
-        font-size: 1rem;
+        font-size: 0.6rem;
+        line-height: 1.4; /* Improve readability */
+    }
+    
+
+    /* Monteverde, Cuisine Section */
+    .monteverde {
+        display: flex; /* Ensure flexbox layout */
+        flex-direction: column; /* Stack items vertically */
+        justify-content: flex-start; /* Align content to the top */
+        align-items: flex-start; /* Align items to the left */
+        text-align: left; /* Align text content to the left */
+        padding: 10px; /* Add padding for spacing */
+        height: 500px; 
+        background-size: cover; /* Cover the background */
+        background-position: center; /* Center the background */
+        background-repeat: no-repeat; /* Prevent tiling */
     }
 
-    /* Cuisine Section */
     .cuisine {
-        flex-direction: column;
-        padding: 20px;
-        text-align: center;
-    }
-
-    /* Contact Section */
-    .contact {
-        flex-direction: column;
-        padding: 20px;
-        text-align: center;
-    }
-
-    /* Bottom Navbar */
-    .bottom-navbar {
-        height: auto;
         padding: 10px;
     }
 
-    .menu-trigger {
-        width: 35px;
-        height: 35px;
+    /* Trips Section */
+
+    .vertical-section-img {
+        display: flex;
+        flex-direction: column; /* Stack image and details vertically */
+        gap: 20px; /* Remove spacing between elements */
+        padding: 0; /* Remove padding */
     }
 
-    /* Menu Content */
-    .menu-content {
-        bottom: 80px;
-        right: 10px;
-        padding: 10px;
+    .image-container {
+        width: 100%; /* Full width for mobile */
+        max-width: none; /* Remove max-width limit */
+        padding: 0; /* Remove padding */
     }
 
-    .menu-content a {
-        font-size: 1rem;
+    .image-container img {
+        width: 100%; /* Make the image span full width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Ensure the image fits well */
+        border-radius: 0; /* Remove rounded corners */
+    }
+
+    .details-block {
+        width: 100%; /* Full width for the details block */
+        padding: 15px; /* Add padding for spacing */
+        background-color: #fff; /* Keep a white background */
+        box-sizing: border-box; /* Include padding in total width */
+    }
+
+    .details-heading {
+        font-size: 0.8rem; /* Adjust font size for headings */
+        text-align: center; /* Center-align headings */
+        margin-bottom: 10px; /* Add spacing below heading */
+    }
+
+    .details-title {
+        font-size: 1.6rem; /* Adjust title size for better fit */
+        text-align: center; /* Center-align the title */
+        margin-bottom: 10px; /* Add spacing below the title */
+    }
+
+    .details-item {
+        display: flex;
+        justify-content: space-between; /* Ensure label and value are at opposite ends */
+        text-align: left; /* Align text to the left */
+        padding: 10px 0; /* Add spacing between items */
+        border-bottom: 1px solid #ccc; /* Light border for separation */
+    }
+
+    .details-label {
+        font-size: 0.8rem; /* Adjust label font size */
+        font-weight: normal; /* Keep font weight normal */
+        text-align: left; /* Align label text to the left */
+        flex: 1; /* Allow the label to take available space */
+        padding-right: 10px; /* Add spacing between label and value */
+    }
+
+    .details-value {
+        font-size: 0.8rem; /* Adjust value font size */
+        font-weight: bold; /* Highlight value text with bold */
+        text-align: right; /* Align value text to the right */
+        flex: 1; /* Allow the value to take available space */
+        padding-left: 10px; /* Add spacing between label and value */
+    }
+    .details-info {
+        font-size: 0.7rem; /* Adjust text size for readability */
+        text-align: justify; /* Justify text for a cleaner look */
+        line-height: 1.5; /* Enhance line spacing */
+        padding-top: 10px; /* Add spacing above the text */
     }
 
     /* Info Section */
     .info-section {
-        padding: 20px;
+        padding: 0;
         height: auto; /* Adjust height for smaller screens */
-        text-align: center;
+        text-align: left; /* Align all content to the left */
     }
-
+    
     .info-item {
-        width: 90%;
+        width: 90%; /* Maintain responsiveness */
         margin: 10px auto;
+        text-align: left; /* Align each item to the left */
+        border-bottom: 1px solid #000; /* Optional: keep separation consistent */
     }
-
+    
     .info-item h3 {
-        font-size: 1rem;
-        text-align: center;
+        font-size: 0.8rem;
+        text-align: left; /* Align header text to the left */
+        margin: 5px 0; /* Add slight spacing above and below */
     }
-
+    
     .dropdown-toggle span {
         font-size: 1rem;
+        text-align: left; /* Align icon to the left, if necessary */
     }
-
+    
     .info-item-content {
         font-size: 0.9rem;
+        text-align: left; /* Align dropdown content to the left */
+        margin-top: 5px; /* Add slight spacing between items */
     }
 
+    /* Contact Section */
+    .contact {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        padding: 5px;
+        text-align: left; /* Center-align text */
+        gap: 10px; /* Add spacing between elements */
+    }
+    
+    .contact h2 {
+        font-size: 22px; /* Slightly smaller heading for mobile */
+        margin-bottom: 10px; /* Add space below the heading */
+    }
+    
+    .contact p {
+        font-size: 14px; /* Adjust font size for better readability */
+        margin-bottom: 5px;
+    }
+    
+    .contact a {
+        font-size: 14px;
+        color: #fff; /* Ensure high contrast for the email link */
+        text-decoration: none;
+        word-break: break-word; /* Allow email to wrap if needed */
+    }
+    
     /* Newsletter Section */
     .newsletter-section {
-        font-size: 18px;
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        padding: 5px;
+        text-align: left; /* Center-align text */
+        gap: 10px; /* Add spacing between elements */
     }
-
+    
+    
     .newsletter-section h2 {
-        font-size: 30px;
+        font-size: 24px; /* Smaller heading for mobile */
+        margin-bottom: 10px;
+        text-align: left;
     }
-
+    
     .newsletter-section form {
+        display: flex;
         flex-direction: column; /* Stack form elements */
-        align-items: center;
+        align-items: left;
+        width: 100%; /* Ensure form spans the section width */
+        gap: 10px; /* Add spacing between input and button */
     }
-
+    
     .newsletter-section input {
-        width: 90%;
-        font-size: 14px;
+        width: 80%; /* Take most of the width for input */
+        font-size: 12px; /* Adjust font size */
+        padding: 10px; /* Add padding for touch-friendly inputs */
+        border-radius: 25px; /* Keep rounded look */
+        border: 1px solid #fff; /* Ensure visible border */
     }
-
+    
     .newsletter-section button {
-        width: 90%;
-        font-size: 0.9rem;
+        width: 87%; /* Match input width */
+        font-size: 12px; /* Adjust font size */
+        padding: 8px; /* Add padding for touch-friendly button */
+        border-radius: 25px; /* Keep rounded look */
+        background-color: black; /* Ensure contrast */
+        color: white;
+        border: 1px solid #fff;
     }
-
+    
+    .newsletter-section button:hover {
+        background-color: #fff;
+        color: black;
+    }
+    
     /* Book Section */
     .book-section {
-        width: 95%;
+        width: 90%;
         padding: 15px;
         background-color: #000;
     }
@@ -844,4 +973,75 @@ input[type="number"] {
     #form-message {
         font-size: 0.9rem;
     }
+    .bottom-navbar {
+        height: 30px; /* Reduce height for mobile */
+        padding: 0 10px; /* Smaller padding */
+        justify-content: space-between; /* Space out content */
+    }
+    
+    /* Adjust trigger button for smaller viewports */
+    .menu-trigger {
+        width: 20px; /* Reduce size */
+        height: 20px;
+        bottom: 3px; /* Adjust placement */
+        right: 10px;
+    }
+    
+    .menu-trigger span {
+        width: 12px; /* Reduce line length */
+        height: 1.5px; /* Reduce line thickness */
+    }
+    
+    /* Dropdown menu adjustments */
+    .menu-content {
+        bottom: 40px; /* Position it above the navbar */
+        right: 45px; /* Align to the trigger */
+        padding: 5px; /* Adjust padding */
+        font-size: 14px; /* Smaller font size */
+        max-width: 30%; /* Prevent dropdown from exceeding screen width */
+    }
+    
+    .menu-content a {
+        font-size: 14px !important;
+        margin: 5px 0; /* Add spacing between links */
+        text-align: center; /* Center-align text */
+    }
+    
+    .p2 {
+        font-size: 5px;
+        text-align: left;
+        position: absolute;
+        left: 5px; /* Adjust this value to move it closer to the left edge */
+        bottom: 10px;
+    
+    }
+    /* Terms and Conditions */
+
+    .email-link {
+        font-size: 1rem; /* Smaller font size for visibility */
+    }
+
+    .terms-content {
+        margin: 20px; /* Reduce margin for smaller screens */
+        max-width: 100%; /* Use full width for better readability */
+        line-height: 1.5; /* Slightly tighter line spacing */
+        font-size: 14px; /* Smaller font size for mobile screens */
+        text-align: justify; /* Align text to make it more visually pleasing */
+    }
+
+    .terms-content h1 {
+        font-size: 24px; /* Reduce size of main heading */
+        margin-bottom: 15px;
+    }
+
+    .terms-content h2 {
+        font-size: 18px; /* Reduce size of subheadings */
+        margin-top: 30px;
+    }
+
+    .terms-content p {
+        font-size: 14px; /* Adjust paragraph font size */
+        margin-bottom: 15px; /* Reduce spacing between paragraphs */
+    }
 }
+
