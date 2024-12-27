@@ -477,13 +477,13 @@ body, html {
 
 .details-label {
     font-size: 1rem;
-    font-weight: normal;
+    font-weight: bold;
     flex: 1;
 }
 
 .details-value {
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: normal;
     text-align: right;
     flex: 1;
 }
@@ -647,31 +647,46 @@ input[type="number"] {
     
 }
 
+a {
+    color: white; /* Make the link text white */
+    text-decoration: none; /* Remove the underline */
+    font-weight: bold; /* Make it bold */
+}
+
+a:visited {
+    color: white; /* Ensure visited links are also white */
+    text-decoration: none; /* Remove underline for visited links */
+}
+
+
+
 /* General Mobile Adjustments */
 @media (max-width: 600px) {
 
-    html {
-        scroll-behavior: smooth; /* Enable smooth scrolling */
+    html, body {
+        scroll-behavior: smooth; /* Enables smooth scrolling */
+        overflow-x: hidden; /* Prevents horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Enables momentum-based scrolling for iOS */
     }
 
     /* Navbar */
     .navbar {
-        height: auto; /* Adjust height for smaller screens */
+        height: 40px; /* Adjust height for smaller screens */
         flex-direction: row; /* Keep the row layout */
         padding: 6px; /* Reduce padding */
     }
 
     .brand {
-        font-size: 1rem; /* Adjust size for mobile */
+        font-size: 1.2rem; /* Adjust size for mobile */
     }
 
     .agency {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
 
     .booking {
-        font-size: 0.7rem; /* Adjust size */
-        padding: 2px 15px; /* Adjust padding */
+        font-size: 0.8rem; /* Adjust size */
+        padding: 3px 15px; /* Adjust padding */
         margin-bottom: 20px;
     }
 
@@ -683,19 +698,27 @@ input[type="number"] {
 
     /* Video Sections */
     .video-section {
-        height: 60vh; /* Reduce video height on smaller screens */
+        position: relative;
+        width: 100%;
+        height: 100vh; /* Full height of the viewport */
+        overflow: hidden; /* Hide any overflowing parts of the video */
     }
 
     #my-video {
-        min-width: 100%;
-        min-height: 60vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center the video */
+        width: 100%; /* Fill the entire width */
+        height: 100%; /* Fill the entire height */
+        object-fit: cover; /* Ensure the video covers the container */
     }
 
     .jp-text {
         font-size: 14px; /* Slightly smaller font size for mobile */
         text-align: left; /* Align Japanese text to the left */
         margin-bottom: -20px; /* Reduce space between Japanese text and heading */
-        margin-top: 50px;
+        
     }
 
     .content-wrapper {
@@ -824,7 +847,7 @@ input[type="number"] {
 
     .details-label {
         font-size: 0.8rem; /* Adjust label font size */
-        font-weight: normal; /* Keep font weight normal */
+        font-weight: bold; /* Keep font weight normal */
         text-align: left; /* Align label text to the left */
         flex: 1; /* Allow the label to take available space */
         padding-right: 10px; /* Add spacing between label and value */
@@ -832,7 +855,7 @@ input[type="number"] {
 
     .details-value {
         font-size: 0.8rem; /* Adjust value font size */
-        font-weight: bold; /* Highlight value text with bold */
+        font-weight: normal; /* Highlight value text with bold */
         text-align: right; /* Align value text to the right */
         flex: 1; /* Allow the value to take available space */
         padding-left: 10px; /* Add spacing between label and value */
@@ -947,7 +970,7 @@ input[type="number"] {
         background-color: #fff;
         color: black;
     }
-    
+
     /* Book Section */
     .book-section {
         width: 90%;
@@ -974,22 +997,22 @@ input[type="number"] {
         font-size: 0.9rem;
     }
     .bottom-navbar {
-        height: 30px; /* Reduce height for mobile */
+        height: 40px; /* Reduce height for mobile */
         padding: 0 10px; /* Smaller padding */
         justify-content: space-between; /* Space out content */
     }
     
     /* Adjust trigger button for smaller viewports */
     .menu-trigger {
-        width: 20px; /* Reduce size */
-        height: 20px;
+        width: 30px; /* Reduce size */
+        height: 30px;
         bottom: 3px; /* Adjust placement */
         right: 10px;
     }
     
     .menu-trigger span {
-        width: 12px; /* Reduce line length */
-        height: 1.5px; /* Reduce line thickness */
+        width: 17px; /* Reduce line length */
+        height: 1.8px; /* Reduce line thickness */
     }
     
     /* Dropdown menu adjustments */
@@ -1005,14 +1028,21 @@ input[type="number"] {
         font-size: 14px !important;
         margin: 5px 0; /* Add spacing between links */
         text-align: center; /* Center-align text */
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s;
+    }
+    
+    .menu-content a:hover {
+        color: #ffcc00; /* Highlight on hover */
     }
     
     .p2 {
-        font-size: 5px;
+        font-size: 10px;
         text-align: left;
         position: absolute;
         left: 5px; /* Adjust this value to move it closer to the left edge */
-        bottom: 10px;
+        bottom: 13px;
     
     }
     /* Terms and Conditions */
