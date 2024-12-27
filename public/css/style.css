@@ -635,14 +635,199 @@ body, html {
     margin-top: 10px;
 }
 
+/* Remove spinner arrows from number input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Remove the spinner for webkit browsers */
+    margin: 0; /* Prevent any layout shifting */
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Remove spinner for Firefox */
+}
+
+/* General Mobile Adjustments */
 @media (max-width: 600px) {
+
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+        text-align: center;
+    }
+
+    .navbar a {
+        margin-bottom: 10px; /* Space between links */
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    .brand {
+        font-size: 1.4rem; /* Adjust brand size */
+    }
+
+    .agency {
+        font-size: 0.7rem;
+    }
+
+    /* Vertical Sections */
+    .vertical-section {
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Video Sections */
+    .video-section {
+        height: 50vh; /* Reduce video height on smaller screens */
+    }
+
+    #my-video {
+        min-width: 100%;
+        min-height: 50vh;
+    }
+
+    /* Monteverde Section */
+    .monteverde {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .content-wrapper {
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+
+    /* Room Section */
+    .room {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .text-block {
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+    .title1 {
+        font-size: 1rem;
+    }
+
+    .heading1 {
+        font-size: 1.8rem;
+    }
+
+    .description1 {
+        font-size: 1rem;
+    }
+
+    /* Cuisine Section */
+    .cuisine {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Contact Section */
+    .contact {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Bottom Navbar */
+    .bottom-navbar {
+        height: auto;
+        padding: 10px;
+    }
+
+    .menu-trigger {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Menu Content */
+    .menu-content {
+        bottom: 80px;
+        right: 10px;
+        padding: 10px;
+    }
+
+    .menu-content a {
+        font-size: 1rem;
+    }
+
+    /* Info Section */
+    .info-section {
+        padding: 20px;
+        height: auto; /* Adjust height for smaller screens */
+        text-align: center;
+    }
+
+    .info-item {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .info-item h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .dropdown-toggle span {
+        font-size: 1rem;
+    }
+
+    .info-item-content {
+        font-size: 0.9rem;
+    }
+
+    /* Newsletter Section */
+    .newsletter-section {
+        font-size: 18px;
+    }
+
+    .newsletter-section h2 {
+        font-size: 30px;
+    }
+
+    .newsletter-section form {
+        flex-direction: column; /* Stack form elements */
+        align-items: center;
+    }
+
+    .newsletter-section input {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .newsletter-section button {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    /* Book Section */
     .book-section {
         width: 95%;
+        padding: 15px;
         background-color: #000;
     }
 
     .book-section h2 {
-        font-size: 28px;
+        font-size: 24px;
+        margin: 20px 0;
     }
 
     .book-section input, .book-section textarea {
@@ -651,7 +836,11 @@ body, html {
     }
 
     .book-section button {
-        padding: 10px 20px;
+        width: 100%; /* Full width button */
+        font-size: 0.9rem;
+    }
+
+    #form-message {
         font-size: 0.9rem;
     }
 }
