@@ -418,6 +418,13 @@ body, html {
     color: rgb(227, 166, 23);
 }
 
+.newsletter-section input:focus,
+.newsletter-section textarea:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgb(249, 192, 21); /* Add custom focus effect */
+    border: 1px rgb(249, 192, 21); /* Add yellow border */
+}
+
 .vertical-section-img {
     display: flex;
     align-items: flex-start; /* Align the items at the top */
@@ -481,6 +488,19 @@ body, html {
     flex: 1;
 }
 
+.details-info {
+    display: block; /* Ensure it fills the width of the container */
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: justify; /* Justify the text for a clean look */
+    width: 100%; /* Fills the parent container */
+    line-height: 1.5; /* Adds line spacing */
+    padding: 10px 0; /* Adds spacing above and below */
+    box-sizing: border-box; /* Includes padding in total width */
+}
+
+
+
 .info-section {
     position: relative; /* Proper containment for child elements */
     height: 110vh; 
@@ -527,4 +547,111 @@ body, html {
     text-align: left;
     margin-bottom: 16px; /* Adjust this value for the desired spacing */
     line-height: 1.4; /* Optional: Adjust line spacing for better readability */
+}
+
+.p2 {
+    font-size: 14px;
+    text-align: left;
+    position: absolute;
+    left: 20px; /* Adjust this value to move it closer to the left edge */
+    bottom: 20px; /* Adjust this value to position it vertically */
+    margin: 0;
+    padding: 0;
+}
+
+
+.book-section {
+    background-color: black;
+    border-radius: 15px;
+    padding: 20px;
+    width: cover;
+    height: 1000px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.book-section h2 {
+    font-size: 30px;
+    margin: 50px 0 10px;
+    text-align: center;
+    color: rgba(255, 255, 255);
+}
+
+.book-section p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.book-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.book-section input, .book-section textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #000;
+    border-radius: 25px;
+    color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.book-section textarea {
+    height: 120px;
+}
+
+.book-section button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.book-section button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.book-section input:focus,
+.book-section textarea:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgb(241, 183, 9); /* Add custom focus effect */
+    border: 1px rgb(241, 183, 9); /* Add yellow border */
+}
+
+#form-message {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .book-section {
+        width: 95%;
+        background-color: #000;
+    }
+
+    .book-section h2 {
+        font-size: 28px;
+    }
+
+    .book-section input, .book-section textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .book-section button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
 }
