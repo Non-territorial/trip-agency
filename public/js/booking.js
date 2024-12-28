@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const bookingForm = document.getElementById('book-form');
+    const bookingForm = document.getElementById("book-form");
     if (bookingForm) {
-        bookingForm.addEventListener('submit', async (e) => {
+        bookingForm.addEventListener("submit", async (e) => {
             e.preventDefault();
 
             const name = e.target.name.value;
@@ -10,27 +10,21 @@ document.addEventListener("DOMContentLoaded", () => {
             const guests = e.target.guests.value;
             const message = e.target.message.value || null;
 
-            // Use the environment variable
-            const apiBaseUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
-            const endpoint = `${apiBaseUrl}/api/bookings`;
-
             try {
-                const response = await fetch(endpoint, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
+                const response = await fetch("/api/bookings", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ name, email, trip, guests, message }),
                 });
 
                 if (response.ok) {
-                    alert('Booking inquiry submitted successfully!');
+                    alert("Booking inquiry submitted successfully!");
                 } else {
-                    const error = await response.json();
-                    alert('Error submitting booking inquiry: ' + (error.message || 'Unknown error'));
+                    alert("Failed to submit booking inquiry. Please try again.");
                 }
-            } catch (err) {
-                alert('A network error occurred while submitting the booking inquiry!');
+            } catch (error) {
+                console.error("Error submitting booking inquiry:", error);
+                alert("An error occurred. Please try again.");
             }
         });
     }
