@@ -10,18 +10,27 @@ document.addEventListener("DOMContentLoaded", () => {
             const guests = e.target.guests.value;
             const message = e.target.message.value || null;
 
-            const response = await fetch('/api/bookings', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ name, email, trip, guests, message }),
-            });
+            // Use the environment variable
+            const apiBaseUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
+            const endpoint = `${apiBaseUrl}/api/bookings`;
 
-            if (response.ok) {
-                alert('Booking inquiry submitted successfully!');
-            } else {
-                alert('Error submitting booking inquiry!');
+            try {
+                const response = await fetch(endpoint, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ name, email, trip, guests, message }),
+                });
+
+                if (response.ok) {
+                    alert('Booking inquiry submitted successfully!');
+                } else {
+                    const error = await response.json();
+                    alert('Error submitting booking inquiry: ' + (error.message || 'Unknown error'));
+                }
+            } catch (err) {
+                alert('A network error occurred while submitting the booking inquiry!');
             }
         });
     }
