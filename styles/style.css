@@ -788,7 +788,7 @@ input[type="number"] {
     .text-block {
         position: absolute; /* Position it within the .room */
         bottom: -10px; /* Add spacing from the bottom */
-        left: -15px; /* Add spacing from the left */
+        left: 5px; /* Add spacing from the left */
         text-align: left; /* Align text to the left */
         background: rgba(0, 0, 0, 0.4); /* Optional: Semi-transparent background */
         padding: 5px; /* Padding for better readability */
@@ -796,33 +796,24 @@ input[type="number"] {
     }
     
     .title1 {
-        font-size: 0.7rem;
+        font-size: 18px;
         margin-bottom: -10px; /* Small spacing between title and heading */
     }
     
     .heading1 {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
         margin-bottom: 5px; /* Small spacing below heading */
     }
     
     .description1 {
-        font-size: 0.6rem;
+        font-size: 16px;
         line-height: 1.4; /* Improve readability */
     }
     
 
     /* Monteverde, Cuisine Section */
     .monteverde {
-        display: flex; /* Ensure flexbox layout */
-        flex-direction: column; /* Stack items vertically */
-        justify-content: flex-start; /* Align content to the top */
-        align-items: flex-start; /* Align items to the left */
-        text-align: left; /* Align text content to the left */
-        padding: 10px; /* Add padding for spacing */
-        height: 500px; 
-        background-size: cover; /* Cover the background */
-        background-position: center; /* Center the background */
-        background-repeat: no-repeat; /* Prevent tiling */
+        padding: 10px;
     }
 
     .cuisine {
@@ -941,13 +932,15 @@ input[type="number"] {
     }
     
     .contact h2 {
-        font-size: 22px; /* Slightly smaller heading for mobile */
+        font-size: 16px; /* Slightly smaller heading for mobile */
         margin-bottom: 10px; /* Add space below the heading */
+        color: rgba(255, 255, 255, 0.8);
     }
     
     .contact p {
         font-size: 14px; /* Adjust font size for better readability */
         margin-bottom: 5px;
+        color: rgba(255, 255, 255, 0.8);
     }
     
     .contact a {
@@ -956,53 +949,72 @@ input[type="number"] {
         text-decoration: none;
         word-break: break-word; /* Allow email to wrap if needed */
     }
-    
-    /* Newsletter Section */
-    .newsletter-section {
-        display: flex;
-        flex-direction: column; /* Stack elements vertically */
-        padding: 5px;
-        text-align: left; /* Center-align text */
-        gap: 10px; /* Add spacing between elements */
-    }
-    
-    
-    .newsletter-section h2 {
-        font-size: 24px; /* Smaller heading for mobile */
-        margin-bottom: 10px;
-        text-align: left;
-    }
-    
-    .newsletter-section form {
-        display: flex;
-        flex-direction: column; /* Stack form elements */
-        align-items: left;
-        width: 100%; /* Ensure form spans the section width */
-        gap: 10px; /* Add spacing between input and button */
-    }
-    
-    .newsletter-section input {
-        width: 80%; /* Take most of the width for input */
-        font-size: 12px; /* Adjust font size */
-        padding: 10px; /* Add padding for touch-friendly inputs */
-        border-radius: 25px; /* Keep rounded look */
-        border: 1px solid #fff; /* Ensure visible border */
-    }
-    
-    .newsletter-section button {
-        width: 87%; /* Match input width */
-        font-size: 12px; /* Adjust font size */
-        padding: 8px; /* Add padding for touch-friendly button */
-        border-radius: 25px; /* Keep rounded look */
-        background-color: black; /* Ensure contrast */
+
+    .inquiry {
         color: white;
-        border: 1px solid #fff;
+        text-decoration: none;
+        font-size: 16px;
     }
-    
-    .newsletter-section button:hover {
-        background-color: #fff;
-        color: black;
-    }
+
+    /* Newsletter Section */
+/* Newsletter Section */
+.newsletter-section {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    text-align: left; /* Align text to the left */
+    gap: 10px; /* Add spacing between elements */
+    width: 100%; /* Ensure it spans the full width */
+    padding: 5px; /* Match padding of the contact section */
+}
+
+.newsletter-section h2 {
+    font-size: 16px; /* Match heading size to Contact section */
+    margin-bottom: 10px; /* Space below heading */
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.newsletter-section p {
+    font-size: 14px; /* Match font size to Contact section */
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.newsletter-section form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: flex-start; /* Align form elements to the left */
+    width: 100%; /* Span the full section width */
+    gap: 10px; /* Add spacing between input and button */
+}
+
+.newsletter-section input {
+    width: 100%; /* Take full width of the container */
+    max-width: 300px; /* Limit the width for better proportions */
+    font-size: 12px; /* Match font size */
+    padding: 10px; /* Touch-friendly padding */
+    border-radius: 25px; /* Keep rounded look */
+    border: 1px solid #fff; /* Visible border */
+    background-color: black; /* Match button background */
+    color: white; /* Text color */
+}
+
+.newsletter-section button {
+    width: 100%; /* Match input width */
+    max-width: 320px; /* Same as input max width */
+    font-size: 12px; /* Match font size */
+    padding: 10px; /* Add padding for touch-friendly button */
+    border-radius: 25px; /* Keep rounded look */
+    background-color: black; /* Match Contact section */
+    color: white; /* Text color */
+    border: 1px solid #fff; /* Visible border */
+    cursor: pointer; /* Indicate clickable button */
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-section button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Add hover effect */
+}
+
 
     /* Book Section */
     .book-section {
