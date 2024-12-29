@@ -48,3 +48,4 @@ Desktop.ini
 # Ignore uploaded content (optional, adjust as needed)
 uploads/
 .DS_Store
+.next
