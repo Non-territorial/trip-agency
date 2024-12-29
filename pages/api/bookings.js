@@ -1,11 +1,35 @@
 import db from "../../db";
+import Cors from "cors";
+
+// Initialize CORS middleware
+const cors = Cors({ origin: "*" });
+
+function runMiddleware(req, res, fn) {
+    return new Promise((resolve, reject) => {
+        fn(req, res, (result) => {
+            if (result instanceof Error) {
+                return reject(result);
+            }
+            resolve(result);
+        });
+    });
+}
 
 export default async function handler(req, res) {
+    // Run the CORS middleware
+    try {
+        await runMiddleware(req, res, cors);
+    } catch (error) {
+        return res.status(500).json({ error: "CORS middleware failed" });
+    }
+
     if (req.method === "POST") {
         const { name, email, trip, guests, message } = req.body;
 
         if (!name || !email || !trip || !guests) {
-            return res.status(400).json({ error: "Name, email, trip, and guests are required" });
+            return res.status(400).json({
+                error: "Name, email, trip, and guests are required",
+            });
         }
 
         try {

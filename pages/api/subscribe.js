@@ -1,6 +1,28 @@
 import db from "../../db";
+import Cors from "cors";
+
+// Initialize CORS middleware
+const cors = Cors({ origin: "*" });
+
+function runMiddleware(req, res, fn) {
+    return new Promise((resolve, reject) => {
+        fn(req, res, (result) => {
+            if (result instanceof Error) {
+                return reject(result);
+            }
+            resolve(result);
+        });
+    });
+}
 
 export default async function handler(req, res) {
+    // Run the CORS middleware
+    try {
+        await runMiddleware(req, res, cors);
+    } catch (error) {
+        return res.status(500).json({ error: "CORS middleware failed" });
+    }
+
     if (req.method === "POST") {
         const { email } = req.body;
 
@@ -19,5 +41,3 @@ export default async function handler(req, res) {
         res.status(405).json({ error: "Method not allowed" });
     }
 }
-
-
