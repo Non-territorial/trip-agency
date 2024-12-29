@@ -35,16 +35,18 @@ export default function Newsletter() {
         <p className="description">
             Subscribe to receive announcements about TRIPS and a look behind the scenes.
         </p>
-        <form id="newsletter-form">
-            <input
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-            />
-            <button type="submit">Subscribe</button>
-        </form>
-        <p id="form-message"></p>
+        <form id="newsletter-form" onSubmit={handleSubmit}>
+    <input
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        value={email} // Bind state to the input field
+        onChange={(e) => setEmail(e.target.value)} // Update email state
+        required
+    />
+    <button type="submit">Subscribe</button>
+</form>
+<p id="form-message">{formMessage}</p>
     </div>
     );
 }
