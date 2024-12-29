@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const bookingForm = document.getElementById("book-form");
+
     if (bookingForm) {
         bookingForm.addEventListener("submit", async (e) => {
             e.preventDefault();
@@ -13,18 +14,21 @@ document.addEventListener("DOMContentLoaded", () => {
             try {
                 const response = await fetch("/api/bookings", {
                     method: "POST",
-                    headers: { "Content-Type": "application/json" },
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
                     body: JSON.stringify({ name, email, trip, guests, message }),
                 });
 
                 if (response.ok) {
                     alert("Booking inquiry submitted successfully!");
                 } else {
-                    alert("Failed to submit booking inquiry. Please try again.");
+                    const errorData = await response.json();
+                    alert(`Failed to submit booking inquiry: ${errorData.error || "Unknown error"}`);
                 }
             } catch (error) {
-                console.error("Error submitting booking inquiry:", error);
-                alert("An error occurred. Please try again.");
+                console.error("Error:", error);
+                alert("An error occurred while submitting your booking inquiry. Please try again.");
             }
         });
     }

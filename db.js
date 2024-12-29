@@ -1,15 +1,13 @@
-// db.js
+import { Pool } from "pg";
+import dotenv from "dotenv";
 
-const { Pool } = require("pg");
-require("dotenv").config(); // Load environment variables from .env file
+dotenv.config(); // Load environment variables
 
-// PostgreSQL configuration using environment variables
 const pool = new Pool({
-    connectionString: process.env.DATABASE_URL, // Full connection string
+    connectionString: process.env.DATABASE_URL, // Full connection string from .env
     ssl: { rejectUnauthorized: false }, // Required for Neon
 });
 
-// Export query function for use in other modules
-module.exports = {
+export default {
     query: (text, params) => pool.query(text, params),
 };
