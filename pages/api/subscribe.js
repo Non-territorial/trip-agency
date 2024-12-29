@@ -16,7 +16,6 @@ function runMiddleware(req, res, fn) {
 }
 
 export default async function handler(req, res) {
-    // Run the CORS middleware
     try {
         await runMiddleware(req, res, cors);
     } catch (error) {
@@ -32,7 +31,7 @@ export default async function handler(req, res) {
 
         try {
             await db.query("INSERT INTO newsletter_subscribers (email) VALUES ($1)", [email]);
-            res.status(200).json({ message: "Subscribed successfully!" });
+            res.status(200).json({ message: "Successfully subscribed!" });
         } catch (error) {
             console.error("Error saving email:", error);
             res.status(500).json({ error: "Internal server error" });

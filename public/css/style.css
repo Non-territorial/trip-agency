@@ -126,6 +126,28 @@ body, html {
     gap: none; /* Adds spacing between sections */
 }
 
+.vertical-section-img {
+    display: flex;
+    align-items: flex-start; /* Align the items at the top */
+    gap: 20px; /* Add spacing between image and text */
+    padding: 40px;
+    max-width: 1200px; /* Limit the section's width */
+    margin: 0 auto; /* Center align the section */
+    box-sizing: border-box;
+}
+
+.image-container {
+    flex: 1; /* Allocate space proportionally */
+    max-width: 50%; /* Restrict image container to half the width */
+}
+
+.image-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop or resize gracefully */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
 
 
 .heading {
@@ -227,25 +249,221 @@ body, html {
     opacity: 0.98;
 }
 
+.details-block {
+    flex: 1; /* Allocate space proportionally */
+    font-family: 'IBM Plex Mono', monospace; /* Consistent font */
+    padding: 20px; /* Add padding around the text */
+    background-color: #fff; /* Optional: Add a background color */
+    
+}
+
+.details-heading {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.details-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.details-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #000;
+}
+
+.details-label {
+    font-size: 1rem;
+    font-weight: bold;
+    flex: 1;
+}
+
+.details-value {
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: right;
+    flex: 1;
+}
+
+.details-info {
+    display: block; /* Ensure it fills the width of the container */
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: justify; /* Justify the text for a clean look */
+    width: 100%; /* Fills the parent container */
+    line-height: 1.5; /* Adds line spacing */
+    padding: 10px 0; /* Adds spacing above and below */
+    box-sizing: border-box; /* Includes padding in total width */
+}
+
+
+
+.info-section {
+    position: relative; /* Proper containment for child elements */
+    height: 110vh; 
+    width: 100%; /* Full width of the viewport */
+    display: flex; /* Enables flexbox for layout */
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; /* Stacks items in a single column */
+    color: black; /* Text color */
+    background-color: white; /* Solid white background */
+    background-size: cover;
+    text-align: center; /* Aligns text to the left */
+    padding: 10px; /* Padding around the section */
+    font-weight: 300; /* Light font weight for content */
+}
+
+.info-item {
+    width: 100%; /* Ensures full-width items */
+    padding: 0;
+    border-bottom: 1px solid #000;
+    margin: 0;
+}
+
+.info-item h3 {
+    font-size: 16px;
+    color: black; /* Text color for headers */
+    font-weight: 300;
+    cursor: pointer; /* Indicates interactivity for dropdown */
+    text-align: left;
+}
+
+.dropdown-toggle span {
+    font-weight: normal;
+    margin-left: 5px;
+    color: black;
+}
+
+.info-item-content {
+    display: none; /* Content is hidden initially */
+    padding: 10px 0;
+    transition: all 0.3s ease-in-out; /* Smooth dropdown animation */
+    margin-top: 10px; /* Spacing between header and content */
+    font-size: 14px; /* Font size for content */
+    color: black; /* Content text color */
+    text-align: left;
+    margin-bottom: 16px; /* Adjust this value for the desired spacing */
+    line-height: 1.4; /* Optional: Adjust line spacing for better readability */
+}
+.info-item-content.show {
+    display: block;
+}
+
+.p2 {
+    font-size: 14px;
+    text-align: left;
+    position: absolute;
+    left: 20px; /* Adjust this value to move it closer to the left edge */
+    bottom: 20px; /* Adjust this value to position it vertically */
+    margin: 0;
+    padding: 0;
+}
 
 .contact {
-    position: relative; /* Ensures the section is a containing block for positioned elements */
-    height: 100vh; /* Full viewport height */
-    width: 100%; /* Full width of the viewport */
-    display: flex; /* Enables flexbox for centering content */
-    justify-content: center; /* Horizontally centers the content */
-    align-items: center; /* Vertically centers the content */
-    color: white; /* Text color */
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* Ensures full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Horizontally center all content */
+    justify-content: center; /* Vertically center all content */
+    color: white;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
-    url('https://gateway.pinata.cloud/ipfs/bafybeihvjjbyhw3minhh7xky6ojmq2hpvmcsdqdl7drb7zzwhlgc4cucb4');
+        url('https://gateway.pinata.cloud/ipfs/bafybeihvjjbyhw3minhh7xky6ojmq2hpvmcsdqdl7drb7zzwhlgc4cucb4');
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
-    z-index: 1; /* Ensures this section layers correctly */
-    text-align: left; /* Align text to the left */
-    padding: 40px; /* Adds padding around text */
-    opacity: 0.98;
+    padding: 40px 20px; /* Adds spacing around the content */
+    text-align: center; /* Center text within the section */
 }
+
+.contact .content-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    gap: 40px; /* Space between Contact Us and Newsletter sections */
+    width: 100%; /* Full width */
+    max-width: 800px; /* Optional: limit the width for better readability */
+}
+
+.contact .contact-us,
+.contact .newsletter {
+    width: 100%; /* Full width of the container */
+    margin: 0 auto; /* Center horizontally */
+}
+
+.contact .contact-us {
+    text-align: left; /* Align Contact Us content to the left */
+}
+
+.contact .newsletter {
+    text-align: center; /* Align Newsletter content to the center */
+}
+
+
+.newsletter-section {
+    width: 100%; /* Ensures it aligns with the width of the contact block */
+    max-width: none; /* Overrides the max-width */
+    margin-top: 10px; /* Reduce spacing between sections */
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+.inquiry {
+    color: white;
+    text-decoration: none;
+}
+
+.newsletter-section h2 {
+    font-size: 38px;
+    color: rgba(255, 255, 255);
+    margin-bottom: 40px;
+}
+
+.newsletter-section form {
+    display: flex;
+    justify-content: center; /* Center input and button */
+    gap: 10px; /* Space between input and button */
+}
+
+.newsletter-section input {
+    width: 70%;
+    padding: 8px;
+    font-size: 16px;
+    background-color: #000;
+    border-radius: 25px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.newsletter-section button {
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#form-message {
+    margin-top: 10px;
+    font-size: 22px;
+    color: rgb(227, 166, 23);
+}
+
+.newsletter-section input:focus,
+.newsletter-section textarea:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgb(249, 192, 21); /* Add custom focus effect */
+    border: 1px rgb(249, 192, 21); /* Add yellow border */
+}
+
 
 /* Bottom Navbar */
 .bottom-navbar {
@@ -374,197 +592,8 @@ body, html {
 }
 
 
-.newsletter-section {
-    width: 100%; /* Ensures it aligns with the width of the contact block */
-    max-width: none; /* Overrides the max-width */
-    margin-top: 10px; /* Reduce spacing between sections */
-    font-size: 22px;
-    color: rgba(255, 255, 255, 0.9);
-}
 
 
-.inquiry {
-    color: white;
-    text-decoration: none;
-}
-
-.newsletter-section h2 {
-    font-size: 38px;
-    color: rgba(255, 255, 255);
-    margin-bottom: 40px;
-}
-
-.newsletter-section form {
-    display: flex;
-    justify-content: left;
-    gap: 10px;
-}
-
-.newsletter-section input {
-    width: 70%;
-    padding: 8px;
-    font-size: 16px;
-    background-color: #000;
-    border-radius: 25px;
-    color: rgba(255, 255, 255, 0.9);
-}
-
-.newsletter-section button {
-    padding: 5px 10px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: black;
-    border: 1px solid white;
-    border-radius: 25px;
-    cursor: pointer;
-}
-
-#form-message {
-    margin-top: 10px;
-    font-size: 22px;
-    color: rgb(227, 166, 23);
-}
-
-.newsletter-section input:focus,
-.newsletter-section textarea:focus {
-    outline: none; /* Remove default outline */
-    box-shadow: 0 0 5px rgb(249, 192, 21); /* Add custom focus effect */
-    border: 1px rgb(249, 192, 21); /* Add yellow border */
-}
-
-.vertical-section-img {
-    display: flex;
-    align-items: flex-start; /* Align the items at the top */
-    gap: 20px; /* Add spacing between image and text */
-    padding: 40px;
-    max-width: 1200px; /* Limit the section's width */
-    margin: 0 auto; /* Center align the section */
-    box-sizing: border-box;
-}
-
-.image-container {
-    flex: 1; /* Allocate space proportionally */
-    max-width: 50%; /* Restrict image container to half the width */
-}
-
-.image-container img {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Crop or resize gracefully */
-    border-radius: 5px; /* Optional: Add rounded corners */
-}
-
-.details-block {
-    flex: 1; /* Allocate space proportionally */
-    font-family: 'IBM Plex Mono', monospace; /* Consistent font */
-    padding: 20px; /* Add padding around the text */
-    background-color: #fff; /* Optional: Add a background color */
-    
-}
-
-.details-heading {
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.details-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.details-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 0;
-    border-bottom: 1px solid #000;
-}
-
-.details-label {
-    font-size: 1rem;
-    font-weight: bold;
-    flex: 1;
-}
-
-.details-value {
-    font-size: 1rem;
-    font-weight: normal;
-    text-align: right;
-    flex: 1;
-}
-
-.details-info {
-    display: block; /* Ensure it fills the width of the container */
-    font-size: 1rem;
-    font-weight: normal;
-    text-align: justify; /* Justify the text for a clean look */
-    width: 100%; /* Fills the parent container */
-    line-height: 1.5; /* Adds line spacing */
-    padding: 10px 0; /* Adds spacing above and below */
-    box-sizing: border-box; /* Includes padding in total width */
-}
-
-
-
-.info-section {
-    position: relative; /* Proper containment for child elements */
-    height: 110vh; 
-    width: 100%; /* Full width of the viewport */
-    display: flex; /* Enables flexbox for layout */
-    justify-content: center; 
-    align-items: center;
-    flex-direction: column; /* Stacks items in a single column */
-    color: black; /* Text color */
-    background-color: white; /* Solid white background */
-    background-size: cover;
-    text-align: center; /* Aligns text to the left */
-    padding: 10px; /* Padding around the section */
-    font-weight: 300; /* Light font weight for content */
-}
-
-.info-item {
-    width: 30%; /* Ensures full-width items */
-    padding: 0;
-    border-bottom: 1px solid #000;
-    margin: 0;
-}
-
-.info-item h3 {
-    font-size: 16px;
-    color: black; /* Text color for headers */
-    font-weight: 300;
-    cursor: pointer; /* Indicates interactivity for dropdown */
-    text-align: left;
-}
-
-.dropdown-toggle span {
-    font-weight: normal;
-    margin-left: 5px;
-    color: black;
-}
-
-.info-item-content {
-    display: none; /* Content is hidden initially */
-    transition: all 0.3s ease-in-out; /* Smooth dropdown animation */
-    margin-top: 10px; /* Spacing between header and content */
-    font-size: 14px; /* Font size for content */
-    color: black; /* Content text color */
-    text-align: left;
-    margin-bottom: 16px; /* Adjust this value for the desired spacing */
-    line-height: 1.4; /* Optional: Adjust line spacing for better readability */
-}
-
-.p2 {
-    font-size: 14px;
-    text-align: left;
-    position: absolute;
-    left: 20px; /* Adjust this value to move it closer to the left edge */
-    bottom: 20px; /* Adjust this value to position it vertically */
-    margin: 0;
-    padding: 0;
-}
 
 
 .book-section {
