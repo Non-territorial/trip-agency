@@ -33,7 +33,7 @@ export default function Home() {
 
     return (
         <>
-            <Head>
+<Head>
     <meta name="description" content="Trip Agency provides unique retreats blending art, hospitality, and hedonistic experiences." />
     <meta property="og:title" content="Trip Agency" />
     <meta property="og:description" content="Experience transformative retreats in Italy, Sweden, and Japan." />
@@ -57,7 +57,7 @@ export default function Home() {
                 </div>
             </header>
 
-            <main id="app">
+<main id="app">
                     <section className="video-section">
                         <video
                             id="my-video"
@@ -353,18 +353,18 @@ export default function Home() {
 
 {/* Contact Section */}
 <section id="contact" className="contact">
-    <div className="content-wrapper" style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
+    <div className="content-wrapper">
         {/* Contact Us */}
-        <div className="contact-us" style={{ flex: 1, marginRight: "20px" }}>
+        <div className="contact-us">
             <h2 className="heading">Contact Us</h2>
             <p className="description">
-                Feel free to reach out with any <b><a href="/booking.html" className="inquiry">inquiry</a></b> for
+                Feel free to reach out with any <b><a href="/booking" className="inquiry">inquiry</a></b> for
                 additional details.
             </p>
         </div>
         
         {/* Newsletter */}
-        <div className="newsletter" style={{ flex: 1 }}>
+        <div className="newsletter">
             <Newsletter />
         </div>
     </div>
