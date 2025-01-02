@@ -5,10 +5,6 @@ import Script from "next/script";
 export default function MyApp({ Component, pageProps }) {
     return (
         <>
-        <Script
-                src="https://example.com/non-critical-script.js"
-                strategy="lazyOnload" // Loads the script after page load
-            />
             <Head>
                 <script
                     type="application/ld+json"

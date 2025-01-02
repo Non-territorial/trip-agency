@@ -19,23 +19,21 @@ export default async function handler(req, res) {
         }
 
         try {
-            // Insert email into the database
             const query = "INSERT INTO newsletter_subscribers (email) VALUES ($1)";
             const values = [email];
-
+        
+            console.log("Running query:", query, "with values:", values); // Add this line
             await db.query(query, values);
-
-            // Respond with success
+        
             return res.status(200).json({ message: "Successfully subscribed!" });
         } catch (error) {
-            console.error("Error saving email:", error);
-
-            if (error.code === "23505") { // PostgreSQL unique constraint violation
+            console.error("Error saving email:", error); // Log full error
+            if (error.code === "23505") {
                 return res.status(400).json({ error: "Email already subscribed" });
             }
-
             return res.status(500).json({ error: "Internal server error" });
         }
+        
     } else {
         // Respond with 405 for unsupported methods
         res.setHeader("Allow", ["POST"]);
