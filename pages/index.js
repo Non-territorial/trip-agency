@@ -36,7 +36,7 @@ export default function Home() {
     return (
         <>
 <Head>
-    <title>Hedonistic Art Retreats | Trip Agency - Unique Experiences in Italy, Sweden, and Japan.</title>
+    <title>Trip Agency | Hedonistic Retreats- Unique Art and Culinary Experiences in Italy, Sweden, and Japan.</title>
     <meta name="description" content="Trip Agency provides unique retreats blending art, hospitality, and hedonistic experiences." />
     <meta property="og:title" content="Trip Agency" />
     <meta property="og:description" content="Experience transformative retreats in Italy, Sweden, and Japan." />
