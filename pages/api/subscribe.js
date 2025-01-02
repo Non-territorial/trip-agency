@@ -1,32 +1,13 @@
-import db from "../../db"; // Ensure your db instance is properly set up
-import Cors from "cors";
-
-// Initialize CORS middleware
-const cors = Cors({
-    methods: ["POST"], // Explicitly allow only POST requests
-    origin: "*", // Adjust the origin for production for security
-});
-
-// Utility function to run middleware
-function runMiddleware(req, res, fn) {
-    return new Promise((resolve, reject) => {
-        fn(req, res, (result) => {
-            if (result instanceof Error) {
-                return reject(result);
-            }
-            resolve(result);
-        });
-    });
-}
+import db from "../../db";
+import NextCors from "nextjs-cors";
 
 export default async function handler(req, res) {
-    // Run the CORS middleware
-    try {
-        await runMiddleware(req, res, cors);
-    } catch (error) {
-        console.error("CORS middleware failed:", error);
-        return res.status(500).json({ error: "CORS middleware failed" });
-    }
+    // Run CORS middleware
+    await NextCors(req, res, {
+        methods: ["POST"],
+        origin: "*", // Adjust for production for better security
+        optionsSuccessStatus: 200,
+    });
 
     // Only handle POST requests
     if (req.method === "POST") {
@@ -47,7 +28,6 @@ export default async function handler(req, res) {
             // Respond with success
             return res.status(200).json({ message: "Successfully subscribed!" });
         } catch (error) {
-            // Handle database errors, such as duplicate email entries
             console.error("Error saving email:", error);
 
             if (error.code === "23505") { // PostgreSQL unique constraint violation

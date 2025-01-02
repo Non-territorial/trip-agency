@@ -1,31 +1,18 @@
 import db from "../../db";
-import Cors from "cors";
-
-// Initialize CORS middleware
-const cors = Cors({ origin: "*" });
-
-function runMiddleware(req, res, fn) {
-    return new Promise((resolve, reject) => {
-        fn(req, res, (result) => {
-            if (result instanceof Error) {
-                return reject(result);
-            }
-            resolve(result);
-        });
-    });
-}
+import NextCors from "nextjs-cors";
 
 export default async function handler(req, res) {
-    // Run the CORS middleware
-    try {
-        await runMiddleware(req, res, cors);
-    } catch (error) {
-        return res.status(500).json({ error: "CORS middleware failed" });
-    }
+    // Run CORS middleware
+    await NextCors(req, res, {
+        methods: ["POST"],
+        origin: "*", // Adjust for production
+        optionsSuccessStatus: 200,
+    });
 
     if (req.method === "POST") {
         const { name, email, trip, guests, message } = req.body;
 
+        // Validate input
         if (!name || !email || !trip || !guests) {
             return res.status(400).json({
                 error: "Name, email, trip, and guests are required",
@@ -43,6 +30,7 @@ export default async function handler(req, res) {
             res.status(500).json({ error: "Internal server error" });
         }
     } else {
+        res.setHeader("Allow", ["POST"]);
         res.status(405).json({ error: "Method not allowed" });
     }
 }
