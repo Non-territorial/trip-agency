@@ -67,7 +67,7 @@ body, html {
 .video-section {
     position: relative;
     width: 100vw; /* Full width of the viewport */
-    height: 100vh; /* Full height of the viewport */
+    height: 95vh; /* Full height of the viewport */
     background: black; /* Black background for unused space */
     display: flex;
     justify-content: center; /* Centers the video horizontally */
@@ -84,7 +84,6 @@ body, html {
     height: auto; /* Dynamically adjusts height */
     max-width: 95%; /* Prevents video from overflowing horizontally */
     max-height: 100%; /* Prevents video from overflowing vertically */
-    object-fit: contain; /* Ensures the video maintains its aspect ratio */
     object-position: center;
     background: black; /* Ensures unused space around the video is black */
 }

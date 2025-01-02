@@ -36,13 +36,13 @@ export default function Home() {
     return (
         <>
 <Head>
+    <title>Trip Agency – Unique Retreats in Italy, Sweden, and Japan</title>
     <meta name="description" content="Trip Agency provides unique retreats blending art, hospitality, and hedonistic experiences." />
     <meta property="og:title" content="Trip Agency" />
     <meta property="og:description" content="Experience transformative retreats in Italy, Sweden, and Japan." />
     <meta property="og:image" content="/og-image.png" />
 </Head>
 
-            {/* Include scripts globally */}
 
             <header className="navbar">
                 <div className="navbar-left">
@@ -61,7 +61,9 @@ export default function Home() {
                 <section id="packages" className="vertical-section">
                     <div className="content-wrapper">
                         <span className="jp-text">ヘドニスティック・リトリート</span>
-                        <h1 className="heading">Hedonistic Retreats</h1>
+                        <h1 className="heading">Hedonistic Retreats<br />in Italy, Sweden, and Japan</h1>
+
+
                         <p className="description">
     We blend unique <b>locations</b>, <b>art</b>, cuisine, and <b>hospitality</b>, creating hedonistic and <b>transformative</b> experiences set in Italy, Sweden, and Japan.
 </p>
