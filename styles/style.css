@@ -337,7 +337,7 @@ body, html {
     padding: 10px 0;
     transition: all 0.3s ease-in-out; /* Smooth dropdown animation */
     margin-top: 10px; /* Spacing between header and content */
-    font-size: 14px; /* Font size for content */
+    font-size: 16px; /* Font size for content */
     color: black; /* Content text color */
     text-align: left;
     margin-bottom: 16px; /* Adjust this value for the desired spacing */
