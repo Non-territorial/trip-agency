@@ -4,6 +4,8 @@ import Newsletter from "../components/newsletter";
 import AboutSection from "../components/AboutSection";
 import Link from "next/link";
 import Script from "next/script";
+import VideoSection from '../components/VideoSection';
+
 
 export default function Home() {
     useEffect(() => {
@@ -41,10 +43,6 @@ export default function Home() {
 </Head>
 
             {/* Include scripts globally */}
-            <Script
-                src="https://vjs.zencdn.net/8.0.4/video.min.js"
-                strategy="afterInteractive"
-            />
 
             <header className="navbar">
                 <div className="navbar-left">
@@ -57,39 +55,20 @@ export default function Home() {
                 </div>
             </header>
 
-<main id="app">
-                    <section className="video-section">
-                        <video
-                            id="my-video"
-                            className="video-js"
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                            preload="auto"
-                            data-setup="{}"
-                            onError={(e) => console.error("Video failed to load", e)}
-                        >
-                            <source
-                                src="https://stream.mux.com/oFF6SHarBZJmgo01oNcVXo4d59cCRHlrQ4IaRRoVOzl00.m3u8"
-                                type="application/x-mpegURL"
-                            />
-                        </video>
-                    </section>
+<main id="app" className="video-page">
+  <VideoSection />
 
                 <section id="packages" className="vertical-section">
                     <div className="content-wrapper">
                         <span className="jp-text">ヘドニスティック・リトリート</span>
                         <h1 className="heading">Hedonistic Retreats</h1>
                         <p className="description">
-                            We blend unique <b>locations</b>, <b>art</b>, cuisine, and <b>hospitality</b>, creating hedonistic and
-                            <b>transformative</b> experiences set in Italy, Sweden, and Japan.
-                        </p>
-                        <p className="description">
-                            These <b>retreats</b> are designed not just to offer an <b>escape</b> but to provide an <b>environment</b>
-                            where guests can indulge in the privilege of <b>unexpected</b> moments. Each retreat creates spaces
-                            that invite you to slow down and reflect, being <b>immersed</b> in a very special ambiance.
-                        </p>
+    We blend unique <b>locations</b>, <b>art</b>, cuisine, and <b>hospitality</b>, creating hedonistic and <b>transformative</b> experiences set in Italy, Sweden, and Japan.
+</p>
+<p className="description">
+    These <b>retreats</b> are designed not just to offer an <b>escape</b> but to provide an <b>environment</b> where guests can indulge in the privilege of <b>unexpected</b> moments. Each retreat creates spaces that invite you to slow down and reflect, being <b>immersed</b> in a very special ambiance.
+</p>
+
                     </div>
                 </section>
 

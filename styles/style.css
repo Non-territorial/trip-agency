@@ -71,7 +71,7 @@ body, html {
 /* Vertical Sections */
 .vertical-section {
     min-height: 100vh; /* Full screen height */
-    padding: 40px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,32 +81,53 @@ body, html {
     box-sizing: border-box;
 }
 
-/* Video Sections */
+/* General reset for the video section */
 .video-section {
-    position: relative;
-    width: 100%;
+    margin: 0;
+    padding: 0;
     height: 100vh; /* Full viewport height */
+    position: relative;
     overflow: hidden;
 }
 
-#my-video {
+/* Make sure the video covers the entire section */
+.video-section video {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover; /* Ensures the video maintains aspect ratio */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures no white gaps appear */
+    margin: 0;
+    padding: 0;
     z-index: -1; /* Places the video behind any content */
 }
 
 
-.video-js .vjs-control-bar {
-    display: none; /* Hides the control bar */
+.video-section video::-webkit-media-controls {
+    display: none !important; /* Hides the control bar on WebKit browsers (Chrome, Safari, Edge) */
+}
+
+.video-section video::-moz-media-controls {
+    display: none !important; /* Hides the control bar on Firefox */
+}
+
+.video-section video {
+    pointer-events: none; /* Disables interaction with the video */
+}
+#app.video-page {
+    margin-top: 0; /* Removes the gap for the video page */
 }
 
 
-/* Styling for the Japanese text */
+/* Content*/
+.content-wrapper {
+    display: flex;
+    flex-direction: column; /* Stacks the children vertically */
+    align-items: flex-start; /* Align content to the left */
+    gap: none; /* Adds spacing between sections */
+}
+
 .jp-text {
     font-family: 'Noto Sans JP', sans-serif; 
     font-size: 16px; /* Adjust size to match the desired appearance */
@@ -114,16 +135,6 @@ body, html {
     text-align: left; /* Align to left */
     display: block; /* Ensure it stays above the heading */
     margin-bottom: -20px;
-}
-
-
-
-
-.content-wrapper {
-    display: flex;
-    flex-direction: column; /* Stacks the children vertically */
-    align-items: flex-start; /* Align content to the left */
-    gap: none; /* Adds spacing between sections */
 }
 
 .vertical-section-img {
@@ -162,6 +173,8 @@ body, html {
     font-size: 22px;
     line-height: 1.4; /* Adjust for better readability */
     max-width: 550px;
+    word-spacing: normal;
+    white-space: normal;
 }
 .room {
     position: relative; /* Makes the section a containing block */
