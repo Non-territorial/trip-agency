@@ -89,9 +89,6 @@ body, html {
     background: black; /* Ensures unused space around the video is black */
 }
 
-
-
-
 .video-section video::-webkit-media-controls {
     display: none !important; /* Hides the control bar on WebKit browsers (Chrome, Safari, Edge) */
 }
@@ -107,13 +104,11 @@ body, html {
     margin-top: 0; /* Removes the gap for the video page */
 }
 
-
 /* Content*/
 
 #app {
     margin-top: 60px; /* Prevent content from overlapping navbar */
 }
-
 
 .vertical-section {
     height: 100vh;/* Full screen height */
