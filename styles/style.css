@@ -128,6 +128,9 @@ body, html {
     gap: none; /* Adds spacing between sections */
 }
 
+.text-block {
+    margin-left: 620px;
+}
 .jp-text {
     font-family: 'Noto Sans JP', sans-serif; 
     font-size: 16px; /* Adjust size to match the desired appearance */
@@ -159,8 +162,13 @@ body, html {
     border-radius: 5px; /* Optional: Add rounded corners */
 }
 
-
-
+.title {
+    font-family: 'IBM Plex Mono', monospace; /* Ensure consistent font */
+    font-size: 1.2rem; /* Small title size */
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: -20px;
+}
 .heading {
     font-family: 'IBM Plex Mono', monospace; /* Ensure consistent font */
     font-size: 2.5rem; /* Larger heading size */
@@ -181,6 +189,7 @@ body, html {
     height: 100vh; /* Full viewport height */
     width: 100%; /* Full viewport width */
     color: white; /* Text color */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-image: url('https://gateway.pinata.cloud/ipfs/bafybeiaob6p3sygp5asch6zzrhmuuvbczgsc7j4rk5tbw2iwfmo2tj2jke');
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the image */
@@ -190,32 +199,9 @@ body, html {
     align-items: flex-end; /* Aligns content to the bottom */
     padding: 40px; /* Adds padding around the text */
     z-index: 1; /* Ensures the section layers correctly */
+    opacity: 0.98;
 }
 
-.text-block {
-    margin-bottom: 80px; /* Adjust the space above the menu button */
-    margin-left: 20px; /* Ensures some space from the left */
-    font-family: 'IBM Plex Mono', monospace; /* Ensure consistent font */
-    text-align: left; /* Align text to the left */
-}
-
-.title1 {
-    font-size: 1.2rem; /* Small title size */
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: -20px;
-}
-
-.heading1 {
-    font-size: 2.5rem; /* Larger heading size */
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-.description1 {
-    font-size: 1.1rem;
-    line-height: 1.4; /* Adjust for better readability */
-}
 
 .monteverde {
     position: relative; /* Ensures the section is a containing block for positioned elements */
@@ -236,13 +222,6 @@ body, html {
     opacity: 0.98;
 }
 
-.title {
-    font-family: 'IBM Plex Mono', monospace; /* Ensure consistent font */
-    font-size: 1.2rem; /* Small title size */
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: -20px;
-}
 .cuisine {
     position: relative; /* Ensures the section is a containing block for positioned elements */
     height: 100vh; /* Full viewport height */
@@ -799,28 +778,7 @@ input[type="number"] {
     }
     
     .text-block {
-        position: absolute; /* Position it within the .room */
-        bottom: -10px; /* Add spacing from the bottom */
-        left: 5px; /* Add spacing from the left */
-        text-align: left; /* Align text to the left */
-        background: rgba(0, 0, 0, 0.4); /* Optional: Semi-transparent background */
-        padding: 5px; /* Padding for better readability */
-        border-radius: 8px; /* Add rounded corners for aesthetics */
-    }
-    
-    .title1 {
-        font-size: 18px;
-        margin-bottom: -10px; /* Small spacing between title and heading */
-    }
-    
-    .heading1 {
-        font-size: 1.8rem;
-        margin-bottom: 5px; /* Small spacing below heading */
-    }
-    
-    .description1 {
-        font-size: 16px;
-        line-height: 1.4; /* Improve readability */
+        margin-left: 8px;
     }
     
 
@@ -966,10 +924,9 @@ input[type="number"] {
     .inquiry {
         color: white;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 18px;
     }
 
-    /* Newsletter Section */
 /* Newsletter Section */
 .newsletter-section {
     display: flex;
@@ -983,12 +940,6 @@ input[type="number"] {
 .newsletter-section h2 {
     font-size: 16px; /* Match heading size to Contact section */
     margin-bottom: 10px; /* Space below heading */
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.newsletter-section p {
-    font-size: 14px; /* Match font size to Contact section */
-    margin-bottom: 5px;
     color: rgba(255, 255, 255, 0.8);
 }
 

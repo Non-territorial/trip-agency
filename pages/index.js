@@ -72,11 +72,11 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section id="room" className="room">
+                <section id="three" className="room">
                     <div className="text-block">
-                        <h3 className="title1">SONIC | CINEMATIC</h3>
-                        <h2 className="heading1">Settings</h2>
-                        <p className="description1">Each location hosts a set of art installations</p>
+                        <h3 className="title">SONIC | CINEMATIC</h3>
+                        <h2 className="heading">Settings</h2>
+                        <p className="description">Each location hosts a set of art installations</p>
                     </div>
                 </section>
 
@@ -85,11 +85,9 @@ export default function Home() {
                         <h3 className="title">TIMING</h3>
                         <h2 className="heading">Four days</h2>
                         <p className="description">
-                            TRIP Agency’s experiences are four-day retreats, inviting visitors to fully embrace a single,
-                            carefully selected location.<br />
+                        TRIP Agency’s experiences are four-day retreats, inviting visitors to fully embrace a single, carefully selected location.<br />
                             <br />
-                            Each site is chosen according to its unique features, and then transformed into a living installation,
-                            offering an escape from the ordinary.
+                            Each site is chosen according to its unique features, and then transformed into a living installation.
                         </p>
                     </div>
                 </section>
@@ -209,7 +207,7 @@ export default function Home() {
                         <h1 className="details-title">(UN)DISCLOSED</h1>
                         <div className="details-item">
                             <span className="details-label">Location</span>
-                            <span className="details-value">Salina | Aeolian Islands | Italy</span>
+                            <span className="details-value">Salina|Aeolian Islands|Italy</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Experience</span>
@@ -253,7 +251,7 @@ export default function Home() {
                         <h1 className="details-title">SILENCE VENTURES</h1>
                         <div className="details-item">
                             <span className="details-label">Location</span>
-                            <span className="details-value">Edsåsdalen | Sweden</span>
+                            <span className="details-value">Edsåsdalen|Sweden</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Experience</span>
@@ -309,11 +307,11 @@ export default function Home() {
                         </div>
                         <div className="details-item">
                             <span className="details-label">Features</span>
-                            <span className="details-value">Audiovisual installation, food, wine, bar and full hosting</span>
+                            <span className="details-value"></span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Dates</span>
-                            <span className="details-value">2025/2026</span>
+                            <span className="details-value">2026</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Booking fee per guest</span>
