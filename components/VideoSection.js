@@ -27,23 +27,25 @@ const VideoSection = () => {
     }, []);
 
     return (
-        <section className="video-section" style={{ margin: 0, padding: 0, height: "100vh" }}>
+        <section className="video-section">
             <video
-                ref={videoRef}
-                muted
-                autoPlay
-                loop
-                style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                    margin: 0,
-                    padding: 0,
-                }}
-            />
+    ref={videoRef}
+    muted
+    autoPlay
+    loop
+    style={{
+        position: "absolute",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)", // Centers the video
+        width: "100%",
+        height: "100%",
+        objectFit: "contain", // Preserves aspect ratio and adds black bars
+        backgroundColor: "black", // Ensures black bars
+        margin: 0,
+        padding: 0,
+    }}
+/>
         </section>
     );
 };
