@@ -548,6 +548,18 @@ body, html {
     color: #ffcc00; /* Highlight on hover */
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 .email-link {
     color: black; /* White color for the email link */
     text-decoration: none; /* Removes underline */

@@ -159,12 +159,23 @@ export default function TermsAndConditions() {
                 </nav>
 
                 <div className="menu-content">
-                    <Link href="/">Home</Link>
-                    <Link href="/#monte-argentario">Trips</Link>
-                    <Link href="/#about">About</Link>
-                    <Link href="/#contact">Contact</Link>
-                    <Link href="/t&c">T&C</Link>
-                </div>
+    <Link href="/">
+        Home <span className="visually-hidden">Go to the Home Page</span>
+    </Link>
+    <Link href="/#monte-argentario">
+        Trips <span className="visually-hidden">Explore Our Trips</span>
+    </Link>
+    <Link href="/#about">
+        About <span className="visually-hidden">Learn About Us</span>
+    </Link>
+    <Link href="/#contact">
+        Contact <span className="visually-hidden">Get in Touch</span>
+    </Link>
+    <Link href="/t&c">
+        T&C <span className="visually-hidden">Terms and Conditions</span>
+    </Link>
+</div>
+
             </div>
 
         </>
