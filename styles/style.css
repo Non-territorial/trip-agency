@@ -82,9 +82,10 @@ body, html {
     transform: translate(-50%, -50%); /* Centers the video */
     width: auto; /* Dynamically adjusts width */
     height: auto; /* Dynamically adjusts height */
-    max-width: 100%; /* Prevents video from overflowing horizontally */
+    max-width: 95%; /* Prevents video from overflowing horizontally */
     max-height: 100%; /* Prevents video from overflowing vertically */
     object-fit: contain; /* Ensures the video maintains its aspect ratio */
+    object-position: center;
     background: black; /* Ensures unused space around the video is black */
 }
 
