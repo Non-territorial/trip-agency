@@ -66,7 +66,13 @@ export default function Home() {
     We blend unique <b>locations</b>, <b>art</b>, cuisine, and <b>hospitality</b>, creating hedonistic and <b>transformative</b> experiences set in Italy, Sweden, and Japan.
 </p>
 <p className="description">
-    These <b>retreats</b> are designed not just to offer an <b>escape</b> but to provide an <b>environment</b> where guests can indulge in the privilege of <b>unexpected</b> moments. Each retreat creates spaces that invite you to slow down and reflect, being <b>immersed</b> in a very special ambiance.
+    These <b>retreats</b> are designed to provide an <b>escape</b>, offering an <b>environment</b> for indulging in <b>unexpected</b> moments. Each retreat is crafted using a Sonic Canvas, a <b>sound</b> ambiance inviting moments of reflection.
+</p>
+<p className="description">
+Imagine spending several nights in a <b>museum</b> or <b>gallery</b> within an atmosphere of <b>poetic dimension</b>, in an unfamiliar environment, or conversely, one that feels deeply familiar.
+</p>
+<p className="description">
+It’s about <b>reducing</b> the distance between <b>art and life</b>.
 </p>
 
                     </div>

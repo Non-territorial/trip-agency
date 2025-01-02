@@ -128,18 +128,6 @@ body, html {
     gap: none; /* Adds spacing between sections */
 }
 
-.text-block {
-    margin-left: 620px;
-}
-.jp-text {
-    font-family: 'Noto Sans JP', sans-serif; 
-    font-size: 16px; /* Adjust size to match the desired appearance */
-    color: rgba(0, 0, 0, 0.90); /* Gray color for subtle appearance */
-    text-align: left; /* Align to left */
-    display: block; /* Ensure it stays above the heading */
-    margin-bottom: -20px;
-}
-
 .vertical-section-img {
     display: flex;
     align-items: flex-start; /* Align the items at the top */
@@ -162,6 +150,14 @@ body, html {
     border-radius: 5px; /* Optional: Add rounded corners */
 }
 
+.jp-text {
+    font-family: 'Noto Sans JP', sans-serif; 
+    font-size: 14px; /* Adjust size to match the desired appearance */
+    color: rgba(0, 0, 0, 0.90); /* Gray color for subtle appearance */
+    text-align: left; /* Align to left */
+    display: block; /* Ensure it stays above the heading */
+    margin-bottom: -20px;
+}
 .title {
     font-family: 'IBM Plex Mono', monospace; /* Ensure consistent font */
     font-size: 1.2rem; /* Small title size */
@@ -171,14 +167,14 @@ body, html {
 }
 .heading {
     font-family: 'IBM Plex Mono', monospace; /* Ensure consistent font */
-    font-size: 2.5rem; /* Larger heading size */
+    font-size: 32px; /* Larger heading size */
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 .description {
     font-family: 'IBM Plex Mono', monospace; /* Ensure consistent font */
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.4; /* Adjust for better readability */
     max-width: 550px;
     word-spacing: normal;
@@ -201,6 +197,10 @@ body, html {
     z-index: 1; /* Ensures the section layers correctly */
     opacity: 0.98;
 }
+.text-block {
+    margin-left: 620px;
+}
+
 
 
 .monteverde {
