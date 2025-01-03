@@ -69,7 +69,7 @@ export default function Home() {
                 <section id="packages" className="vertical-section">
                     <div className="content-wrapper">
                         <span className="jp-text">ヘドニスティック・リトリート</span>
-                        <h1 className="heading">Hedonistic Retreats<br />in Italy, Sweden, and Japan</h1>
+                        <h1 className="heading">Hedonistic Retreats<br /></h1>
 
 
                         <p className="description">
