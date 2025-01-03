@@ -9,34 +9,42 @@ import VideoSection from '../components/VideoSection';
 
 export default function Home() {
     useEffect(() => {
-        // Menu toggle functionality
         const trigger = document.querySelector(".menu-trigger");
         const menuContent = document.querySelector(".menu-content");
 
-        if (trigger && menuContent) {
-            trigger.addEventListener("click", () => {
+        const toggleMenu = () => {
+            if (menuContent) {
                 menuContent.style.display =
                     menuContent.style.display === "flex" ? "none" : "flex";
-            });
+            }
+        };
 
-            document.addEventListener("click", (event) => {
-                if (!menuContent.contains(event.target) && !trigger.contains(event.target)) {
-                    menuContent.style.display = "none";
-                }
-            });
+        const closeMenu = (event) => {
+            if (
+                menuContent &&
+                !menuContent.contains(event.target) &&
+                trigger &&
+                !trigger.contains(event.target)
+            ) {
+                menuContent.style.display = "none";
+            }
+        };
+
+        if (trigger) {
+            trigger.addEventListener("click", toggleMenu);
+            document.addEventListener("click", closeMenu);
         }
 
         return () => {
-            // Cleanup event listeners to prevent memory leaks
-            if (trigger) trigger.removeEventListener("click", null);
-            document.removeEventListener("click", null);
+            if (trigger) trigger.removeEventListener("click", toggleMenu);
+            document.removeEventListener("click", closeMenu);
         };
     }, []);
 
     return (
         <>
 <Head>
-    <title>Trip Agency | Hedonistic Retreats- Unique Art and Culinary Experiences in Italy, Sweden, and Japan.</title>
+    <title>Trip Agency | Hedonistic Retreats - Unique Art and Culinary Experiences in Italy, Sweden, and Japan.</title>
     <meta name="description" content="Trip Agency provides unique retreats blending art, hospitality, and hedonistic experiences." />
     <meta property="og:title" content="Trip Agency" />
     <meta property="og:description" content="Experience transformative retreats in Italy, Sweden, and Japan." />
