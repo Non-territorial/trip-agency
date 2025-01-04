@@ -719,7 +719,7 @@ input[type="number"] {
     .vertical-section {
         padding: 20px;
         text-align: center;
-        height: 120vh;
+        height: 140vh;
     }
 
     /* Video Sections */
@@ -880,7 +880,7 @@ input[type="number"] {
     }
     
     .info-item h3 {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         text-align: left; /* Align header text to the left */
         margin: 5px 0; /* Add slight spacing above and below */
     }
