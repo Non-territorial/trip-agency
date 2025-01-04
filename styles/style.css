@@ -1175,6 +1175,37 @@ input[type="number"] {
         margin-top: 5px; /* Add slight spacing between items */
     }
 
+    /* Terms and Conditions */
+
+    .email-link {
+        font-size: 1rem; /* Smaller font size for visibility */
+    }
+
+    .terms-content {
+        justify-content: center;
+        max-width: 100%; /* Use full width for better readability */
+        line-height: 1.5; /* Slightly tighter line spacing */
+        font-size: 12px; /* Smaller font size for mobile screens */
+        text-align: justify; /* Align text to make it more visually pleasing */
+        margin-left: 20px;
+    }
+
+    .terms-content h1 {
+        font-size: 22px; /* Reduce size of main heading */
+        margin-bottom: 15px;
+    }
+
+    .terms-content h2 {
+        font-size: 16px; /* Reduce size of subheadings */
+        margin-top: 30px;
+    }
+
+    .terms-content p {
+        font-size: 12px; /* Adjust paragraph font size */
+        margin-bottom: 15px; /* Reduce spacing between paragraphs */
+    }
+
+
     }
     
     

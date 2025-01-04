@@ -159,7 +159,17 @@ export default function Booking() {
                 </nav>
 
                 <div className="menu-content">
-    <Link href="/">
+    <Link href="/" onClick={(e) => {
+        e.preventDefault();
+        if (window.location.pathname === "/" && window.location.search) {
+            // Remove query parameters if already on the home page
+            window.history.pushState({}, document.title, "/");
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        } else {
+            // Navigate to the home page
+            window.location.href = "/";
+        }
+    }}>
         Home <span className="visually-hidden">Go to the Home Page</span>
     </Link>
     <Link href="/#monte-argentario">
