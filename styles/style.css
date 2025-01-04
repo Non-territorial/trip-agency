@@ -857,7 +857,7 @@ input[type="number"] {
         padding-left: 10px; /* Add spacing between label and value */
     }
     .details-info {
-        font-size: 0.7rem; /* Adjust text size for readability */
+        font-size: 0.8rem; /* Adjust text size for readability */
         text-align: justify; /* Justify text for a cleaner look */
         line-height: 1.5; /* Enhance line spacing */
         padding-top: 10px; /* Add spacing above the text */
@@ -891,7 +891,7 @@ input[type="number"] {
     }
     
     .info-item-content {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         text-align: left; /* Align dropdown content to the left */
         margin-top: 5px; /* Add slight spacing between items */
     }

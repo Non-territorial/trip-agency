@@ -159,7 +159,7 @@ export default function TermsAndConditions() {
                 </nav>
 
                 <div className="menu-content">
-    <Link href="/">
+    <Link href="/" onClick={() => window.location.reload()}>
         Home <span className="visually-hidden">Go to the Home Page</span>
     </Link>
     <Link href="/#monte-argentario">
