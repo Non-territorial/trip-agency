@@ -110,7 +110,7 @@ body, html {
 }
 
 .vertical-section {
-    height: 100vh;/* Full screen height */
+    height: 120vh;/* Full screen height */
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -296,7 +296,7 @@ body, html {
 
 .info-section {
     position: relative; /* Proper containment for child elements */
-    height: 110vh; 
+    height: 130vh; 
     width: 100%; /* Full width of the viewport */
     display: flex; /* Enables flexbox for layout */
     justify-content: center; 
@@ -411,12 +411,6 @@ body, html {
 .newsletter-section {
     text-align: left; /* Align newsletter content to the left */
     margin-top: 20px; /* Adjust spacing */
-}
-
-.newsletter-section h2 {
-    font-size: 32px;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 20px;
 }
 
 .newsletter-section form {
@@ -601,11 +595,6 @@ body, html {
     margin-bottom: 20px;
 }
 
-
-
-
-
-
 .book-section {
     background-color: black;
     border-radius: 15px;
@@ -730,6 +719,7 @@ input[type="number"] {
     .vertical-section {
         padding: 20px;
         text-align: center;
+        height: 120vh;
     }
 
     /* Video Sections */
@@ -907,90 +897,84 @@ input[type="number"] {
     }
 
     /* Contact Section */
-    .contact {
+    .contact .content-wrapper {
         display: flex;
-        flex-direction: column; /* Stack elements vertically */
-        padding: 5px;
-        text-align: left; /* Center-align text */
-        gap: 10px; /* Add spacing between elements */
+        flex-wrap: wrap; /* Ensure sections stack on smaller screens */
+        gap: 20px; /* Space between sections */
+        margin: 0 auto; /* Center content */
     }
     
-    .contact h2 {
-        font-size: 16px; /* Slightly smaller heading for mobile */
-        margin-bottom: 10px; /* Add space below the heading */
+    .contact .contact-us,
+    .contact .newsletter {
+        flex: 1; /* Equal space for both sections */
+        min-width: 300px; /* Ensure sections do not collapse on small screens */
+        text-align: left; /* Align content to the left */
+    }
+    
+    .contact .contact-us h2,
+    .contact .newsletter h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .contact .contact-us .description,
+    .contact .newsletter .description {
+        font-size: 16px;
+        line-height: 1.6;
         color: rgba(255, 255, 255, 0.8);
     }
     
-    .contact p {
-        font-size: 14px; /* Adjust font size for better readability */
-        margin-bottom: 5px;
-        color: rgba(255, 255, 255, 0.8);
-    }
-    
-    .contact a {
-        font-size: 14px;
-        color: #fff; /* Ensure high contrast for the email link */
-        text-decoration: none;
-        word-break: break-word; /* Allow email to wrap if needed */
-    }
-
     .inquiry {
         color: white;
         text-decoration: none;
-        font-size: 18px;
     }
-
-/* Newsletter Section */
-.newsletter-section {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    text-align: left; /* Align text to the left */
-    gap: 10px; /* Add spacing between elements */
-    width: 100%; /* Ensure it spans the full width */
-    padding: 5px; /* Match padding of the contact section */
-}
-
-.newsletter-section h2 {
-    font-size: 16px; /* Match heading size to Contact section */
-    margin-bottom: 10px; /* Space below heading */
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.newsletter-section form {
-    display: flex;
-    flex-direction: column; /* Stack form elements vertically */
-    align-items: flex-start; /* Align form elements to the left */
-    width: 100%; /* Span the full section width */
-    gap: 10px; /* Add spacing between input and button */
-}
-
-.newsletter-section input {
-    width: 100%; /* Take full width of the container */
-    max-width: 300px; /* Limit the width for better proportions */
-    font-size: 12px; /* Match font size */
-    padding: 10px; /* Touch-friendly padding */
-    border-radius: 25px; /* Keep rounded look */
-    border: 1px solid #fff; /* Visible border */
-    background-color: black; /* Match button background */
-    color: white; /* Text color */
-}
-
-.newsletter-section button {
-    width: 100%; /* Match input width */
-    max-width: 320px; /* Same as input max width */
-    font-size: 12px; /* Match font size */
-    padding: 10px; /* Add padding for touch-friendly button */
-    border-radius: 25px; /* Keep rounded look */
-    background-color: black; /* Match Contact section */
-    color: white; /* Text color */
-    border: 1px solid #fff; /* Visible border */
-    cursor: pointer; /* Indicate clickable button */
-    transition: background-color 0.3s ease;
-}
-
-.newsletter-section button:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Add hover effect */
-}
+    
+    .newsletter-section form {
+        width: 90%;
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: stretch; /* Ensure inputs and buttons align properly */
+        gap: 10px; /* Space between input and button */
+    }
+    
+    .newsletter-section input {
+        flex: 1; /* Adjust width relative to button */
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        background-color: black;
+        color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .newsletter-section button {
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.9);
+        background-color: #000;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .newsletter-section button:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .newsletter-section #form-message {
+        margin-top: 10px;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.7); 
+    }
+    
+    .newsletter-section input:focus,
+    .newsletter-section textarea:focus {
+        outline: none; /* Remove default outline */
+        box-shadow: 0 0 5px rgb(249, 192, 21); /* Add custom focus effect */
+        border: 1px rgb(249, 192, 21); /* Add yellow border */
+    }
 
 
     /* Book Section */
