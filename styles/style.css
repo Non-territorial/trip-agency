@@ -880,7 +880,7 @@ input[type="number"] {
     }
     
     .info-item h3 {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         text-align: left; /* Align header text to the left */
         margin: 5px 0; /* Add slight spacing above and below */
     }
@@ -1012,7 +1012,7 @@ input[type="number"] {
     .menu-trigger {
         width: 30px; /* Reduce size */
         height: 30px;
-        bottom: 3px; /* Adjust placement */
+        bottom: 5px; /* Adjust placement */
         right: 10px;
     }
     

@@ -54,7 +54,17 @@ export default function Home() {
 
             <header className="navbar">
                 <div className="navbar-left">
-                    <Link href="/" className="brand">
+                    <Link href="/" className="brand" onClick={(e) => {
+        e.preventDefault();
+        if (window.location.pathname === "/" && window.location.search) {
+            // Remove query parameters if already on the home page
+            window.history.pushState({}, document.title, "/");
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        } else {
+            // Navigate to the home page
+            window.location.href = "/";
+        }
+    }}>
                         TRIP<span className="agency">AGENCY</span>
                     </Link>
                 </div>
@@ -375,9 +385,24 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                 </nav>
 
                 <div className="menu-content">
-    <Link href="/">
-        Home <span className="visually-hidden">Go to the Home Page</span>
-    </Link>
+                <Link
+    href="/"
+    onClick={(e) => {
+        e.preventDefault();
+        if (window.location.pathname === "/" && window.location.search) {
+            // Remove query parameters if already on the home page
+            window.history.pushState({}, document.title, "/");
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        } else {
+            // Navigate to the home page
+            window.location.href = "/";
+        }
+    }}
+>
+    Home <span className="visually-hidden">Go to the Home Page</span>
+</Link>
+
+
     <Link href="/#monte-argentario">
         Trips <span className="visually-hidden">Explore Our Trips</span>
     </Link>
