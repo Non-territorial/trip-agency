@@ -1139,6 +1139,42 @@ input[type="number"] {
         .details-item .details-value {
             text-align: right;
         }
+
+        /* Info Section */
+    .info-section {
+        padding: 0;
+        width: 100%;
+        height: auto; /* Adjust height for smaller screens */
+        text-align: left; /* Align all content to the left */
+        margin-top: 50px;
+        margin-bottom: 50px;;
+    }
+    
+    .info-item {
+        width: 100%; /* Maintain responsiveness */
+        margin: 10px auto;
+        text-align: left; /* Align each item to the left */
+        border-bottom: 1px solid #000; /* Optional: keep separation consistent */
+    }
+    
+    .info-item h3 {
+        font-size: 0.8rem;
+        text-align: left; /* Align header text to the left */
+        margin: 5px 0; /* Add slight spacing above and below */
+    }
+    
+    .dropdown-toggle span {
+        font-size: 1rem;
+        text-align: left; /* Align icon to the left, if necessary */
+
+    }
+    
+    .info-item-content {
+        font-size: 0.7rem;
+        text-align: left; /* Align dropdown content to the left */
+        margin-top: 5px; /* Add slight spacing between items */
+    }
+
     }
     
     
