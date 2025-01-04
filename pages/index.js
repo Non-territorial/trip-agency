@@ -142,7 +142,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         <h1 className="details-title">MAGIC MOUNTAIN</h1>
                         <div className="details-item">
                             <span className="details-label">Location</span>
-                            <span className="details-value">Monte Argentario|Italy</span>
+                            <span className="details-value">Monte Argentario | Italy</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Experience</span>
@@ -157,8 +157,8 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                             <span className="details-value">Audiovisual installation, food, wine, bar and full hosting</span>
                         </div>
                         <div className="details-item">
-                            <span className="details-label">Dates|Spring</span>
-                            <span className="details-value">03-06|10-13 April 2025</span>
+                            <span className="details-label">Dates | Spring</span>
+                            <span className="details-value">03-06 | 10-13 April 2025</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Booking fee per guest</span>
@@ -187,7 +187,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         <h1 className="details-title">MONASTERO VENTO</h1>
                         <div className="details-item">
                             <span className="details-label">Location</span>
-                            <span className="details-value">Pantelleria|Italy</span>
+                            <span className="details-value">Pantelleria | Italy</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Experience</span>
@@ -202,7 +202,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                             <span className="details-value">Audiovisual installation, food, wine, bar and full hosting</span>
                         </div>
                         <div className="details-item">
-                            <span className="details-label">Dates|Spring</span>
+                            <span className="details-label">Dates | Spring</span>
                             <span className="details-value">16-19 October 2025</span>
                         </div>
                         <div className="details-item">
@@ -233,7 +233,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         <h1 className="details-title">(UN)DISCLOSED</h1>
                         <div className="details-item">
                             <span className="details-label">Location</span>
-                            <span className="details-value">Salina|Italy</span>
+                            <span className="details-value">Salina | Italy</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Experience</span>
@@ -248,8 +248,8 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                             <span className="details-value">Audiovisual installation, food, wine, bar and full hosting</span>
                         </div>
                         <div className="details-item">
-                            <span className="details-label">Dates|Autumn</span>
-                            <span className="details-value">02-05|09-12 October 2025</span>
+                            <span className="details-label">Dates | Autumn</span>
+                            <span className="details-value">02-05 | 09-12 October 2025</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Booking fee per guest</span>
@@ -277,7 +277,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         <h1 className="details-title">SILENCE VENTURES</h1>
                         <div className="details-item">
                             <span className="details-label">Location</span>
-                            <span className="details-value">Edsåsdalen|Sweden</span>
+                            <span className="details-value">Edsåsdalen | Sweden</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Experience</span>
@@ -292,8 +292,8 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                             <span className="details-value">Audiovisual installation, food, wine, bar and full hosting</span>
                         </div>
                         <div className="details-item">
-                            <span className="details-label">Dates|Summer</span>
-                            <span className="details-value">03-06|10-13|17-20|24-27 July 2025</span>
+                            <span className="details-label">Dates | Summer</span>
+                            <span className="details-value">03-06 | 10-13 | 17-20 | 24-27 July 2025</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Booking fee per guest</span>
