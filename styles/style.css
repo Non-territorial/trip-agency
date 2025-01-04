@@ -901,7 +901,7 @@ input[type="number"] {
         display: flex;
         flex-wrap: wrap; /* Ensure sections stack on smaller screens */
         gap: 20px; /* Space between sections */
-        margin: 0 auto; /* Center content */
+        margin-left: -10px; /* Center content */
     }
     
     .contact .contact-us,
