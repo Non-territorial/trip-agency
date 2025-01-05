@@ -185,7 +185,7 @@ body, html {
     width: 100%; /* Full viewport width */
     color: white; /* Text color */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    background-image: url('https://gateway.pinata.cloud/ipfs/bafybeiaob6p3sygp5asch6zzrhmuuvbczgsc7j4rk5tbw2iwfmo2tj2jke');
+    background-image: url('https://gateway.pinata.cloud/ipfs/bafybeidetmcqw7gkx7v2l5xr7kxwapq2w3t2brpxuoffcd6nefgr4feh5u');
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -211,7 +211,7 @@ body, html {
     align-items: center; /* Vertically centers the content */
     color: white; /* Text color */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
-    url('https://gateway.pinata.cloud/ipfs/bafybeifwo6255tgipknzbblcub7k63tvcbzsyjwqjobye3gka7v5yo56uu');
+    url('https://gateway.pinata.cloud/ipfs/bafybeicwelqumn77frzr6lgd66lhifcvisjmmjksot6o6npfuplggcv6su');
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -230,7 +230,7 @@ body, html {
     align-items: center; /* Vertically centers the content */
     color: white; /* Text color */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
-    url('https://gateway.pinata.cloud/ipfs/bafybeih5cbdbpuatv4b3lczzft2t2xcbps7itnsbr2hd3q2rue3mp2uroy');
+    url('https://gateway.pinata.cloud/ipfs/bafybeicwya6ts4oizaqbpmp4njrxmy6m5lkteb3af3rc4fgf3wfmxlw3wm');
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -366,7 +366,7 @@ body, html {
     justify-content: center; /* Vertically center all content */
     color: white;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
-        url('https://gateway.pinata.cloud/ipfs/bafybeihvjjbyhw3minhh7xky6ojmq2hpvmcsdqdl7drb7zzwhlgc4cucb4');
+        url('https://gateway.pinata.cloud/ipfs/bafybeicckymxobq6kwqe62ty6pbtrvvtnt65udbqcejlz55rc63yu3h7qm');
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */

@@ -44,6 +44,7 @@ export default function Home() {
     return (
         <>
 <Head>
+    <link rel="canonical" href="https://www.trip-agency.net/" />
     <title>Trip Agency | Hedonistic Retreats - Art, Wine and Cuisine</title>
     <meta name="description" content="Explore Trip Agency's Hedonistic Retreats turning audiovisual art, traditional cuisine and stunning locations into deeply transformative experiences. Discover our trips in Italy, Sweden, and Japan." />
     <meta property="og:title" content="Trip Agency" />
@@ -137,7 +138,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                 <section id="monte-argentario" className="vertical-section-img">
                     <div className="image-container">
                         <img
-                            src="https://gateway.pinata.cloud/ipfs/bafybeia7hsyn7iitne5f75c7j5adnrj4efymxazpcaqovxi73okdz5wkc4"
+                            src="https://gateway.pinata.cloud/ipfs/bafybeiawxtrvj5ma4hovmbdwpmob6627gjed4qkfp3bzzp7nilpjz6z674"
                             alt="invitation"
                             style={{ maxWidth: "100%", height: "auto" }}
                         />
@@ -182,7 +183,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                 <section id="pantelleria" className="vertical-section-img">
                     <div className="image-container">
                         <img
-                            src="https://gateway.pinata.cloud/ipfs/bafybeifk3ezy5hcuyfbeniawl4dycoy3243x2hsapcxlfbmfsc37fjgwua"
+                            src="https://gateway.pinata.cloud/ipfs/bafybeiab4rresrzvnjlgoup2vyxwnui4zozxmxpx33np24md435da7uxke"
                             alt="invitation"
                             style={{ maxWidth: "100%", height: "auto" }}
                         />
@@ -228,7 +229,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
 <section id="eolie" className="vertical-section-img">
                     <div className="image-container">
                         <img
-                            src="https://gateway.pinata.cloud/ipfs/bafybeibd6bt2phtjudtkeqwii5zc6yyjawfpipubbvxpt222ebpsnctzcm"
+                            src="https://gateway.pinata.cloud/ipfs/bafybeieovzcko4tsmgkldpdncsl2x5hf2z3d2vi5h7k6m3t44ezrwlqhl4"
                             alt="Aeolian Islands"
                             style={{ maxWidth: "100%", height: "auto" }}
                         />
@@ -272,7 +273,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                 <section id="sweden" className="vertical-section-img">
                     <div className="image-container">
                         <img
-                            src="https://gateway.pinata.cloud/ipfs/bafkreifrux5ainslvhffyp3vjmp3cmshhu3lsb6one7bo6dy7vqxnrsjia"
+                            src="https://gateway.pinata.cloud/ipfs/bafybeihgthpatsdkpshkznaq5vpgyo26plmwy5kmalxgcitrntzos54cs4"
                             alt="Sweden"
                             style={{ maxWidth: "100%", height: "auto" }}
                         />
@@ -316,7 +317,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                 <section id="japan" className="vertical-section-img">
                     <div className="image-container">
                         <img
-                            src="https://gateway.pinata.cloud/ipfs/bafybeieydbahejlehqbgkzty23pa2qahx2t5whbwqobim4azgvyf6abjwe"
+                            src="https://gateway.pinata.cloud/ipfs/bafybeiepr7g7uyl3yjs7chasq6kons6brisltdb4ztqrmidyw2afadyo5i"
                             alt="Japan"
                             style={{ maxWidth: "100%", height: "auto" }}
                         />

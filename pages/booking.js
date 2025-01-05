@@ -81,6 +81,7 @@ export default function Booking() {
     return (
         <>
             <Head>
+                <link rel="canonical" href="https://www.trip-agency.net/booking" />
                 <title>Book - Trip Agency</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="icon" href="/favicon.ico" />
