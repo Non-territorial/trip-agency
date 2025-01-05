@@ -33,6 +33,7 @@ const VideoSection = () => {
     muted
     autoPlay
     loop
+    preload="auto"
     style={{
         position: "absolute",
         top: "50%",
