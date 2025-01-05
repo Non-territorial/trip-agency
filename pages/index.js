@@ -44,8 +44,8 @@ export default function Home() {
     return (
         <>
 <Head>
-    <title>Trip Agency | Hedonistic Retreats - Art and Culinary Experiences</title>
-    <meta name="description" content="Explore hedonistic retreats blending art, culinary experiences, and luxury travel with Trip Agency. Discover Italy, Sweden, and Japan." />
+    <title>Trip Agency | Hedonistic Retreats - Art, Wine and Cuisine</title>
+    <meta name="description" content="Explore Trip Agency's Hedonistic Retreats turning audiovisual art, traditional cuisine and stunning locations into deeply transformative experiences. Discover our trips in Italy, Sweden, and Japan." />
     <meta property="og:title" content="Trip Agency" />
     <meta property="og:description" content="Experience transformative retreats in Italy, Sweden, and Japan." />
     <meta property="og:image" content="/og-image.png" />
