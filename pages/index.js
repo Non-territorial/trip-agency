@@ -44,8 +44,8 @@ export default function Home() {
     return (
         <>
 <Head>
-    <title>Trip Agency | Hedonistic Retreats - Unique Art and Culinary Experiences in Italy, Sweden, and Japan.</title>
-    <meta name="description" content="Trip Agency provides unique retreats blending art, hospitality, and hedonistic experiences." />
+    <title>Trip Agency | Hedonistic Retreats in Italy, Sweden, and Japan.</title>
+    <meta name="description" content="Explore hedonistic retreats blending art, culinary experiences, and luxury travel with Trip Agency. Discover Italy, Sweden, and Japan." />
     <meta property="og:title" content="Trip Agency" />
     <meta property="og:description" content="Experience transformative retreats in Italy, Sweden, and Japan." />
     <meta property="og:image" content="/og-image.png" />
@@ -83,10 +83,10 @@ export default function Home() {
 
 
                         <p className="description">
-    We blend unique <b>locations</b>, <b>art</b>, cuisine, and <b>hospitality</b>, creating hedonistic and <b>transformative</b> experiences set in Italy, Sweden, and Japan.
+    Trip Agency blends unique <b>locations</b>, <b>art</b>, cuisine, and <b>hospitality</b>, creating <b>transformative</b> experiences set in Italy, Sweden, and Japan.
 </p>
 <p className="description">
-    These <b>retreats</b> are designed to provide an <b>escape</b>, offering an <b>environment</b> for indulging in <b>unexpected</b> moments. Each retreat is crafted using a Sonic Canvas, a <b>sound</b> ambiance inviting moments of reflection.
+    These <b>hedonistic retreats</b> are designed to provide an <b>escape</b>, offering an <b>environment</b> for indulging in <b>unexpected</b> moments. Each retreat is crafted using a Sonic Canvas, a <b>sound</b> ambiance inviting moments of reflection.
 </p>
 <p className="description">
 Imagine spending several nights in a <b>museum</b> or <b>gallery</b> within an atmosphere of <b>poetic dimension</b>, in an unfamiliar environment, or conversely, one that feels deeply familiar.
@@ -102,7 +102,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                     <div className="text-block">
                         <h3 className="title">SONIC | CINEMATIC</h3>
                         <h2 className="heading">Settings</h2>
-                        <p className="description">Each location hosts a set of art installations</p>
+                        <p className="description">Each hedonistic reatreat hosts a set of art installations</p>
                     </div>
                 </section>
 

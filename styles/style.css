@@ -1182,13 +1182,15 @@ input[type="number"] {
     }
 
     .terms-content {
-        justify-content: center;
-        max-width: 100%; /* Use full width for better readability */
-        line-height: 1.5; /* Slightly tighter line spacing */
-        font-size: 12px; /* Smaller font size for mobile screens */
-        text-align: justify; /* Align text to make it more visually pleasing */
-        margin-left: 20px;
+        box-sizing: border-box; /* Ensure padding doesn't add to total width */
+        margin: 0 auto; /* Center the content horizontally */
+        padding: 0 20px; /* Add 20px padding on both sides */
+        max-width: 100%; /* Prevent overflow */
+        line-height: 1.5; /* Keep text readable */
+        font-size: 12px; /* Ensure consistent text size */
+        text-align: justify; /* Clean alignment */
     }
+    
 
     .terms-content h1 {
         font-size: 22px; /* Reduce size of main heading */
