@@ -109,7 +109,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                     <div className="text-block">
                         <h3 className="title">SONIC | CINEMATIC</h3>
                         <h2 className="heading">Settings</h2>
-                        <p className="description">Each hedonistic reatreat hosts a set of art installations</p>
+                        <p className="description">Each Trip hosts a set of art installations</p>
                     </div>
                 </section>
 
