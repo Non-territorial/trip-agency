@@ -44,7 +44,7 @@ export default function Home() {
     return (
         <>
 <Head>
-    <title>Trip Agency | Hedonistic Retreats in Italy, Sweden, and Japan.</title>
+    <title>Trip Agency | Hedonistic Retreats - Tranformative Art and Culinary Experiences</title>
     <meta name="description" content="Explore hedonistic retreats blending art, culinary experiences, and luxury travel with Trip Agency. Discover Italy, Sweden, and Japan." />
     <meta property="og:title" content="Trip Agency" />
     <meta property="og:description" content="Experience transformative retreats in Italy, Sweden, and Japan." />
@@ -113,7 +113,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         <p className="description">
                         TRIP Agency’s experiences are four-day retreats, inviting visitors to fully embrace a single, carefully selected location.<br />
                             <br />
-                            Each site is chosen according to its unique features, and then transformed into a living installation.
+                            Each site is chosen according to its unique features, and then transformed into a living art installation.
                         </p>
                     </div>
                 </section>
@@ -122,7 +122,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                     <div className="content-wrapper">
                         <h2 className="heading">Local Culture</h2>
                         <p className="description">
-                            Our experiences include a selection of rare, high-quality wines and exceptional cuisine that highlights
+                            Our experiences include a selection of rare, high-quality wines and exceptional culinary offerings that highlights
                             the finest local flavors, carefully chosen to complement the artistic and cultural ambiance.
                         </p>
                     </div>
