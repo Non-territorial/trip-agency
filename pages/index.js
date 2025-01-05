@@ -44,7 +44,7 @@ export default function Home() {
     return (
         <>
 <Head>
-    <title>Trip Agency | Hedonistic Retreats - Tranformative Art and Culinary Experiences</title>
+    <title>Trip Agency | Hedonistic Retreats - Art and Culinary Experiences</title>
     <meta name="description" content="Explore hedonistic retreats blending art, culinary experiences, and luxury travel with Trip Agency. Discover Italy, Sweden, and Japan." />
     <meta property="og:title" content="Trip Agency" />
     <meta property="og:description" content="Experience transformative retreats in Italy, Sweden, and Japan." />
@@ -83,7 +83,7 @@ export default function Home() {
 
 
                         <p className="description">
-    Trip Agency blends unique <b>locations</b>, <b>art</b>, cuisine, and <b>hospitality</b>, creating <b>transformative</b> experiences set in Italy, Sweden, and Japan.
+    Trip Agency blends unique <b>locations</b>, <b>art</b>, culinary offerings, and <b>hospitality</b>, creating <b>transformative</b> experiences set in Italy, Sweden, and Japan.
 </p>
 <p className="description">
     These <b>hedonistic retreats</b> are designed to provide an <b>escape</b>, offering an <b>environment</b> for indulging in <b>unexpected</b> moments. Each retreat is crafted using a Sonic Canvas, a <b>sound</b> ambiance inviting moments of reflection.
