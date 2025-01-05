@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.trip-agency.net/sitemap.xml
+Sitemap: https://www.trip-agency.net/sitemap_4465528.xml
