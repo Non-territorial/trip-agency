@@ -79,7 +79,7 @@ export default function Home() {
                 <section id="packages" className="vertical-section">
                     <div className="content-wrapper">
                         <span className="jp-text">ヘドニスティック・リトリート</span>
-                        <h1 className="heading">Hedonistic Retreats<br /></h1>
+                        <h1 className="heading">Hedonistic Retreats<br/>Art and Culinary Delights in unique settings</h1>
 
 
                         <p className="description">
@@ -139,7 +139,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                     </div>
                     <div className="details-block">
                         <h3 className="details-heading">DETAILS</h3>
-                        <h1 className="details-title">MAGIC MOUNTAIN</h1>
+                        <h2 className="details-title">MAGIC MOUNTAIN</h2>
                         <div className="details-item">
                             <span className="details-label">Location</span>
                             <span className="details-value">Monte Argentario | Italy</span>
@@ -184,7 +184,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                     </div>
                     <div className="details-block">
                         <h3 className="details-heading">DETAILS</h3>
-                        <h1 className="details-title">MONASTERO VENTO</h1>
+                        <h2 className="details-title">MONASTERO VENTO</h2>
                         <div className="details-item">
                             <span className="details-label">Location</span>
                             <span className="details-value">Pantelleria | Italy</span>
@@ -230,7 +230,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                     </div>
                     <div className="details-block">
                         <h3 className="details-heading">DETAILS</h3>
-                        <h1 className="details-title">(UN)DISCLOSED</h1>
+                        <h2 className="details-title">(UN)DISCLOSED</h2>
                         <div className="details-item">
                             <span className="details-label">Location</span>
                             <span className="details-value">Salina | Italy</span>
@@ -274,7 +274,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                     </div>
                     <div className="details-block">
                         <h3 className="details-heading">DETAILS</h3>
-                        <h1 className="details-title">SILENCE VENTURES</h1>
+                        <h2 className="details-title">SILENCE VENTURES</h2>
                         <div className="details-item">
                             <span className="details-label">Location</span>
                             <span className="details-value">Edsåsdalen | Sweden</span>
@@ -318,7 +318,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                     </div>
                     <div className="details-block">
                         <h3 className="details-heading">DETAILS</h3>
-                        <h1 className="details-title">UPCOMING</h1>
+                        <h2 className="details-title">UPCOMING</h2>
                         <div className="details-item">
                             <span className="details-label">Location</span>
                             <span className="details-value">Japan</span>
