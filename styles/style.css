@@ -686,22 +686,18 @@ input[type="number"] {
 
 
 
-/* General Mobile Adjustments */ 
+/* General Mobile Adjustments */
+@media (max-width: 600px) {
 
-@media screen and (max-width: 600px) and (orientation: landscape) {
-    .content-wrapper {
-        padding: 3rem 1rem;
-    }
+    
 
     html, body {
         scroll-behavior: smooth; /* Enables smooth scrolling */
-        overflow-x: hidden; /* Prevents horizontal scrolling */
         -webkit-overflow-scrolling: touch; /* Enables momentum-based scrolling for iOS */
         margin: 0;
         padding: 0;
         font-family: 'IBM Plex Mono', monospace;
         overflow-y: auto;
-        height: auto;
         }
 
         /* Navbar */
@@ -729,7 +725,7 @@ input[type="number"] {
     .vertical-section {
         padding: 20px;
         text-align: center;
-        min-height: 1420vh;
+        min-height: 120vh;
     }
 
     /* Video Sections */
