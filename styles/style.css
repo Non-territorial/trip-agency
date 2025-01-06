@@ -726,9 +726,9 @@ input[type="number"] {
 
     /* Vertical Sections */
     .vertical-section {
-        text-align: center;
+        text-align: left;
         min-height: 100vh; /* Fallback for older browsers */
-        height: 140dvh; /* Ensures consistency across mobile devices */
+        height: 120dvh; /* Ensures consistency across mobile devices */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -830,7 +830,7 @@ input[type="number"] {
         object-fit: cover; /* Ensure the image fits well */
         border-radius: 0; /* Remove rounded corners */
     }
-    @media screen and (max-width: 600px) and (orientation: landscape) {
+   
     .details-block {
         width: 100%; /* Full width for the details block */
         padding: 15px; /* Add padding for spacing */
@@ -873,20 +873,9 @@ input[type="number"] {
         flex: 1; /* Allow the value to take available space */
         padding-left: 10px; /* Add spacing between label and value */
     }
-    
-        .details-info {
-            display: flex; /* Enable horizontal layout */
-            flex-wrap: nowrap; /* Prevent wrapping */
-            justify-content: space-between; /* Space items evenly */
-            align-items: center; /* Align items vertically */
-            gap: 10px; /* Add spacing between items */
-        }
-    
-        .details-info > * {
-            display: inline-block; /* Ensure child elements stay inline */
-            white-space: nowrap; /* Prevent text wrapping */
-        }
-    
+    .details-info {
+        text-align: left;
+        font-size: 0.8rem;
     }
 
     /* Info Section */
@@ -1107,9 +1096,10 @@ input[type="number"] {
         font-size: 14px; /* Adjust paragraph font size */
         margin-bottom: 15px; /* Reduce spacing between paragraphs */
     }
+}
 
 
-    }
+    
 
     
     @media (min-width: 768px) and (max-width: 1024px) {
@@ -1129,45 +1119,35 @@ input[type="number"] {
         .navbar .book-button {
             margin-right: 10px;
         }
-    
-        /* Details Section */
-        .details-section {
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-            padding: 20px;
-            max-width: 90%;
-            margin: 0 auto;
-        }
-    
-        .details-section .image-container img {
-            width: 100%;
-            height: auto;
-            max-width: 50%;
-            border-radius: 10px;
-        }
-    
-        .details-section .details-block {
-            flex: 1;
-            font-size: 1rem;
-            padding: 10px;
-        }
-    
-        /* Adjusting grid alignment for details */
-        .details-block .details-item {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 10px;
-            padding: 5px 0;
-        }
-    
-        .details-item .details-label {
+
+        .vertical-section {
             text-align: left;
-            font-weight: bold;
+            min-height: 140vh; /* Fallback for older browsers */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow: visible;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .text-block {
+   
+            margin: 0 150px; /* Center-align the block */
+            text-align: left; /* Align text properly */
+           
+        }
+        .details-info {
+            display: flex; /* Enable horizontal layout */
+            flex-wrap: nowrap; /* Prevent wrapping */
+            justify-content: space-between; /* Space items evenly */
+            align-items: center; /* Align items vertically */
+            gap: 10px; /* Add spacing between items */
         }
     
-        .details-item .details-value {
-            text-align: right;
+        .details-info > * {
+            display: inline-block; /* Ensure child elements stay inline */
+            white-space: nowrap; /* Prevent text wrapping */
         }
 
         /* Info Section */
@@ -1178,6 +1158,7 @@ input[type="number"] {
         text-align: left; /* Align all content to the left */
         margin-top: 50px;
         margin-bottom: 50px;;
+        margin-left: 20px;
     }
     
     .info-item {
@@ -1203,6 +1184,14 @@ input[type="number"] {
         font-size: 0.7rem;
         text-align: left; /* Align dropdown content to the left */
         margin-top: 5px; /* Add slight spacing between items */
+    }
+
+    .contact .content-wrapper {
+        display: flex;
+        flex-wrap: wrap; /* Ensure sections stack on smaller screens */
+        gap: 20px; /* Space between sections */
+        margin-bottom: 30px;; /* Center content */
+      
     }
 
     /* Terms and Conditions */
@@ -1238,14 +1227,4 @@ input[type="number"] {
     }
 
 
-    }
-    
-    
-    
-    
-    
-
-
-
-
-
+}
