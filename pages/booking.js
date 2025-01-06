@@ -151,7 +151,7 @@ export default function Booking() {
 
             <footer className="bottom-menu">
                 <nav className="bottom-navbar">
-                    <p className="p2">Ⓒ 2025 Brave Hills Ltd All rights reserved</p>
+                    <p className="p2">Ⓒ 2025 Trip Agency All rights reserved</p>
                     <div className="menu-trigger">
                         <span></span>
                         <span></span>

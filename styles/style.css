@@ -198,7 +198,10 @@ body, html {
     opacity: 0.98;
 }
 .text-block {
-    margin: 0 auto;
+   
+    margin: 0 600px; /* Center-align the block */
+    text-align: left; /* Align text properly */
+   
 }
 
 
@@ -790,7 +793,10 @@ input[type="number"] {
     }
     
     .text-block {
-        margin-left: 8px;
+   
+        margin: 0 8px; /* Center-align the block */
+        text-align: left; /* Align text properly */
+       
     }
     
 
@@ -824,7 +830,7 @@ input[type="number"] {
         object-fit: cover; /* Ensure the image fits well */
         border-radius: 0; /* Remove rounded corners */
     }
-
+    @media screen and (max-width: 600px) and (orientation: landscape) {
     .details-block {
         width: 100%; /* Full width for the details block */
         padding: 15px; /* Add padding for spacing */
@@ -867,11 +873,20 @@ input[type="number"] {
         flex: 1; /* Allow the value to take available space */
         padding-left: 10px; /* Add spacing between label and value */
     }
-    .details-info {
-        font-size: 0.8rem; /* Adjust text size for readability */
-        line-height: 1.5; /* Enhance line spacing */
-        padding-top: 10px; /* Add spacing above the text */
-        text-align: left;
+    
+        .details-info {
+            display: flex; /* Enable horizontal layout */
+            flex-wrap: nowrap; /* Prevent wrapping */
+            justify-content: space-between; /* Space items evenly */
+            align-items: center; /* Align items vertically */
+            gap: 10px; /* Add spacing between items */
+        }
+    
+        .details-info > * {
+            display: inline-block; /* Ensure child elements stay inline */
+            white-space: nowrap; /* Prevent text wrapping */
+        }
+    
     }
 
     /* Info Section */
@@ -913,6 +928,7 @@ input[type="number"] {
         flex-wrap: wrap; /* Ensure sections stack on smaller screens */
         gap: 20px; /* Space between sections */
         margin-left: 0; /* Center content */
+      
     }
     
     .contact .contact-us,
