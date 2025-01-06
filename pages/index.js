@@ -3,9 +3,8 @@ import { useEffect } from "react";
 import Newsletter from "../components/newsletter";
 import AboutSection from "../components/AboutSection";
 import Link from "next/link";
-import Script from "next/script";
 import VideoSection from '../components/VideoSection';
-import Image from "next/image";
+
 
 
 export default function Home() {
@@ -164,7 +163,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-label">Features</span>
-                            <span className="details-value">Audiovisual installation, food, wine, bar and full hosting</span>
+                            <span className="details-value">Audiovisual installation, food, wine and bar</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Dates | Spring</span>
@@ -210,7 +209,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-label">Features</span>
-                            <span className="details-value">Audiovisual installation, food, wine, bar and full hosting</span>
+                            <span className="details-value">Audiovisual installation, food, wine and bar</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Dates | Spring</span>
@@ -259,7 +258,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-label">Features</span>
-                            <span className="details-value">Audiovisual installation, food, wine, bar and full hosting</span>
+                            <span className="details-value">Audiovisual installation, food, wine and bar</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Dates | Autumn</span>
@@ -306,7 +305,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-label">Features</span>
-                            <span className="details-value">Audiovisual installation, food, wine, bar and full hosting</span>
+                            <span className="details-value">Audiovisual installation, food, wine and bar</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Dates | Summer</span>
