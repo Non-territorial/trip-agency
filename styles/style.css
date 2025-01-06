@@ -698,6 +698,7 @@ input[type="number"] {
         padding: 0;
         font-family: 'IBM Plex Mono', monospace;
         overflow-y: auto;
+        min-height: 120vh;
         }
 
         /* Navbar */
@@ -725,7 +726,7 @@ input[type="number"] {
     .vertical-section {
         padding: 20px;
         text-align: center;
-        min-height: 120vh;
+        height: 140vh;
     }
 
     /* Video Sections */
