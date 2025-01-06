@@ -110,7 +110,7 @@ body, html {
 }
 
 .vertical-section {
-    height: 120vh;/* Full screen height */
+    min-height: 120vh;/* Full screen height */
     overflow: visible;
     padding: 0;
     display: flex;
@@ -697,7 +697,6 @@ input[type="number"] {
         margin: 0;
         padding: 0;
         font-family: 'IBM Plex Mono', monospace;
-        overflow-y: auto;
         min-height: 120vh;
         }
 
@@ -724,10 +723,15 @@ input[type="number"] {
 
     /* Vertical Sections */
     .vertical-section {
-        padding: 20px;
         text-align: center;
-        height: 140vh;
+        min-height: 100vh; /* Fallback for older browsers */
+        height: 140dvh; /* Ensures consistency across mobile devices */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: visible;
     }
+    
 
     /* Video Sections */
     .video-section {
@@ -755,7 +759,7 @@ input[type="number"] {
     }
 
     .content-wrapper {
-        padding: 15px; /* Add padding for better spacing on smaller screens */
+        padding: 20px; /* Add padding for better spacing on smaller screens */
     }
 
     .heading {
@@ -865,9 +869,9 @@ input[type="number"] {
     }
     .details-info {
         font-size: 0.8rem; /* Adjust text size for readability */
-        text-align: left; /* Justify text for a cleaner look */
         line-height: 1.5; /* Enhance line spacing */
         padding-top: 10px; /* Add spacing above the text */
+        text-align: left;
     }
 
     /* Info Section */
@@ -908,7 +912,7 @@ input[type="number"] {
         display: flex;
         flex-wrap: wrap; /* Ensure sections stack on smaller screens */
         gap: 20px; /* Space between sections */
-        margin-left: -10px; /* Center content */
+        margin-left: 0; /* Center content */
     }
     
     .contact .contact-us,
