@@ -4,8 +4,8 @@ body, html {
     padding: 0;
     font-family: 'IBM Plex Mono', monospace;
     scroll-behavior: smooth;
-    overflow-x: hidden;
-    height: 100%;
+    overflow-y: auto;
+    height: 100vh;
 }
 
 /* Navbar */
@@ -111,6 +111,7 @@ body, html {
 
 .vertical-section {
     height: 120vh;/* Full screen height */
+    overflow: visible;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -285,7 +286,7 @@ body, html {
     display: block; /* Ensure it fills the width of the container */
     font-size: 1rem;
     font-weight: normal;
-    text-align: justify; /* Justify the text for a clean look */
+    text-align: left; 
     width: 100%; /* Fills the parent container */
     line-height: 1.5; /* Adds line spacing */
     padding: 10px 0; /* Adds spacing above and below */
@@ -685,16 +686,25 @@ input[type="number"] {
 
 
 
-/* General Mobile Adjustments */
-@media (max-width: 600px) {
+/* General Mobile Adjustments */ 
+
+@media screen and (max-width: 600px) and (orientation: landscape) {
+    .content-wrapper {
+        padding: 3rem 1rem;
+    }
 
     html, body {
         scroll-behavior: smooth; /* Enables smooth scrolling */
         overflow-x: hidden; /* Prevents horizontal scrolling */
         -webkit-overflow-scrolling: touch; /* Enables momentum-based scrolling for iOS */
-    }
+        margin: 0;
+        padding: 0;
+        font-family: 'IBM Plex Mono', monospace;
+        overflow-y: auto;
+        height: auto;
+        }
 
-    /* Navbar */
+        /* Navbar */
     .navbar {
         height: 40px; /* Adjust height for smaller screens */
         flex-direction: row; /* Keep the row layout */
@@ -719,7 +729,7 @@ input[type="number"] {
     .vertical-section {
         padding: 20px;
         text-align: center;
-        height: 140vh;
+        min-height: 1420vh;
     }
 
     /* Video Sections */
@@ -858,7 +868,7 @@ input[type="number"] {
     }
     .details-info {
         font-size: 0.8rem; /* Adjust text size for readability */
-        text-align: justify; /* Justify text for a cleaner look */
+        text-align: left; /* Justify text for a cleaner look */
         line-height: 1.5; /* Enhance line spacing */
         padding-top: 10px; /* Add spacing above the text */
     }
@@ -1082,6 +1092,9 @@ input[type="number"] {
     }
 
 
+    }
+
+    
     @media (min-width: 768px) and (max-width: 1024px) {
        
         /* Navbar */
@@ -1211,7 +1224,9 @@ input[type="number"] {
     }
     
     
-    }
+    
+    
+    
 
 
 

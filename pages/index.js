@@ -109,7 +109,8 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                     <div className="text-block">
                         <h3 className="title">SONIC | CINEMATIC</h3>
                         <h2 className="heading">Settings</h2>
-                        <p className="description">Each Trip hosts a set of art installations</p>
+                        <p className="description">Each Trip hosts<br />
+                         a set of art installations</p>
                     </div>
                 </section>
 
@@ -138,13 +139,13 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                 {/* Monte Argentario */}
                 <section id="monte-argentario" className="vertical-section-img">
                     <div className="image-container">
-                    <Image
-            src="https://gateway.pinata.cloud/ipfs/bafybeiawxtrvj5ma4hovmbdwpmob6627gjed4qkfp3bzzp7nilpjz6z674"
-            alt="invitation"
-            width={2550}
-            height={3300} // Original dimensions of the image
-            priority 
-          />
+                    
+          <img
+  src="https://gateway.pinata.cloud/ipfs/bafybeiawxtrvj5ma4hovmbdwpmob6627gjed4qkfp3bzzp7nilpjz6z674"
+  alt="invitation"
+  width="2550"
+  height="3300"
+/>
                     </div>
                     <div className="details-block">
                         <div className="details-heading">DETAILS</div>
@@ -185,13 +186,12 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                 {/* Pantelleria */}
                 <section id="pantelleria" className="vertical-section-img">
                     <div className="image-container">
-                    <Image
-            src="https://gateway.pinata.cloud/ipfs/bafybeiab4rresrzvnjlgoup2vyxwnui4zozxmxpx33np24md435da7uxke"
-            alt="invitation"
-           
-            width={2550}
-            height={3300}
-          />
+                    <img
+  src="https://gateway.pinata.cloud/ipfs/bafybeiab4rresrzvnjlgoup2vyxwnui4zozxmxpx33np24md435da7uxke"
+  alt="invitation"
+  width="2550"
+  height="3300"
+/>
                     </div>
                     <div className="details-block">
                         <div className="details-heading">DETAILS</div>
@@ -234,13 +234,13 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
 <section id="eolie" className="vertical-section-img">
                     <div className="image-container">
                         
-                        <Image
-            src="https://gateway.pinata.cloud/ipfs/bafybeieovzcko4tsmgkldpdncsl2x5hf2z3d2vi5h7k6m3t44ezrwlqhl4"
-            alt="invitation"
-            
-            width={2550}
-            height={3300}
-          />
+                       
+          <img
+  src="https://gateway.pinata.cloud/ipfs/bafybeieovzcko4tsmgkldpdncsl2x5hf2z3d2vi5h7k6m3t44ezrwlqhl4"
+  alt="invitation"
+  width="2550"
+  height="3300"
+/>
                     </div>
                     <div className="details-block">
                         <div className="details-heading">DETAILS</div>
@@ -281,13 +281,13 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                 <section id="sweden" className="vertical-section-img">
                     <div className="image-container">
                     
-                        <Image
-            src="https://gateway.pinata.cloud/ipfs/bafybeihgthpatsdkpshkznaq5vpgyo26plmwy5kmalxgcitrntzos54cs4"
-            alt="invitation"
-            
-            width={2550}
-            height={3300}
-          />
+                       
+          <img
+  src="https://gateway.pinata.cloud/ipfs/bafybeihgthpatsdkpshkznaq5vpgyo26plmwy5kmalxgcitrntzos54cs4"
+  alt="invitation"
+  width="2550"
+  height="3300"
+/>
                     </div>
                     <div className="details-block">
                         <div className="details-heading">DETAILS</div>
@@ -327,13 +327,12 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                 {/* Japan */}
                 <section id="japan" className="vertical-section-img">
                     <div className="image-container">
-                        <Image
-            src="https://gateway.pinata.cloud/ipfs/bafybeiepr7g7uyl3yjs7chasq6kons6brisltdb4ztqrmidyw2afadyo5i"
-            alt="invitation"
-            
-            width={2550}
-            height={3300}
-          />
+           <img
+  src="https://gateway.pinata.cloud/ipfs/bafybeiepr7g7uyl3yjs7chasq6kons6brisltdb4ztqrmidyw2afadyo5i"
+  alt="invitation"
+  width="2550"
+  height="3300"
+/>
                     </div>
                     <div className="details-block">
                         <div className="details-heading">DETAILS</div>
