@@ -105,11 +105,10 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                 </section>
 
                 <section id="three" className="room">
-                    <div className="text-block">
+                    <div className="content-wrapper">
                         <h3 className="title">SONIC | CINEMATIC</h3>
                         <h2 className="heading">Settings</h2>
-                        <p className="description">Each Trip hosts<br />
-                         a set of art installations</p>
+                        <p className="description">Each Trip hosts a set of art installations</p>
                     </div>
                 </section>
 

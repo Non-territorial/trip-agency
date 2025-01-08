@@ -182,27 +182,23 @@ body, html {
     white-space: normal;
 }
 .room {
-    position: relative; /* Makes the section a containing block */
+    position: relative; /* Ensures the section is a containing block for positioned elements */
     height: 100vh; /* Full viewport height */
-    width: 100%; /* Full viewport width */
+    width: 100%; /* Full width of the viewport */
+    display: flex; /* Enables flexbox for centering content */
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
     color: white; /* Text color */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    background-image: url('https://gateway.pinata.cloud/ipfs/bafybeidetmcqw7gkx7v2l5xr7kxwapq2w3t2brpxuoffcd6nefgr4feh5u');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
+    url('https://gateway.pinata.cloud/ipfs/bafybeidetmcqw7gkx7v2l5xr7kxwapq2w3t2brpxuoffcd6nefgr4feh5u');
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
-    display: flex; /* Enables flexbox for content alignment */
-    justify-content: flex-start; /* Aligns content to the left */
-    align-items: flex-end; /* Aligns content to the bottom */
-    padding: 40px; /* Adds padding around the text */
-    z-index: 1; /* Ensures the section layers correctly */
+    z-index: 1; /* Ensures this section layers correctly */
+    text-align: left; /* Align text to the left */
+    padding: 40px; /* Adds padding around text */
     opacity: 0.98;
-}
-.text-block {
-   
-    margin: 0 600px; /* Center-align the block */
-    text-align: left; /* Align text properly */
-   
+
 }
 
 
@@ -1192,7 +1188,7 @@ input[type="number"] {
         display: flex;
         flex-wrap: wrap; /* Ensure sections stack on smaller screens */
         gap: 20px; /* Space between sections */
-        margin-bottom: 30px;; /* Center content */
+        margin-bottom: 30px; /* Center content */
       
     }
 
