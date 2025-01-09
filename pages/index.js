@@ -134,6 +134,101 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                     </div>
                 </section>
 
+
+                {/* Aeolian Islands */}
+<section id="eolie" className="vertical-section-img">
+                    <div className="image-container">
+                        
+                       
+          <img
+  src="https://gateway.pinata.cloud/ipfs/bafybeieovzcko4tsmgkldpdncsl2x5hf2z3d2vi5h7k6m3t44ezrwlqhl4"
+  alt="invitation"
+  width="2550"
+  height="3300"
+/>
+                    </div>
+                    <div className="details-block">
+                        <div className="details-heading">DETAILS</div>
+                        <div className="details-title">(UN)DISCLOSED</div>
+                        <div className="details-item">
+                            <span className="details-label">Location</span>
+                            <span className="details-value">Salina | Italy</span>
+                        </div>
+                        <div className="details-item">
+                            <span className="details-label">Experience</span>
+                            <span className="details-value">4 nights</span>
+                        </div>
+                        <div className="details-item">
+                            <span className="details-label">Guests</span>
+                            <span className="details-value">42</span>
+                        </div>
+                        <div className="details-item">
+                            <span className="details-label">Features</span>
+                            <span className="details-value">Audiovisual installation, food, wine and bar</span>
+                        </div>
+                        <div className="details-item">
+                            <span className="details-label">Dates | Autumn</span>
+                            <span className="details-value">02-05 | 09-12 October 2025</span>
+                        </div>
+                        <div className="details-item">
+                            <span className="details-label">Booking fee per guest</span>
+                            <span className="details-value">5,000 EUR</span>
+                        </div>
+                        <div className="details-item">
+                            <span className="details-info">
+                            (UN)DISCLOSED is a travel experience in the form of an exhibition. It is an art experience set on Salina, a remote Sicilian island of the Mediterranean Sea, comprised of several distributed exhibitions throughout the island. (UN)DISCLOSED will turn your stay into a live art experience, in an absolutely unprecedented way. 
+                            </span>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Sweden */}
+                <section id="sweden" className="vertical-section-img">
+                    <div className="image-container">
+                    
+                       
+          <img
+  src="https://gateway.pinata.cloud/ipfs/bafybeihgthpatsdkpshkznaq5vpgyo26plmwy5kmalxgcitrntzos54cs4"
+  alt="invitation"
+  width="2550"
+  height="3300"
+/>
+                    </div>
+                    <div className="details-block">
+                        <div className="details-heading">DETAILS</div>
+                        <div className="details-title">SILENCE VENTURES</div>
+                        <div className="details-item">
+                            <span className="details-label">Location</span>
+                            <span className="details-value">Edsåsdalen | Sweden</span>
+                        </div>
+                        <div className="details-item">
+                            <span className="details-label">Experience</span>
+                            <span className="details-value">4 nights</span>
+                        </div>
+                        <div className="details-item">
+                            <span className="details-label">Guests</span>
+                            <span className="details-value">Up to 12</span>
+                        </div>
+                        <div className="details-item">
+                            <span className="details-label">Features</span>
+                            <span className="details-value">Audiovisual installation, food, wine and bar</span>
+                        </div>
+                        <div className="details-item">
+                            <span className="details-label">Dates | Summer</span>
+                            <span className="details-value">03-06 | 10-13 | 17-20 | 24-27 July 2025</span>
+                        </div>
+                        <div className="details-item">
+                            <span className="details-label">Booking fee per guest</span>
+                            <span className="details-value">5,000 EUR</span>
+                        </div>
+                        <div className="details-item">
+                            <span className="details-info">
+                                A unique A-frame house transformed into a four-day Sonic Resort for deep listening.
+                            </span>
+                        </div>
+                    </div>
+                </section>
+
                 {/* Monte Argentario */}
                 <section id="monte-argentario" className="vertical-section-img">
                     <div className="image-container">
@@ -228,99 +323,6 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                     </div>
                 </section>
 
-{/* Aeolian Islands */}
-<section id="eolie" className="vertical-section-img">
-                    <div className="image-container">
-                        
-                       
-          <img
-  src="https://gateway.pinata.cloud/ipfs/bafybeieovzcko4tsmgkldpdncsl2x5hf2z3d2vi5h7k6m3t44ezrwlqhl4"
-  alt="invitation"
-  width="2550"
-  height="3300"
-/>
-                    </div>
-                    <div className="details-block">
-                        <div className="details-heading">DETAILS</div>
-                        <div className="details-title">(UN)DISCLOSED</div>
-                        <div className="details-item">
-                            <span className="details-label">Location</span>
-                            <span className="details-value">Salina | Italy</span>
-                        </div>
-                        <div className="details-item">
-                            <span className="details-label">Experience</span>
-                            <span className="details-value">4 nights</span>
-                        </div>
-                        <div className="details-item">
-                            <span className="details-label">Guests</span>
-                            <span className="details-value">42</span>
-                        </div>
-                        <div className="details-item">
-                            <span className="details-label">Features</span>
-                            <span className="details-value">Audiovisual installation, food, wine and bar</span>
-                        </div>
-                        <div className="details-item">
-                            <span className="details-label">Dates | Autumn</span>
-                            <span className="details-value">02-05 | 09-12 October 2025</span>
-                        </div>
-                        <div className="details-item">
-                            <span className="details-label">Booking fee per guest</span>
-                            <span className="details-value">5,000 EUR</span>
-                        </div>
-                        <div className="details-item">
-                            <span className="details-info">
-                            (UN)DISCLOSED is a travel experience in the form of an exhibition. It is an art experience set on Salina, a remote Sicilian island of the Mediterranean Sea, comprised of several distributed exhibitions throughout the island. (UN)DISCLOSED will turn your stay into a live art experience, in an absolutely unprecedented way. 
-                            </span>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Sweden */}
-                <section id="sweden" className="vertical-section-img">
-                    <div className="image-container">
-                    
-                       
-          <img
-  src="https://gateway.pinata.cloud/ipfs/bafybeihgthpatsdkpshkznaq5vpgyo26plmwy5kmalxgcitrntzos54cs4"
-  alt="invitation"
-  width="2550"
-  height="3300"
-/>
-                    </div>
-                    <div className="details-block">
-                        <div className="details-heading">DETAILS</div>
-                        <div className="details-title">SILENCE VENTURES</div>
-                        <div className="details-item">
-                            <span className="details-label">Location</span>
-                            <span className="details-value">Edsåsdalen | Sweden</span>
-                        </div>
-                        <div className="details-item">
-                            <span className="details-label">Experience</span>
-                            <span className="details-value">4 nights</span>
-                        </div>
-                        <div className="details-item">
-                            <span className="details-label">Guests</span>
-                            <span className="details-value">Up to 12</span>
-                        </div>
-                        <div className="details-item">
-                            <span className="details-label">Features</span>
-                            <span className="details-value">Audiovisual installation, food, wine and bar</span>
-                        </div>
-                        <div className="details-item">
-                            <span className="details-label">Dates | Summer</span>
-                            <span className="details-value">03-06 | 10-13 | 17-20 | 24-27 July 2025</span>
-                        </div>
-                        <div className="details-item">
-                            <span className="details-label">Booking fee per guest</span>
-                            <span className="details-value">6,500 EUR</span>
-                        </div>
-                        <div className="details-item">
-                            <span className="details-info">
-                                A unique A-frame house transformed into a four-day Sonic Resort for deep listening.
-                            </span>
-                        </div>
-                    </div>
-                </section>
 
                 {/* Japan */}
                 <section id="japan" className="vertical-section-img">
