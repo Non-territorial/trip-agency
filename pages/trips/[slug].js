@@ -3,48 +3,60 @@ import Head from "next/head";
 import Link from "next/link";
 import { useMenu } from "../../hooks/useMenu";
 import VideoSection from "../../components/VideoSection"; // Assuming you already have this component
+import fs from 'fs';
+import path from 'path';
+
 
 
 
 
 export async function getStaticPaths() {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/trips.json`);
-    const trips = await res.json();
+    try {
+        // Read the static JSON file
+        const filePath = path.join(process.cwd(), 'public', 'trips.json');
+        const fileContents = fs.readFileSync(filePath, 'utf-8');
+        const trips = JSON.parse(fileContents);
 
-    console.log("Trips fetched for paths:", trips); // Debugging log
+        const paths = trips.map((trip) => ({
+            params: { slug: trip.slug },
+        }));
 
-    const paths = trips.map((trip) => ({
-        params: { slug: trip.slug },
-    }));
-
-    console.log("Generated paths:", paths); // Debugging log
-    return {
-        paths,
-        fallback: false,
-    };
+        return {
+            paths,
+            fallback: false, // or true/false depending on your requirements
+        };
+    } catch (error) {
+        console.error("Error in getStaticPaths:", error);
+        return { paths: [], fallback: false };
+    }
 }
 
 
 export async function getStaticProps({ params }) {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/trips.json`);
-    const trips = await res.json();
+    try {
+        const filePath = path.join(process.cwd(), 'public', 'trips.json');
+        const fileContents = fs.readFileSync(filePath, 'utf-8');
+        const trips = JSON.parse(fileContents);
 
-    console.log("Trips fetched for props:", trips); // Debugging log
+        const trip = trips.find((trip) => trip.slug === params.slug);
 
-    const trip = trips.find((trip) => trip.slug === params.slug);
+        if (!trip) {
+            return { notFound: true };
+        }
 
-    console.log("Matched trip:", trip); // Debugging log
-
-    if (!trip) {
         return {
-            notFound: true, // Return 404 if no trip matches
+            props: {
+                trip,
+            },
         };
+    } catch (error) {
+        console.error("Error in getStaticProps:", error);
+        return { props: {} };
     }
-
-    return {
-        props: { trip },
-    };
 }
+
+
+
 export default function TripPage({ trip }) {
     useMenu(); // Hook for menu functionality
 
