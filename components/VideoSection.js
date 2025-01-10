@@ -1,52 +1,26 @@
-import { useEffect, useRef } from "react";
-import shaka from "shaka-player";
+import React from "react";
+import MuxPlayer from "@mux/mux-player-react";
 
-const VideoSection = () => {
-    const videoRef = useRef(null);
-
-    useEffect(() => {
-        const video = videoRef.current;
-
-        if (video) {
-            const player = new shaka.Player(video);
-
-            player
-                .load("https://stream.mux.com/oFF6SHarBZJmgo01oNcVXo4d59cCRHlrQ4IaRRoVOzl00.m3u8")
-                .then(() => {
-                    console.log("The video has been loaded!");
-                    video.play().catch((error) => console.error("Video autoplay failed:", error));
-                })
-                .catch((error) => {
-                    console.error("Error loading video:", error);
-                });
-
-            return () => {
-                player.destroy(); // Cleanup the player instance
-            };
-        }
-    }, []);
-
+const VideoSection = ({ videos = [] }) => {
     return (
         <section className="video-section">
-            <video
-    ref={videoRef}
-    muted
-    autoPlay
-    loop
-    preload="auto"
-    style={{
-        position: "absolute",
-        top: "50%",
-        left: "50%",
-        transform: "translate(-50%, -50%)", // Centers the video
-        width: "100%",
-        height: "100%",
-        objectFit: "contain", // Preserves aspect ratio and adds black bars
-        backgroundColor: "black", // Ensures black bars
-        margin: 0,
-        padding: 0,
-    }}
+            {videos.map((video, index) => (
+                <div key={index} className="video-container" style={{ position: "relative", marginBottom: "20px" }}>
+                   <MuxPlayer
+  streamType="on-demand"
+  playbackId={video.src}
+  metadataVideoTitle={video.title || `Video ${index + 1}`}
+  loop
+  style={{
+    width: "100%",
+    height: "100%",
+    objectFit: "cover", // Ensures the video fills the space proportionally
+    backgroundColor: "black", // Prevents gaps
+    
+  }}
 />
+                </div>
+            ))}
         </section>
     );
 };

@@ -8,13 +8,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@mux/mux-player-react": "^3.2.4",
     "@next/bundle-analyzer": "^15.1.3",
     "dotenv": "^16.4.7",
     "next": "^13.4.0",
     "nextjs-cors": "^2.2.0",
     "pg": "^8.13.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "shaka-player": "^4.12.5"
+    "react-dom": "^18.2.0"
   }
 }

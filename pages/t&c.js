@@ -1,46 +1,16 @@
 import Head from "next/head";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useMenu } from "../hooks/useMenu";
 
 export default function TermsAndConditions() {
-    useEffect(() => {
-        const trigger = document.querySelector(".menu-trigger");
-        const menuContent = document.querySelector(".menu-content");
+    useMenu();
 
-        const toggleMenu = () => {
-            if (menuContent) {
-                menuContent.style.display =
-                    menuContent.style.display === "flex" ? "none" : "flex";
-            }
-        };
-
-        const closeMenu = (event) => {
-            if (
-                menuContent &&
-                !menuContent.contains(event.target) &&
-                trigger &&
-                !trigger.contains(event.target)
-            ) {
-                menuContent.style.display = "none";
-            }
-        };
-
-        if (trigger) {
-            trigger.addEventListener("click", toggleMenu);
-            document.addEventListener("click", closeMenu);
-        }
-
-        return () => {
-            if (trigger) trigger.removeEventListener("click", toggleMenu);
-            document.removeEventListener("click", closeMenu);
-        };
-    }, []);
 
     return (
         <>
             <Head>
                 <link rel="canonical" href="https://www.trip-agency.net/t&c" />
-                <title>Terms and Conditions</title>
+                <title>Trip Agency | Terms and Conditions</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

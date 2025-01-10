@@ -1,0 +1,149 @@
+[
+    {
+        "slug": "undisclosed",
+        "title": "Trip agency | (Un)disclosed",
+        "video": "wfF7RDwo3YXBUYhY178nsOLa01r9iZgsRLA029MaReZeY",
+        "content": {
+            "heading": "PROGRAM",
+            "description": [
+                "Experience sound in a transformative retreat in Italy.",
+                "This four-day retreat invites you to immerse yourself in sonic experiences, luxurious accommodations, and fine dining.",
+                "Imagine spending nights in a gallery-like setting that blurs the lines between art and life, creating transformative moments."
+            ],
+            "details": {
+                "location": "Italy",
+                "duration": "4 days",
+                "guests": "42",
+                "price": "5,000 EUR",
+                "dates": "02-05, 09-12 October 2025",
+                "features": ["Sonic Experience", "Luxury Accommodation", "Fine Dining"],
+                "itinerary": ["Arrival and Welcome", "Day of Immersion", "Cultural Exploration", "Farewell Breakfast"]
+            }
+            
+        }
+    },
+    {
+        "slug": "silence-ventures",
+        "title": "Trip Agency | Silence Ventures",
+        "video": "https://stream.mux.com/sample_video2.m3u8",
+        "content": {
+            "heading": "PROGRAM",
+            "description": [
+                "Experience the magic of the Northern Lights in Swedish Lapland.",
+                "Enjoy four days of unique Nordic adventures with luxury cabins and gourmet cuisine.",
+                "A retreat under the dancing Aurora Borealis."
+            ],
+            "details": {
+                "location": "Sweden",
+                "duration": "4 days",
+                "guests": "12",
+                "price": "5,500 EUR",
+                "dates": "03-06, 10-13, 17-20, 24-27 July 2025",
+                "features": ["Aurora Borealis Viewing", "Luxury Cabins", "Gourmet Nordic Cuisine"],
+                "itinerary": ["Arrival and Welcome Dinner", "Aurora Viewing", "Snow Activities", "Departure Brunch"]
+            }
+            
+        }
+    },
+    
+        {
+            "slug": "magic-mountain",
+            "title": "Trip Agency | Magic Mountain",
+            "video": "https://stream.mux.com/sample_video3.m3u8",
+            "content": {
+                "heading": "PROGRAM",
+                "description": [
+                    "A luxurious retreat in the heart of Tuscany's wine country.",
+                    "Every day guests will be invited to a morning and an afternoon session of active listening. Each session will last 2/3 hours, including a 15 minutes break.",
+                    "",
+                    "Thursday: Arrival & Welcome",
+                    "Arrival: Private transfer from Rome Fiumicino Airport to villa (4:00 p.m. check-in).",
+                    "Evening: Welcome cocktail on terrace; dinner featuring Tuscan coastal cuisine and local wine pairings.",
+                    "Opening of audiovisual installation.",
+                    "",
+                    "Friday: Culinary Experience & Leisure",
+                    "Morning: Breakfast showcasing regional specialties.",
+                    "Daytime: Leisure at villa, access to beach, audiovisual installation active throughout stay.",
+                    "Optional: sunset hike to historical watchtower (10 min. hiking). Guests should bring bathing suits, sunglasses, a sun hat, and a pair of walking shoes or boots in case of hiking.",
+                    "Lunch & Dinner: In-villa meals with local wine pairings, highlighting regional flavors.",
+                    "",
+                    "Saturday: Optional Cultural Excursion & Relaxation",
+                    "Morning: Breakfast with local offerings.",
+                    "Optional Excursions:",
+                    "- Submarine Museum (Talamone) – scuba experience to underwater sculptures.",
+                    "- Giardino dei Tarocchi (Capalbio) – visit to renowned sculpture garden.",
+                    "Lunch & Dinner: Villa dining with curated local wines.",
+                    "",
+                    "Sunday: Departure",
+                    "Morning: Final breakfast.",
+                    "Check-Out: 11:00 a.m.; private transfer to Fiumicino Airport. Optional lunch stop en route based on flight schedules.",
+                    "",
+
+
+                    "INCLUSIONS:",
+                    "- Private Transportation: Round-trip transfers from Rome Fiumicino Airport to the villa, local transportation for optional excursions and activities.",
+                    "- Accommodation: 4-day, 3-night stay in a luxury villa with oceanfront views and private access.",
+                    "- Culinary Experiences: Daily breakfast, lunch, and dinner with menus crafted around authentic local cuisine. Curated wine pairings with each meal.",
+                    "- Audiovisual Experience: Permanent audiovisual installation in the villa, active throughout the stay.",
+                    "- Leisure and Activity Options: Private beach access, optional guided sunset hike, cultural excursions like the Submarine Museum or the Giardino dei Tarocchi.",
+                    "- Concierge Services: 24/7 concierge assistance for guests.",
+                    "",
+
+                    
+                    "EXCLUSIONS:",
+                    "- Airfare: Flights to and from Rome Fiumicino Airport are not included.",
+                    "- Diving Certification: Scuba diving certifications are not provided for the Submarine Museum experience.",
+                    "- Personal Expenses: Personal purchases or incidental expenses.",
+                    "- Travel Insurance: Guests are responsible for their own travel insurance.",
+                    "- Additional On-Demand Services: Any spa treatments, private tours, or special requests.",
+                    "- Gratuities: Tips for drivers, guides, and villa staff are not included."
+                ]
+            }
+        },
+        
+    
+    {
+        "slug": "monastero-vento",
+        "title": "Trip Agency | Monastero Vento",
+         "video": "https://stream.mux.com/sample_video4.m3u8",
+        "content": {
+            "heading": "Monastero Vento: Mediterranean Getaway",
+            "description": [
+                "Escape to a hidden gem in the Mediterranean for ultimate relaxation.",
+                "Private beaches, spa treatments, and Mediterranean cuisine await in this four-day island retreat."
+            ],
+            "details": {
+                "location": "Italy",
+                "duration": "4 days",
+                "guests": "50",
+                "price": "7,500 EUR",
+                "dates": "16-19 October 2025",
+                "features": ["Private Beaches", "Spa Treatments", "Mediterranean Cuisine"],
+                "itinerary": ["Arrival and Welcome Dinner", "Beach Activities", "Island Exploration", "Farewell Sunset Dinner"]
+            }
+           
+        }
+    },
+    {
+        "slug": "upcoming",
+        "title": "Upcoming",
+        "video": "https://stream.mux.com/sample_video1.m3u8",
+        "content": {
+            "heading": "Upcoming: Harmony in Japan",
+            "description": [
+                "Discover the harmony of sound in a tranquil Japanese setting.",
+                "Immerse yourself in traditional Japanese culture with soundscapes, ryokan stays, and local cuisine."
+            ],
+            "details": {
+                "location": "Japan",
+                "duration": "",
+                "guests": "",
+                "price": "",
+                "dates": "2026",
+                "features": ["Immersive Soundscapes", "Traditional Ryokan Stay", "Local Cuisine"],
+                "itinerary": ["Arrival and Tea Ceremony", "Sound Bath Experience", "Cultural Tours", "Farewell Dinner"]
+            }
+            
+        }
+    }
+]

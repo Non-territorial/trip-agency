@@ -1,45 +1,20 @@
 import Head from "next/head";
-import { useEffect } from "react";
 import Newsletter from "../components/newsletter";
 import AboutSection from "../components/AboutSection";
 import Link from "next/link";
 import VideoSection from '../components/VideoSection';
-
-
+import { useMenu } from "../hooks/useMenu";
 
 export default function Home() {
-    useEffect(() => {
-        const trigger = document.querySelector(".menu-trigger");
-        const menuContent = document.querySelector(".menu-content");
+    useMenu(); 
 
-        const toggleMenu = () => {
-            if (menuContent) {
-                menuContent.style.display =
-                    menuContent.style.display === "flex" ? "none" : "flex";
-            }
-        };
-
-        const closeMenu = (event) => {
-            if (
-                menuContent &&
-                !menuContent.contains(event.target) &&
-                trigger &&
-                !trigger.contains(event.target)
-            ) {
-                menuContent.style.display = "none";
-            }
-        };
-
-        if (trigger) {
-            trigger.addEventListener("click", toggleMenu);
-            document.addEventListener("click", closeMenu);
-        }
-
-        return () => {
-            if (trigger) trigger.removeEventListener("click", toggleMenu);
-            document.removeEventListener("click", closeMenu);
-        };
-    }, []);
+    // Homepage-specific video data
+    const homepageVideos = [
+        {
+            src: "qUggBqQ34mPlNtoSzBlYal02XBvdKRGX00pp2011Z5OXz4", // Mux playback ID
+            title: "Discover Trip Agency - Hedonistic Retreats",
+        },
+    ];
 
     return (
         <>
@@ -75,7 +50,9 @@ export default function Home() {
             </header>
 
 <main id="app" className="video-page">
-  <VideoSection />
+                {/* Display the homepage video */}
+                <VideoSection videos={homepageVideos} />
+           
 
                 <section id="packages" className="vertical-section">
                     <div className="content-wrapper">
@@ -84,11 +61,7 @@ export default function Home() {
                         Hedonistic Retreats<br />
     Art and Culinary Experiences
 </h1>
-
-
-
-
-                        <p className="description">
+<p className="description">
     Trip Agency blends unique <b>locations</b>, <b>art</b>, culinary offerings, and <b>hospitality</b>, creating <b>transformative</b> experiences set in Italy, Sweden, and Japan.
 </p>
 <p className="description">
@@ -152,7 +125,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         <div className="details-title">(UN)DISCLOSED</div>
                         <div className="details-item">
                             <span className="details-label">Location</span>
-                            <span className="details-value">Salina | Italy</span>
+                            <span className="details-value">Salina, Italy</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Experience</span>
@@ -167,8 +140,8 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                             <span className="details-value">Audiovisual installation, food, wine and bar</span>
                         </div>
                         <div className="details-item">
-                            <span className="details-label">Dates | Autumn</span>
-                            <span className="details-value">02-05 | 09-12 October 2025</span>
+                            <span className="details-label">Dates</span>
+                            <span className="details-value">02-05, 09-12 October 2025</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Booking fee per guest</span>
@@ -179,6 +152,9 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                             (UN)DISCLOSED is a travel experience in the form of an exhibition. It is an art experience set on Salina, a remote Sicilian island of the Mediterranean Sea, comprised of several distributed exhibitions throughout the island. (UN)DISCLOSED will turn your stay into a live art experience, in an absolutely unprecedented way. 
                             </span>
                         </div>
+                        <div className="details-link">
+    <a href="/trips/undisclosed" className="view-more-link">View more</a>
+</div>
                     </div>
                 </section>
 
@@ -199,7 +175,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         <div className="details-title">SILENCE VENTURES</div>
                         <div className="details-item">
                             <span className="details-label">Location</span>
-                            <span className="details-value">Edsåsdalen | Sweden</span>
+                            <span className="details-value">Edsåsdalen, Sweden</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Experience</span>
@@ -214,18 +190,21 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                             <span className="details-value">Audiovisual installation, food, wine and bar</span>
                         </div>
                         <div className="details-item">
-                            <span className="details-label">Dates | Summer</span>
-                            <span className="details-value">03-06 | 10-13 | 17-20 | 24-27 July 2025</span>
+                            <span className="details-label">Dates</span>
+                            <span className="details-value">03-06, 10-13, 17-20, 24-27 July 2025</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Booking fee per guest</span>
-                            <span className="details-value">5,000 EUR</span>
+                            <span className="details-value">5,500 EUR</span>
                         </div>
                         <div className="details-item">
                             <span className="details-info">
-                                A unique A-frame house transformed into a four-day Sonic Resort for deep listening.
+                            In Northern Sweden, a unique remote villa set amidst pristine nature is transformed into a four-day Sonic Resort dedicated to deep listening. A curated collection of rare sound works is presented through both active and passive modes of experience, carefully arranged to harmonize with the surrounding wilderness and facilitate the discovery of new levels of perception.
                             </span>
                         </div>
+                        <div className="details-link">
+    <a href="/trips/silence-ventures" className="view-more-link">View more</a>
+</div>
                     </div>
                 </section>
 
@@ -245,7 +224,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         <div className="details-title">MAGIC MOUNTAIN</div>
                         <div className="details-item">
                             <span className="details-label">Location</span>
-                            <span className="details-value">Monte Argentario | Italy</span>
+                            <span className="details-value">Monte Argentario, Italy</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Experience</span>
@@ -260,8 +239,8 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                             <span className="details-value">Audiovisual installation, food, wine and bar</span>
                         </div>
                         <div className="details-item">
-                            <span className="details-label">Dates | Spring</span>
-                            <span className="details-value">03-06 | 10-13 April 2025</span>
+                            <span className="details-label">Dates</span>
+                            <span className="details-value">03-06, 10-13 April 2025</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Booking fee per guest</span>
@@ -269,10 +248,12 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-info">
-                                Presenting a Sonic Exhibition where sound shapes the ambiance, seamlessly blending with the
-                                Mediterranean setting and the rugged beauty of the rocky ledges surrounding the villa.
+                            Tuscany. A contemporary seaside villa transformed into an art installation, offering a holistic experience that combines active and passive listening, a fully curated gastronomic journey, a bar, and the surrounding nature. Sounds shape the ambiance, seamlessly blending with the Mediterranean setting and the rugged beauty of the rocky ledges surrounding the villa, shaping the atmosphere and connecting deeply with the natural beauty of the Mediterranean.
                             </span>
                         </div>
+                        <div className="details-link">
+    <a href="/trips/magic-mountain" className="view-more-link">View more</a>
+</div>
                     </div>
                 </section>
 
@@ -291,7 +272,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         <div className="details-title">MONASTERO VENTO</div>
                         <div className="details-item">
                             <span className="details-label">Location</span>
-                            <span className="details-value">Pantelleria | Italy</span>
+                            <span className="details-value">Pantelleria, Italy</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Experience</span>
@@ -306,20 +287,21 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                             <span className="details-value">Audiovisual installation, food, wine and bar</span>
                         </div>
                         <div className="details-item">
-                            <span className="details-label">Dates | Spring</span>
+                            <span className="details-label">Dates</span>
                             <span className="details-value">16-19 October 2025</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Booking fee per guest</span>
-                            <span className="details-value">6,000 EUR</span>
+                            <span className="details-value">7,500 EUR</span>
                         </div>
                         <div className="details-item">
                             <span className="details-info">
-                                The famous villa, for multiple Cinematic occasions, transformed into sonic exhibition lasting for four
-                                days. The Sonic Exhibition is an environment entirely dedicated to sound as the sole protagonist.
-                                The space to engage in active and deep listening, a setting for contemplative engagement.
+                            The famous villa, resembling a movie set, is transformed into TRIP, a four-day Sonic Exhibition. This creates an environment entirely dedicated to sound as the sole protagonist, offering a space for active and deep listening — a setting designed for contemplative engagement.
                             </span>
                         </div>
+                        <div className="details-link">
+    <a href="/trips/monastero-vento" className="view-more-link">View more</a>
+</div>
                     </div>
                 </section>
 
@@ -366,6 +348,9 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                                 An upcoming series of locations and artistic programs across Japan.
                             </span>
                         </div>
+                        <div className="details-link">
+    <a href="/trips/upcoming" className="view-more-link">View more</a>
+</div>
                     </div>
                 </section>
 
