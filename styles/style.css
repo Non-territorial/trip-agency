@@ -883,13 +883,6 @@ input[type="number"] {
         background-repeat: no-repeat; /* Prevent tiling */
     }
     
-    .text-block {
-   
-        margin: 0 8px; /* Center-align the block */
-        text-align: left; /* Align text properly */
-       
-    }
-    
 
     /* Monteverde, Cuisine Section */
     .monteverde {
