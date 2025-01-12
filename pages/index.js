@@ -81,7 +81,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                     <div className="content-wrapper">
                         <h3 className="title">SONIC | CINEMATIC</h3>
                         <h2 className="heading">Settings</h2>
-                        <p className="description">Each Trip hosts a set of art installations</p>
+                        <p className="description">The unusual of TRIP Agency lies within its transformative capacities, turning selected locations into exhibition-experience environments</p>
                     </div>
                 </section>
 
@@ -137,15 +137,11 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-label">Features</span>
-                            <span className="details-value">Audiovisual installation, food, wine and bar</span>
+                            <span className="details-value">Distributed audiovisual installations, enogastronomic itineraries, listening sessions, local excursions</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Dates</span>
                             <span className="details-value">02-05, 09-12 October 2025</span>
-                        </div>
-                        <div className="details-item">
-                            <span className="details-label">Booking fee per guest</span>
-                            <span className="details-value">5,000 EUR</span>
                         </div>
                         <div className="details-item">
                             <span className="details-info">
@@ -187,15 +183,11 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-label">Features</span>
-                            <span className="details-value">Audiovisual installation, food, wine and bar</span>
+                            <span className="details-value">Audiovisual installation, gastronomic discoveries, listening sessions, infinite bar, natural excursions</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Dates</span>
                             <span className="details-value">03-06, 10-13, 17-20, 24-27 July 2025</span>
-                        </div>
-                        <div className="details-item">
-                            <span className="details-label">Booking fee per guest</span>
-                            <span className="details-value">5,500 EUR</span>
                         </div>
                         <div className="details-item">
                             <span className="details-info">
@@ -236,15 +228,11 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-label">Features</span>
-                            <span className="details-value">Audiovisual installation, food, wine and bar</span>
+                            <span className="details-value">Audiovisual installation, coastal enogastronomy, listening sessions, infinite bar, cultural excursions</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Dates</span>
                             <span className="details-value">03-06, 10-13 April 2025</span>
-                        </div>
-                        <div className="details-item">
-                            <span className="details-label">Booking fee per guest</span>
-                            <span className="details-value">6,000 EUR</span>
                         </div>
                         <div className="details-item">
                             <span className="details-info">
@@ -280,19 +268,15 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-label">Guests</span>
-                            <span className="details-value">up to 14</span>
+                            <span className="details-value">up to 10</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Features</span>
-                            <span className="details-value">Audiovisual installation, food, wine and bar</span>
+                            <span className="details-value">Audiovisual installation, enogastronomic discoveries, listening sessions, infinite bar, mineral excursions</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Dates</span>
-                            <span className="details-value">16-19 October 2025</span>
-                        </div>
-                        <div className="details-item">
-                            <span className="details-label">Booking fee per guest</span>
-                            <span className="details-value">7,500 EUR</span>
+                            <span className="details-value">16-19, 23-26 October 2025</span>
                         </div>
                         <div className="details-item">
                             <span className="details-info">
@@ -340,10 +324,6 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                             <span className="details-value">2026</span>
                         </div>
                         <div className="details-item">
-                            <span className="details-label">Booking fee per guest</span>
-                            <span className="details-value"></span>
-                        </div>
-                        <div className="details-item">
                             <span className="details-info">
                                 An upcoming series of locations and artistic programs across Japan.
                             </span>
@@ -359,13 +339,17 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
 
 {/* Contact Section */}
 <section id="contact" className="contact">
-    <div className="content-wrapper">
+<div className="content-wrapper">
         {/* Contact Us */}
         <div className="contact-us">
             <h2 className="heading">Contact Us</h2>
             <p className="description">
                 Feel free to reach out with any <b><a href="/booking" className="inquiry">inquiry</a></b> for
                 additional details.
+            </p>
+            <p className="description">
+                Email: <a href="mailto:i@trip-agency.net" className="email">i@trip-agency.net</a> <br />
+                Telephone: <a href="tel:+393515635054" className="phone">+39 351 563 5054</a>
             </p>
         </div>
         

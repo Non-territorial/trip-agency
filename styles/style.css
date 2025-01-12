@@ -169,7 +169,7 @@ mux-player::part(center play button) {
 }
 
 .vertical-page {
-    min-height: 320vh;/* Full screen height */
+    min-height: 280vh;/* Full screen height */
     overflow: visible;
     padding: 0;
     display: flex;
@@ -215,13 +215,18 @@ mux-player::part(center play button) {
     font-size: 1.2rem; /* Small title size */
     font-weight: 400;
     text-transform: uppercase;
-    margin-bottom: -20px;
+    margin-bottom: -10px;
 }
+.description p strong {
+    display: block;
+    margin-top: 60px; /* Adds space before any strong text, like "Included" */
+}
+
 .heading {
     font-family: 'IBM Plex Mono', monospace; /* Ensure consistent font */
     font-size: 32px; /* Larger heading size */
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .description {
@@ -231,6 +236,7 @@ mux-player::part(center play button) {
     max-width: 550px;
     word-spacing: normal;
     white-space: normal;
+   
 }
 .room {
     position: relative; /* Ensures the section is a containing block for positioned elements */
@@ -364,7 +370,16 @@ mux-player::part(center play button) {
 }
 
 
-
+.about {
+    font-family: 'IBM Plex Mono', monospace; /* Ensure consistent font */
+    font-size: 32px; /* Larger heading size */
+    font-weight: 700;
+    text-align: left; /* Align text to the left */
+    margin-right: 27.5%; /* Adjust this value to position it above "Intro" */
+    margin-bottom: 20px;
+    
+    
+}
 .info-section {
     position: relative; /* Proper containment for child elements */
     height: 130vh; 
@@ -477,6 +492,13 @@ mux-player::part(center play button) {
 .inquiry {
     color: white;
     text-decoration: none;
+}
+
+.contact .description a.email,
+.contact .description a.phone {
+    color: rgb(255, 255, 255); /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: 700;
 }
 
 .newsletter-section {

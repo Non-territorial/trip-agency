@@ -64,7 +64,8 @@ export default function TripPage({ trip }) {
         <>
             {/* Metadata */}
             <Head>
-                <title>{trip.title || "Trip"} | Trip Agency</title>
+            <title>{typeof trip.title === "string" ? `${trip.title} | Trip Agency` : "Trip | Trip Agency"}</title>
+
                 <meta name="description" content={trip.description || "Description of the trip"} />
             </Head>
 
@@ -107,23 +108,52 @@ export default function TripPage({ trip }) {
 />
 
 <section id="packages" className="vertical-page">
-        <div className="content-wrapper">
-            {/* Trip Title */}
-            <span className="title">{trip.title || ""}</span>
+    <div className="content-wrapper">
+        {/* Trip Title */}
+        <span className="title">{trip.title || ""}</span>
 
-            {/* Trip Heading */}
-            {trip.content?.heading && <h1 className="heading">{trip.content.heading}</h1>}
+        {/* Trip Heading */}
+        {trip.content?.heading && <h1 className="heading">{trip.content.heading}</h1>}
 
-            {/* Trip Description */}
-            {trip.content?.description && (
-                <div className="description">
-                    {trip.content.description.map((paragraph, index) => (
-                        <p key={index}>{paragraph}</p>
-                    ))}
-                </div>
-            )}
-        </div>
-    </section>
+        {/* Trip Description */}
+        {trip.content?.description && (
+            <div className="description">
+                {trip.content.description.map((paragraph, index) => {
+            const trimmedParagraph = paragraph.trim(); // Ensure extra spaces are removed
+
+            // Render "Included" section
+            if (trimmedParagraph === "INCLUDED:") {
+                return <p key={index} className="included-title"><strong>Included:</strong></p>;
+            }
+
+            // Render "Not Included" section
+            if (trimmedParagraph === "NOT_INCLUDED:") {
+                return <p key={index} className="not_included-title"><strong>Not Included:</strong></p>;
+            }
+
+            // Render bullet points with indentation
+            if (trimmedParagraph.startsWith("-")) {
+                return <p key={index} style={{ marginLeft: "20px" }}>{trimmedParagraph}</p>;
+            }
+
+            // Render "Price per person" as bold
+            if (trimmedParagraph.includes("Price per person:")) {
+                const [label, value] = trimmedParagraph.split(":");
+                return (
+                    <p key={index}>
+                        <strong>{label}:</strong> {value.trim()}
+                    </p>
+                );
+            }
+
+                    // Render regular text
+                    return <p key={index}>{trimmedParagraph}</p>;
+                })}
+            </div>
+        )}
+    </div>
+</section>
+
 
             </main>
 

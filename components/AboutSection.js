@@ -71,7 +71,7 @@ export default function AboutSection() {
             If you need to cancel your reservation, please email
             i@trip-agency.net as soon as possible. We will make every effort to
             rebook your spot with another guest. If we successfully rebook your
-            reservation, we will refund your fees to the original payer.
+            reservation, we will refund your fees.
           </p>
           <p>
             Please note: Reservations are non-refundable unless we can rebook your
@@ -129,7 +129,7 @@ export default function AboutSection() {
           <p>
             TRIP Agency provides transportation to and from the airport. All guests
             are required to arrive on the first day of the TRIP, no later than
-            14:00.
+            2:00 p.m.
           </p>
           <p>
             You will receive detailed meeting point instructions once your
@@ -143,7 +143,7 @@ export default function AboutSection() {
           <p>
             It is essential to plan your travel to align with the event schedule,
             as off-schedule trips cannot be accommodated. Guests arriving at
-            different times (such as the day before or after) will need to arrange
+            different times (late arrival, or day after) will need to arrange
             their own transportation to the location.
           </p>
         </>
@@ -181,6 +181,7 @@ export default function AboutSection() {
 
   return (
     <section id="about" className="info-section">
+       <h1 className="about">About</h1> {/* Title positioned left */}
         {sections.map((section, index) => (
             <div className="info-item" key={index}>
                 <h3
