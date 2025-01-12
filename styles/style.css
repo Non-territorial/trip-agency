@@ -962,6 +962,11 @@ input[type="number"] {
         font-size: 0.8rem;
     }
 
+    .details-link {
+        margin-top: 20px; /* Add some spacing */
+        font-size: 0.8rem;
+    }
+
     /* Info Section */
     .info-section {
         padding: 0;
