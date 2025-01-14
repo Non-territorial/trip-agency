@@ -673,21 +673,6 @@ mux-player::part(center play button) {
     border: 0;
 }
 
-.email-link {
-    color: black; /* White color for the email link */
-    text-decoration: none; /* Removes underline */
-    font-family: 'IBM Plex Mono', monospace; /* Matches other text styling */
-    font-size: 1.2rem; /* Slightly larger font size for visibility */
-    font-weight: 700; /* Normal weight */
-   
-    display: inline-block; /* Ensures proper spacing */
-}
-
-.email-link:hover {
-    text-decoration: underline; /* Adds underline on hover */
-    color: #070707; /* Light gray color on hover */
-}
-
 .terms-content {
     margin: 100px auto; /* Adds spacing from the navbar */
     max-width: 800px; /* Limit content width for readability */
@@ -1202,9 +1187,6 @@ input[type="number"] {
     }
     /* Terms and Conditions */
 
-    .email-link {
-        font-size: 1rem; /* Smaller font size for visibility */
-    }
 
     .terms-content {
         margin: 20px; /* Reduce margin for smaller screens */

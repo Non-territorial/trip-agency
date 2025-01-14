@@ -112,7 +112,7 @@ export default function TermsAndConditions() {
                     <h2>11. Contact Us</h2>
                     <p>
                         For any questions or concerns regarding these Terms and Conditions, please contact TRIP Agency
-                        at <a href="mailto:i@trip-agency.net">i@trip-agency.net</a> or by mail at Brave Hills Ltd.,
+                        at <a href="mailto:i@trip-agency.net" className="about-email">i@trip-agency.net</a> or by mail at Brave Hills Ltd.,
                         4th Floor, Silverstream House, 45 Fitzroy Street, London, England, W1T 6EB.
                     </p>
                 </section>
