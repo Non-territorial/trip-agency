@@ -45,7 +45,7 @@
     {
         "slug": "silence-ventures",
         "title": "Trip Agency | Silence Ventures",
-        "video": "https://stream.mux.com/sample_video2.m3u8",
+        "video": "yjz87DkI00uYCuCpRlgUIN01JQeWPh5sPM3Q6WhpSzy2s",
         "content": {
             "heading": "PROGRAM",
             "description": [
@@ -92,7 +92,7 @@
         {
             "slug": "magic-mountain",
             "title": "Trip Agency | Magic Mountain",
-            "video": "https://stream.mux.com/sample_video3.m3u8",
+            "video": "Ase6QwF1f5Y027Ig6twrMH02DAk6DSJHRp500flyJJddZU",
             "content": {
                 "heading": "PROGRAM",
                 "description": [
@@ -139,7 +139,7 @@
     {
         "slug": "monastero-vento",
         "title": "Trip Agency | Monastero Vento",
-         "video": "https://stream.mux.com/sample_video4.m3u8",
+         "video": "01OvrJTnp01InMycB774dQzLdu02dbJOeLqILW4IsQvWVI",
         "content": {
             "heading": "PROGRAM",
             "description": [
@@ -185,10 +185,9 @@
         "title": "Upcoming",
         "video": "https://stream.mux.com/sample_video1.m3u8",
         "content": {
-            "heading": "PROGRAM",
+            "heading": "JAPAN 2026",
             "description": [
-                "Discover the harmony of sound in a tranquil Japanese setting.",
-                "Immerse yourself in traditional Japanese culture with soundscapes, ryokan stays, and local cuisine."
+               "Subscribe to our <a href='/#contact'>newsletter</a> to get priority access to Japan destinations bookings."
             ],
             "details": {
                 "location": "Japan",

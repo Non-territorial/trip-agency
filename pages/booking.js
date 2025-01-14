@@ -142,7 +142,7 @@ export default function Booking() {
     }}>
         Home <span className="visually-hidden">Go to the Home Page</span>
     </Link>
-    <Link href="/#monte-argentario">
+    <Link href="/#eolie">
         Trips <span className="visually-hidden">Explore Our Trips</span>
     </Link>
     <Link href="/#about">

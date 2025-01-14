@@ -6,7 +6,7 @@ export default function AboutSection() {
     const toggleSection = (index) => {
         setOpenSections((prev) => ({
             ...prev,
-            [index]: !prev[index], // Toggles the section's visibility
+            [index]: !prev[index], // Toggle the specific section
         }));
     };
 
@@ -181,24 +181,22 @@ export default function AboutSection() {
 
   return (
     <section id="about" className="info-section">
-       <h1 className="about">About</h1> {/* Title positioned left */}
+        <h1 className="about">About</h1>
         {sections.map((section, index) => (
             <div className="info-item" key={index}>
                 <h3
                     className="dropdown-toggle"
                     onClick={() => toggleSection(index)}
                 >
-                    {section.title} <span>{openSections[index] ? "v" : ">"}</span>
+                    {section.title}{" "}
+                    <span>{openSections[index] ? "v" : ">"}</span>
                 </h3>
-                <div
-                    className={`info-item-content ${
-                        openSections[index] ? "show" : ""
-                    }`}
-                >
-                    {section.content}
-                </div>
+                {openSections[index] && (
+                    <div className="info-item-content">{section.content}</div>
+                )}
             </div>
         ))}
     </section>
 );
 }
+

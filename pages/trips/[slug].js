@@ -106,9 +106,9 @@ export default function TripPage({ trip }) {
         },
     ]}
 />
-
+<div className="outer-container">
 <section id="packages" className="vertical-page">
-    <div className="content-wrapper">
+    <div className="vertical-page-content">
         {/* Trip Title */}
         <span className="title">{trip.title || ""}</span>
 
@@ -117,9 +117,22 @@ export default function TripPage({ trip }) {
 
         {/* Trip Description */}
         {trip.content?.description && (
-            <div className="description">
-                {trip.content.description.map((paragraph, index) => {
+    <div className="description">
+        {trip.content.description.map((paragraph, index) => {
             const trimmedParagraph = paragraph.trim(); // Ensure extra spaces are removed
+
+            // Check if the paragraph contains HTML (e.g., <a> tag)
+            const containsHTML = /<\/?[a-z][\s\S]*>/i.test(trimmedParagraph);
+
+            // Render HTML content directly if it contains HTML
+            if (containsHTML) {
+                return (
+                    <p
+                        key={index}
+                        dangerouslySetInnerHTML={{ __html: trimmedParagraph }}
+                    />
+                );
+            }
 
             // Render "Included" section
             if (trimmedParagraph === "INCLUDED:") {
@@ -146,13 +159,14 @@ export default function TripPage({ trip }) {
                 );
             }
 
-                    // Render regular text
-                    return <p key={index}>{trimmedParagraph}</p>;
-                })}
-            </div>
-        )}
+            // Render regular text
+            return <p key={index}>{trimmedParagraph}</p>;
+        })}
+    </div>
+)}
     </div>
 </section>
+</div>
 
 
             </main>
@@ -183,7 +197,7 @@ export default function TripPage({ trip }) {
                     >
                         Home <span className="visually-hidden">Go to the Home Page</span>
                     </Link>
-                    <Link href="/#monte-argentario">
+                    <Link href="/#eolie">
                         Trips <span className="visually-hidden">Explore Our Trips</span>
                     </Link>
                     <Link href="/#about">

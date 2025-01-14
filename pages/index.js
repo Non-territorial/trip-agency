@@ -390,7 +390,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
 </Link>
 
 
-    <Link href="/#monte-argentario">
+    <Link href="/#eolie">
         Trips <span className="visually-hidden">Explore Our Trips</span>
     </Link>
     <Link href="/#about">

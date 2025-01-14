@@ -6,7 +6,7 @@ body, html {
     scroll-behavior: smooth;
     overflow-y: auto;
     overflow-x: hidden;
-    height: 100vh;
+    height: 100%;
 }
 
 /* Navbar */
@@ -168,17 +168,46 @@ mux-player::part(center play button) {
     gap: none; /* Adds spacing between sections */
 }
 
-.vertical-page {
-    min-height: 280vh;/* Full screen height */
-    overflow: visible;
-    padding: 0;
+
+.outer-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: left;
-    box-sizing: border-box;
+    min-height: 100vh;
 }
+
+.vertical-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 100vh; /* Minimum height to fill the viewport */
+    box-sizing: border-box; /* Include padding in height calculations */
+    padding: 80px 40px; /* Add spacing above and below */
+}
+
+.vertical-page-content {
+    display: block; /* Ensure content behaves as a block */
+    width: 100%; /* Make the content responsive */
+    max-width: 800px; /* Set a maximum width for readability */
+    text-align: left; /* Align text to the left */
+    margin: 0; /* Reset any margins that may push content */
+}
+
+
+
+
+.vertical-page-content a[href='/#contact'] {
+    color: black; /* Make only the newsletter link black */
+    text-decoration: underline; /* Remove underline */
+    font-weight: bold;
+}
+
+.vertical-page-content a[href='/#contact']:visited {
+    color: black; /* Keep it black even after visiting */
+}
+
+
 
 .vertical-section-img {
     display: flex;
@@ -375,62 +404,48 @@ mux-player::part(center play button) {
     font-size: 32px; /* Larger heading size */
     font-weight: 700;
     text-align: left; /* Align text to the left */
-    margin-right: 27.5%; /* Adjust this value to position it above "Intro" */
     margin-bottom: 20px;
     
     
 }
 .info-section {
-    position: relative; /* Proper containment for child elements */
-    height: 130vh; 
-    width: 100%; /* Full width of the viewport */
-    display: flex; /* Enables flexbox for layout */
-    justify-content: center; 
-    align-items: center;
-    flex-direction: column; /* Stacks items in a single column */
-    color: black; /* Text color */
-    background-color: white; /* Solid white background */
-    background-size: cover;
-    text-align: center; /* Aligns text to the left */
-    padding: 10px; /* Padding around the section */
-    font-weight: 300; /* Light font weight for content */
+    padding: 80px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .info-item {
-    width: 33%; /* Ensures full-width items */
-    padding: 0;
-    border-bottom: 1px solid #000;
-    margin: 0;
+    margin-bottom: 20px;
+    border-bottom: 1.5px solid #676767;
+    padding-bottom: 10px;
 }
 
-.info-item h3 {
-    font-size: 16px;
-    color: black; /* Text color for headers */
-    font-weight: 300;
-    cursor: pointer; /* Indicates interactivity for dropdown */
-    text-align: left;
-}
-
-.dropdown-toggle span {
+.dropdown-toggle {
+    cursor: pointer;
+    font-size: 18px;
     font-weight: normal;
-    margin-left: 5px;
-    color: black;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .info-item-content {
-    display: none; /* Content is hidden initially */
     padding: 10px 0;
-    transition: all 0.3s ease-in-out; /* Smooth dropdown animation */
-    margin-top: 10px; /* Spacing between header and content */
-    font-size: 16px; /* Font size for content */
-    color: black; /* Content text color */
-    text-align: left;
-    margin-bottom: 16px; /* Adjust this value for the desired spacing */
-    line-height: 1.4; /* Optional: Adjust line spacing for better readability */
+    font-size: 16px;
+    line-height: 1.5;
+    animation: fadeIn 0.3s ease;
 }
-.info-item-content.show {
-    display: block;
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
+
 
 .p2 {
     font-size: 14px;
@@ -778,6 +793,7 @@ input[type="number"] {
 
 
 
+
 /* General Mobile Adjustments */
 @media (max-width: 600px) {
 
@@ -968,36 +984,52 @@ input[type="number"] {
     }
 
     /* Info Section */
+
+    .about {
+        font-family: 'IBM Plex Mono', monospace; /* Ensure consistent font */
+        font-size: 32px; /* Larger heading size */
+        font-weight: 700;
+        text-align: left; /* Align text to the left */
+        margin-bottom: 40px;
+        
+        
+    }
     .info-section {
-        padding: 0;
-        height: auto; /* Adjust height for smaller screens */
-        text-align: left; /* Align all content to the left */
-        margin-top: 50px;
-        margin-bottom: 50px;;
+        padding: 80px;
+        max-width: 800px;
+        margin: 0 auto;
     }
     
     .info-item {
-        width: 90%; /* Maintain responsiveness */
-        margin: 10px auto;
-        text-align: left; /* Align each item to the left */
-        border-bottom: 1px solid #000; /* Optional: keep separation consistent */
+        margin-bottom: 20px;
+        border-bottom: 1.5px solid #ddd;
+        padding-bottom: 10px;
     }
     
-    .info-item h3 {
-        font-size: 0.8rem;
-        text-align: left; /* Align header text to the left */
-        margin: 5px 0; /* Add slight spacing above and below */
-    }
-    
-    .dropdown-toggle span {
-        font-size: 1rem;
-        text-align: left; /* Align icon to the left, if necessary */
+    .dropdown-toggle {
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: normal;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     
     .info-item-content {
-        font-size: 0.7rem;
-        text-align: left; /* Align dropdown content to the left */
-        margin-top: 5px; /* Add slight spacing between items */
+        padding: 10px 0;
+        font-size: 16px;
+        line-height: 1.5;
+        animation: fadeIn 0.3s ease;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 
     /* Contact Section */
