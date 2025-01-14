@@ -111,14 +111,10 @@ mux-player {
   
 }
 
-mux-player::part(center play button) {
-    background-color: black; /* Default color */
-    transition: background-color 0.3s ease; /* Smooth transition */
-  }
-  
-  mux-player::part(center play button):hover {
-    background-color: rgb(57, 56, 56); /* Hover color */
-  }
+ mux-player::part(center play button) {
+    background: none; /* Default color */
+    
+ } 
   
   mux-player::part(play button):hover {
     background-color: #030303; /* Replace with your desired color */
@@ -207,29 +203,6 @@ mux-player::part(center play button) {
     color: black; /* Keep it black even after visiting */
 }
 
-
-
-.vertical-section-img {
-    display: flex;
-    align-items: flex-start; /* Align the items at the top */
-    gap: 20px; /* Add spacing between image and text */
-    padding: 40px;
-    max-width: 1200px; /* Limit the section's width */
-    margin: 0 auto; /* Center align the section */
-    box-sizing: border-box;
-}
-
-.image-container {
-    flex: 1; /* Allocate space proportionally */
-    max-width: 50%; /* Restrict image container to half the width */
-}
-
-.image-container img {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Crop or resize gracefully */
-    border-radius: 5px; /* Optional: Add rounded corners */
-}
 
 .jp-text {
     font-family: 'Noto Sans JP', sans-serif; 
@@ -325,6 +298,29 @@ mux-player::part(center play button) {
     text-align: left; /* Align text to the left */
     padding: 40px; /* Adds padding around text */
     opacity: 0.98;
+}
+
+
+.vertical-section-img {
+    display: flex;
+    align-items: flex-start; /* Align the items at the top */
+    gap: 20px; /* Add spacing between image and text */
+    padding: 40px;
+    max-width: 1200px; /* Limit the section's width */
+    margin: 0 auto; /* Center align the section */
+    box-sizing: border-box;
+}
+
+.image-container {
+    flex: 1; /* Allocate space proportionally */
+    max-width: 50%; /* Restrict image container to half the width */
+}
+
+.image-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop or resize gracefully */
+    border-radius: 5px; /* Optional: Add rounded corners */
 }
 
 
@@ -838,23 +834,37 @@ input[type="number"] {
         overflow-x: hidden;
     }
     
-
-    /* Video Sections */
-    .video-section {
-        position: relative;
-        width: 100%;
-        height: 100vh; /* Full height of the viewport */
-        overflow: hidden; /* Hide any overflowing parts of the video */
+    .outer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
     }
-
-    #my-video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); /* Center the video */
-        width: 100%; /* Fill the entire width */
-        height: 100%; /* Fill the entire height */
-        object-fit: cover; /* Ensure the video covers the container */
+    
+    .vertical-page {
+       
+        padding: 70px 30px; /* Add spacing above and below */
+    }
+    
+    .vertical-page-content {
+        display: block; /* Ensure content behaves as a block */
+        width: 100%; /* Make the content responsive */
+        max-width: 800px; /* Set a maximum width for readability */
+        text-align: left; /* Align text to the left */
+        margin: 0; /* Reset any margins that may push content */
+    }
+    
+    
+    
+    
+    .vertical-page-content a[href='/#contact'] {
+        color: black; /* Make only the newsletter link black */
+        text-decoration: underline; /* Remove underline */
+        font-weight: bold;
+    }
+    
+    .vertical-page-content a[href='/#contact']:visited {
+        color: black; /* Keep it black even after visiting */
     }
 
     .jp-text {
@@ -883,16 +893,7 @@ input[type="number"] {
     }
     /* Room Section */
     .room {
-        position: relative; /* Ensure proper containment for positioned elements */
-        display: flex;
-        justify-content: flex-start; /* Align items to the left */
-        align-items: flex-end; /* Align items to the bottom */
-        height: 100vh; /* Full viewport height */
-        padding: 20px; /* Add some padding around */
-        color: white; /* Ensure text is visible */
-        background-size: cover; /* Cover the background */
-        background-position: center; /* Center the background */
-        background-repeat: no-repeat; /* Prevent tiling */
+        padding: 10px;
     }
     
 
@@ -952,6 +953,7 @@ input[type="number"] {
         text-align: left; /* Align text to the left */
         padding: 10px 0; /* Add spacing between items */
         border-bottom: 1px solid #ccc; /* Light border for separation */
+        font-size: 0.8rem;
     }
 
     .details-label {
@@ -991,13 +993,13 @@ input[type="number"] {
         
     }
     .info-section {
-        padding: 80px;
-        max-width: 800px;
+        padding: 30px;
+        max-width: 1000px;
         margin: 0 auto;
     }
     
     .info-item {
-        margin-bottom: 20px;
+        margin-bottom: px;
         border-bottom: 1.5px solid #ddd;
         padding-bottom: 10px;
     }
@@ -1112,6 +1114,7 @@ input[type="number"] {
 
     /* Book Section */
     .book-section {
+        margin-top: 30px;
         width: 90%;
         padding: 15px;
         background-color: #000;
@@ -1189,11 +1192,12 @@ input[type="number"] {
 
 
     .terms-content {
-        margin: 20px; /* Reduce margin for smaller screens */
+        padding: 20px;
+        margin: 10px; /* Reduce margin for smaller screens */
         max-width: 100%; /* Use full width for better readability */
         line-height: 1.5; /* Slightly tighter line spacing */
         font-size: 14px; /* Smaller font size for mobile screens */
-        text-align: justify; /* Align text to make it more visually pleasing */
+        text-align: left; /* Align text to make it more visually pleasing */
     }
 
     .terms-content h1 {
