@@ -81,7 +81,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                     <div className="content-wrapper">
                         <h3 className="title">SONIC | CINEMATIC</h3>
                         <h2 className="heading">Settings</h2>
-                        <p className="description">The unusual of TRIP Agency lies within its transformative capacities, turning selected locations into exhibition-experience environments</p>
+                        <p className="description">The unusual of TRIP Agency lies within its transformative capacities, turning selected locations into exhibition-experience environments.</p>
                     </div>
                 </section>
 
@@ -92,7 +92,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         <p className="description">
                         TRIP Agency’s experiences are four-day retreats, inviting visitors to fully embrace a single, carefully selected location.<br />
                             <br />
-                            Each site is chosen according to its unique features, and then transformed into a living art installation.
+                            Each site is chosen according its unique features, and then transformed into a living art installation.
                         </p>
                     </div>
                 </section>

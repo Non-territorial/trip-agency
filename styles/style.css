@@ -448,6 +448,15 @@ mux-player::part(center play button) {
     }
 }
 
+.about-email{
+    color: black; /* Make only the newsletter link black */
+    text-decoration: underline; /* Remove underline */
+    font-weight: bold;
+}
+
+.about-email {
+    color: black; 
+}
 
 .p2 {
     font-size: 14px;

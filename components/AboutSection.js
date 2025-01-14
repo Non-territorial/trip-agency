@@ -68,8 +68,7 @@ export default function AboutSection() {
           </p>
           <h3>CANCELLATIONS</h3>
           <p>
-            If you need to cancel your reservation, please email
-            i@trip-agency.net as soon as possible. We will make every effort to
+            If you need to cancel your reservation, please email <a href="mailto:i@trip-agency.net" className="about-email">i@trip-agency.net</a> as soon as possible. We will make every effort to
             rebook your spot with another guest. If we successfully rebook your
             reservation, we will refund your fees.
           </p>
