@@ -404,7 +404,7 @@ mux-player::part(center play button) {
     font-size: 32px; /* Larger heading size */
     font-weight: 700;
     text-align: left; /* Align text to the left */
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     
     
 }
@@ -412,12 +412,14 @@ mux-player::part(center play button) {
     padding: 80px;
     max-width: 800px;
     margin: 0 auto;
+
 }
 
 .info-item {
     margin-bottom: 20px;
     border-bottom: 1.5px solid #676767;
     padding-bottom: 10px;
+    
 }
 
 .dropdown-toggle {
