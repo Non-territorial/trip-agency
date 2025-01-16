@@ -21,7 +21,7 @@ export default function Home() {
 <Head>
     <link rel="canonical" href="https://www.trip-agency.net/" />
     <title>Trip Agency | Hedonistic Retreats - Art, Wine and Cuisine</title>
-    <meta name="description" content="Explore Trip Agency's Hedonistic Retreats turning audiovisual art, traditional cuisine and stunning locations into deeply transformative experiences. Discover our trips in Italy, Sweden, and Japan." />
+    <meta name="description" content="Trip Agency's Hedonistic Retreats turn art, cuisine and stunning locations into transformative experiences. Discover our trips in Italy, Sweden, and Japan." />
     <meta property="og:title" content="Trip Agency" />
     <meta property="og:description" content="Experience transformative retreats in Italy, Sweden, and Japan." />
     <meta property="og:image" content="/og-image.png" />

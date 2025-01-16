@@ -833,6 +833,7 @@ input[type="number"] {
         overflow: visible;
         overflow-x: hidden;
     }
+
     
     .outer-container {
         display: flex;
