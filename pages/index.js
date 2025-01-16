@@ -25,6 +25,7 @@ export default function Home() {
     <meta property="og:title" content="Trip Agency" />
     <meta property="og:description" content="Experience transformative retreats in Italy, Sweden, and Japan." />
     <meta property="og:image" content="/og-image.png" />
+    <meta name="p:domain_verify" content="223d43cdd0380d3fe3e34270be7281dd"/>
 </Head>
 
 
