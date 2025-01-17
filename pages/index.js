@@ -12,7 +12,7 @@ export default function Home() {
     const homepageVideos = [
         {
             src: "qUggBqQ34mPlNtoSzBlYal02XBvdKRGX00pp2011Z5OXz4", // Mux playback ID
-            title: "Discover Trip Agency - Hedonistic Retreats",
+            title: "Discover TRIP Agency - Hedonistic Retreats",
         },
     ];
 
@@ -21,8 +21,8 @@ export default function Home() {
 <Head>
     <link rel="canonical" href="https://www.trip-agency.net/" />
     <title>Trip Agency | Hedonistic Retreats - Art, Wine and Cuisine</title>
-    <meta name="description" content="Trip Agency's Hedonistic Retreats turn art, cuisine and stunning locations into transformative experiences. Discover our trips in Italy, Sweden, and Japan." />
-    <meta property="og:title" content="Trip Agency" />
+    <meta name="description" content="TRIP Agency's Hedonistic Retreats turn art, cuisine and stunning locations into transformative experiences. Discover our trips in Italy, Sweden, and Japan." />
+    <meta property="og:title" content="TRIP Agency" />
     <meta property="og:description" content="Experience transformative retreats in Italy, Sweden, and Japan." />
     <meta property="og:image" content="/og-image.png" />
     <meta name="p:domain_verify" content="223d43cdd0380d3fe3e34270be7281dd"/>
@@ -63,7 +63,7 @@ export default function Home() {
     Art and Culinary Experiences
 </h1>
 <p className="description">
-    Trip Agency blends unique <b>locations</b>, <b>art</b>, culinary offerings, and <b>hospitality</b>, creating <b>transformative</b> experiences set in Italy, Sweden, and Japan.
+    TRIP Agency blends unique <b>locations</b>, <b>art</b>, culinary offerings, and <b>hospitality</b>, creating <b>transformative</b> experiences set in Italy, Sweden, and Japan.
 </p>
 <p className="description">
     These <b>hedonistic retreats</b> are designed to provide an <b>escape</b>, offering an <b>environment</b> for indulging in <b>unexpected</b> moments. Each retreat is crafted using a Sonic Canvas, a <b>sound</b> ambiance inviting moments of reflection.
