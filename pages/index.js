@@ -281,7 +281,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-info">
-                            The famous villa, resembling a movie set, is transformed into TRIP, a four-day Sonic Exhibition. This creates an environment entirely dedicated to sound as the sole protagonist, offering a space for active and deep listening — a setting designed for contemplative engagement.
+                            The famous villa, resembling a some kind of dream, is transformed into TRIP, a four-day Sonic Exhibition. This creates an environment entirely dedicated to sound as the sole protagonist, offering a space for active and deep listening — a setting designed for contemplative engagement.
                             </span>
                         </div>
                         <div className="details-link">
