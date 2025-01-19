@@ -134,7 +134,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-label">Guests</span>
-                            <span className="details-value">42</span>
+                            <span className="details-value">30 to 40</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Features</span>
@@ -180,7 +180,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-label">Guests</span>
-                            <span className="details-value">Up to 12</span>
+                            <span className="details-value">08 to 12</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Features</span>
@@ -225,7 +225,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-label">Guests</span>
-                            <span className="details-value">up to 14</span>
+                            <span className="details-value">10 to 14</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Features</span>
@@ -269,7 +269,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-label">Guests</span>
-                            <span className="details-value">up to 10</span>
+                            <span className="details-value">06 to 10</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Features</span>
