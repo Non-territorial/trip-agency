@@ -277,7 +277,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-label">Dates</span>
-                            <span className="details-value">16-19, 23-26 October 2025</span>
+                            <span className="details-value">11-14, 18-21 September 2025</span>
                         </div>
                         <div className="details-item">
                             <span className="details-info">
