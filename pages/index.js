@@ -350,7 +350,8 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
             </p>
             <p className="description">
                 Email: <a href="mailto:i@trip-agency.net" className="email">i@trip-agency.net</a> <br />
-                Telephone: <a href="tel:+393515635054" className="phone">+39 351 563 5054</a>
+                Telephone: <a href="tel:+393515635054" className="phone">+39 351 563 5054</a> <br />
+                Social: <a href="https://www.instagram.com/trip_agency_net/" className="phone">Instagram</a>, <a href="https://x.com/TRIP_Ag" className="phone">X</a>
             </p>
         </div>
         
