@@ -250,7 +250,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                 <section id="pantelleria" className="vertical-section-img">
                     <div className="image-container">
                     <img
-  src="https://gateway.pinata.cloud/ipfs/bafybeiab4rresrzvnjlgoup2vyxwnui4zozxmxpx33np24md435da7uxke"
+  src="https://gateway.pinata.cloud/ipfs/bafybeifi4bbluuvqogbcbqvx6fayxzdbuph6xvyuivc7lmtdafjzfkz3se"
   alt="invitation"
   width="2550"
   height="3300"
@@ -258,7 +258,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                     </div>
                     <div className="details-block">
                         <div className="details-heading">DETAILS</div>
-                        <div className="details-title">MONASTERO VENTO</div>
+                        <div className="details-title">MONASTERO</div>
                         <div className="details-item">
                             <span className="details-label">Location</span>
                             <span className="details-value">Pantelleria, Italy</span>
@@ -281,11 +281,11 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-info">
-                            The famous villa, resembling a some kind of dream, is transformed into TRIP, a four-day Sonic Exhibition. This creates an environment entirely dedicated to sound as the sole protagonist, offering a space for active and deep listening — a setting designed for contemplative engagement.
+                            The intimate dammuso, resembling some kind of dream, is transformed into TRIP, a four-day Sonic Exhibition. This creates an environment entirely dedicated to sound as the sole protagonist, offering a space for active and deep listening — a setting designed for contemplative engagement.
                             </span>
                         </div>
                         <div className="details-link">
-    <a href="/trips/monastero-vento" className="view-more-link">View more</a>
+    <a href="/trips/monastero" className="view-more-link">View more</a>
 </div>
                     </div>
                 </section>
