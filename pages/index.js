@@ -19,14 +19,40 @@ export default function Home() {
     return (
         <>
 <Head>
+    {/* Canonical URL */}
     <link rel="canonical" href="https://www.trip-agency.net/" />
-    <title>Trip Agency | Hedonistic Retreats - Art, Wine and Cuisine</title>
-    <meta name="description" content="TRIP Agency's Hedonistic Retreats turn art, cuisine and stunning locations into transformative experiences. Discover our trips in Italy, Sweden, and Japan." />
-    <meta property="og:title" content="TRIP Agency" />
-    <meta property="og:description" content="Experience transformative retreats in Italy, Sweden, and Japan." />
-    <meta property="og:image" content="/og-image.png" />
-    <meta name="p:domain_verify" content="223d43cdd0380d3fe3e34270be7281dd"/>
+
+    {/* SEO Title */}
+    <title>Hedonistic Retreats | Luxury Travel Experiences - Trip Agency</title>
+
+    {/* Meta Description */}
+    <meta name="description" content="Explore luxury hedonistic retreats with TRIP Agency. Indulge in art, wine, and fine cuisine in breathtaking locations across Italy, Sweden, and Japan." />
+
+    {/* Open Graph (OG) for Social Media */}
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.trip-agency.net/" />
+    <meta property="og:title" content="Hedonistic Retreats | Transformative Travel Experiences - Trip Agency" />
+    <meta property="og:description" content="Discover transformative travel experiences blending art, culture, and gastronomy with TRIP Agency. Perfect for discerning travelers seeking luxury retreats." />
+    <meta property="og:image" content="https://www.trip-agency.net/images/og-image.jpg" /> {/* Ensure the URL is absolute */}
+    <meta property="og:image:alt" content="TRIP Agency's Hedonistic Retreats banner showcasing scenic landscapes." />
+    <meta property="og:locale" content="en_US" />
+
+
+    {/* Additional Verification and SEO Meta Tags */}
+    <meta name="p:domain_verify" content="223d43cdd0380d3fe3e34270be7281dd" /> {/* Pinterest domain verification */}
+    <meta name="keywords" content="luxury travel, transformative experiences, hedonistic retreats, art travel, wine and cuisine trips, sonic baths, sonic exhibitions, infinite bar, Sweden retreats, Italy travel, Japan luxury tours, cultural excursions, natural excursions, TRIP Agency" />
+    <meta name="author" content="TRIP Agency" />
+    <meta name="robots" content="index, follow" />
+
+    {/* Favicons */}
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    {/* Preload Key Assets */}
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap" as="style" />
 </Head>
+
 
 
             <header className="navbar">
@@ -59,8 +85,7 @@ export default function Home() {
                     <div className="content-wrapper">
                         <span className="jp-text">ヘドニスティック・リトリート</span>
                         <h1 className="heading">
-                        Hedonistic Retreats<br />
-    Art and Culinary Experiences
+                        Hedonistic Retreats: <br />Art and Culinary Experiences
 </h1>
 <p className="description">
     TRIP Agency blends unique <b>locations</b>, <b>art</b>, culinary offerings, and <b>hospitality</b>, creating <b>transformative</b> experiences set in Italy, Sweden, and Japan.

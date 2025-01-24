@@ -180,7 +180,7 @@ export default function AboutSection() {
 
   return (
     <section id="about" className="info-section">
-        <h1 className="about">About</h1>
+        <h2 className="about">About</h2>
         {sections.map((section, index) => (
             <div className="info-item" key={index}>
                 <h3

@@ -151,7 +151,7 @@ return (
         <span className="title">{trip.title || ""}</span>
 
         {/* Trip Heading */}
-        {trip.content?.heading && <h1 className="heading">{trip.content.heading}</h1>}
+        {trip.content?.heading && <h2 className="heading">{trip.content.heading}</h2>}
 
         {/* Trip Description */}
         {trip.content?.description && (
