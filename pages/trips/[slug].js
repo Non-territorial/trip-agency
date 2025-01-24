@@ -99,13 +99,28 @@ return (
     <>
         {/* Metadata */}
         <Head>
-                <title>{trip.title}</title>
-                <meta name="description" content={trip.content.description.join(" ")} />
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(generateJsonLd()) }}
-                />
-            </Head>
+    {/* Dynamic Page Title */}
+    <title>{trip.title} | Trip Agency</title>
+
+    {/* Meta Description */}
+    <meta name="description" content={trip.content.description.join(" ")} />
+
+    {/* Canonical URL */}
+    <link rel="canonical" href={`https://www.trip-agency.net/trips/${trip.slug}`} />
+
+    {/* Open Graph (OG) Tags for Social Sharing */}
+    <meta property="og:title" content={trip.title} />
+    <meta property="og:description" content={trip.content.description.join(" ")} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={`https://www.trip-agency.net/trips/${trip.slug}`} />
+
+    {/* Structured Data */}
+    <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(generateJsonLd()) }}
+    />
+</Head>
+
 
             {/* Top Navbar */}
             <header className="navbar">

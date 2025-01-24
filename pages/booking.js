@@ -56,7 +56,6 @@ export default function Booking() {
     <meta name="description" content="Submit your booking inquiry for TRIP Agency's hedonistic retreats. Transformative art, luxury, and gastronomy await in Italy, Sweden, and Japan." />
     <meta property="og:title" content="Trip Agency | Booking Inquiry" />
     <meta property="og:description" content="Book your spot for transformative retreats in Italy, Sweden, and Japan. Experience art, luxury, and fine dining in absolutely unprecedented way." />
-    <meta property="og:image" content="/og-image.jpg" />
     <meta property="og:url" content="https://www.trip-agency.net/booking" />
     <meta name="robots" content="index, follow" />
     <link rel="icon" href="/favicon.ico" />

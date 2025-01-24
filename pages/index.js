@@ -23,7 +23,7 @@ export default function Home() {
     <link rel="canonical" href="https://www.trip-agency.net/" />
 
     {/* SEO Title */}
-    <title>Hedonistic Retreats | Luxury Travel Experiences - Trip Agency</title>
+    <title>Hedonistic Retreats | Transformative Travel Experiences - Trip Agency</title>
 
     {/* Meta Description */}
     <meta name="description" content="Explore luxury hedonistic retreats with TRIP Agency. Indulge in art, wine, and fine cuisine in breathtaking locations across Italy, Sweden, and Japan." />
@@ -40,7 +40,7 @@ export default function Home() {
 
     {/* Additional Verification and SEO Meta Tags */}
     <meta name="p:domain_verify" content="223d43cdd0380d3fe3e34270be7281dd" /> {/* Pinterest domain verification */}
-    <meta name="keywords" content="luxury travel, transformative experiences, hedonistic retreats, art travel, wine and cuisine trips, sonic baths, sonic exhibitions, infinite bar, Sweden retreats, Italy travel, Japan luxury tours, cultural excursions, natural excursions, TRIP Agency" />
+    <meta name="keywords" content="luxury travel, transformative experiences, hedonistic retreats, art travel, audiovisual installations, gastronomic discoveries, quality wines, sonic baths, sonic exhibitions, infinite bar, Sweden retreats, Italy travel, Japan luxury tours, cultural excursions, natural excursions, TRIP Agency" />
     <meta name="author" content="TRIP Agency" />
     <meta name="robots" content="index, follow" />
 
@@ -88,10 +88,10 @@ export default function Home() {
                         Hedonistic Retreats: <br />Art and Culinary Experiences
 </h1>
 <p className="description">
-    TRIP Agency blends unique <b>locations</b>, <b>art</b>, culinary offerings, and <b>hospitality</b>, creating <b>transformative</b> experiences set in Italy, Sweden, and Japan.
+TRIP Agency's Hedonistic Retreats turn <b>art</b>, <b>cuisine</b> and stunning <b>locations</b> into <b>transformative</b> experiences. Discover our trips in Italy, Sweden, and Japan.
 </p>
 <p className="description">
-    These <b>hedonistic retreats</b> are designed to provide an <b>escape</b>, offering an <b>environment</b> for indulging in <b>unexpected</b> moments. Each retreat is crafted using a Sonic Canvas, a <b>sound</b> ambiance inviting moments of reflection.
+    These <b>retreats</b> are designed to provide an <b>escape</b>, offering an <b>environment</b> for indulging in <b>unexpected</b> moments. Each retreat is crafted using a Sonic Canvas, a <b>sound</b> ambiance inviting moments of reflection.
 </p>
 <p className="description">
 Imagine spending several nights in a <b>museum</b> or <b>gallery</b> within an atmosphere of <b>poetic dimension</b>, in an unfamiliar environment, or conversely, one that feels deeply familiar.
