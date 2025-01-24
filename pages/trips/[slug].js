@@ -73,7 +73,7 @@ export default function TripPage({ trip }) {
             "availability": "https://schema.org/InStock",
             "validFrom": new Date().toISOString(),
         },
-        "location": {
+        "tripOrigin": {
             "@type": "Place",
             "name": trip.content.details.location,
         },
