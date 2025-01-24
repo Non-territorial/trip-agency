@@ -30,13 +30,13 @@
 
             ],
             "details": {
-                "location": "Italy",
+                "location": "Salina, Aeolian Islands, Italy",
                 "duration": "4 days",
-                "guests": "42",
+                "guests": "40",
                 "price": "5,000 EUR",
                 "dates": "02-05, 09-12 October 2025",
-                "features": ["Sonic Experience", "Luxury Accommodation", "Fine Dining"],
-                "itinerary": ["Arrival and Welcome", "Day of Immersion", "Cultural Exploration", "Farewell Breakfast"]
+                "features": ["Distributed Audiovisual Installations", "Private Exhibitions", "Eno-gastronomic Itineraries", "Sonic Bath", "Local Excursions"],
+                "itinerary": ["Arrival and Welcome", "Island Exploration", "Gastronomic Itinerary", "Hotel Activities", "Leisure", "Sunrise and Sunset Witnessing"]
             }
             
         }
@@ -76,13 +76,13 @@
 
             ],
             "details": {
-                "location": "Sweden",
+                "location": "Edsåsdalen, Sweden",
                 "duration": "4 days",
                 "guests": "12",
-                "price": "5,500 EUR",
+                "price": "5,000 EUR",
                 "dates": "03-06, 10-13, 17-20, 24-27 July 2025",
-                "features": ["Aurora Borealis Viewing", "Luxury Cabins", "Gourmet Nordic Cuisine"],
-                "itinerary": ["Arrival and Welcome Dinner", "Aurora Viewing", "Snow Activities", "Departure Brunch"]
+                "features": ["Audiovisual installation", "Infinite Bar", "Luxury Cabin", "Gourmet Nordic Cuisine", "Listening Sessions", "Natural Excursions"],
+                "itinerary": ["Arrival and Welcome Dinner", "Sonic Exhibition","Traditional Smörgåsbordet", "Rock Climbing", "Lake Kayaking", "Departure Breakfast"]
             }
             
         }
@@ -128,8 +128,8 @@
                 "guests": "14",
                 "price": "6,000 EUR",
                 "dates": "03-06, 10-13 April 2025",
-                "features": ["Private Beaches", "Spa Treatments", "Mediterranean Cuisine"],
-                "itinerary": ["Arrival and Welcome Dinner", "Beach Activities", "Island Exploration", "Farewell Sunset Dinner"]
+                "features": ["Direct Beach Access", "Sonic Baths", "Audiovisual Installation", "Local Wines", "Mediterranean Coastal Cuisine", "Cultural Excursions"],
+                "itinerary": ["Arrival and Welcome", "Pool Cocktail", "Mountain Hike", "Thermal Baths", "Farewell Sunset Dinner"]
             }
             }
         },
@@ -168,13 +168,13 @@
                     "Price per person: 7.500 EUR"
             ],
             "details": {
-                "location": "Italy",
+                "location": "Pantelleria Island, Italy",
                 "duration": "4 days",
                 "guests": "10",
                 "price": "7,500 EUR",
                 "dates": "11-14, 18-21 September 2025",
-                "features": ["Private Beaches", "Spa Treatments", "Mediterranean Cuisine"],
-                "itinerary": ["Arrival and Welcome Dinner", "Beach Activities", "Island Exploration", "Farewell Sunset Dinner"]
+                "features": ["Private Park", "Spa Treatments", "Listening Sessions", "Mediterranean Cuisine", "Mineral Excursions"],
+                "itinerary": ["Arrival and Welcome Dinner", "Audiovisual Installation Opening", "Island Exploration", "Leisure", "Farewell Sunset Dinner"]
             }
            
         }
@@ -195,7 +195,7 @@
                 "price": "",
                 "dates": "2026",
                 "features": ["Immersive Soundscapes", "Traditional Ryokan Stay", "Local Cuisine"],
-                "itinerary": ["Arrival and Tea Ceremony", "Sound Bath Experience", "Cultural Tours", "Farewell Dinner"]
+                "itinerary": ["Arrival and Welcome", "Sonic Bath Experience", "Cultural Tours", "Farewell Dinner"]
             }
             
         }

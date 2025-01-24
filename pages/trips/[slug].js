@@ -60,6 +60,36 @@ export async function getStaticProps({ params }) {
 export default function TripPage({ trip }) {
     useMenu(); // Hook for menu functionality
 
+    // Generate JSON-LD for structured data
+    const generateJsonLd = () => ({
+        "@context": "https://schema.org",
+        "@type": "TouristTrip",
+        "name": trip.title,
+        "description": trip.content.description.join(" "),
+        "itinerary": {
+            "@type": "ItemList",
+            "itemListElement": trip.content.details.itinerary.map((item, index) => ({
+                "@type": "ListItem",
+                "position": index + 1,
+                "name": item,
+            })),
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": trip.content.details.price.replace(",", "").replace(" EUR", ""),
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "validFrom": new Date().toISOString(),
+        },
+        "location": {
+            "@type": "Place",
+            "name": trip.content.details.location,
+        },
+        "duration": trip.content.details.duration,
+        "touristType": "Luxury",
+        "hasFeature": trip.content.details.features,
+    });
+
     return (
         <>
             {/* Metadata */}
