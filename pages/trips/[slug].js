@@ -63,17 +63,9 @@ export default function TripPage({ trip }) {
     // Generate JSON-LD for structured data
     const generateJsonLd = () => ({
         "@context": "https://schema.org",
-        "@type": "TouristTrip",
+        "@type": "Trip",
         "name": trip.title,
         "description": trip.content.description.join(" "),
-        "itinerary": {
-            "@type": "ItemList",
-            "itemListElement": trip.content.details.itinerary.map((item, index) => ({
-                "@type": "ListItem",
-                "position": index + 1,
-                "name": item,
-            })),
-        },
         "offers": {
             "@type": "Offer",
             "price": trip.content.details.price.replace(",", "").replace(" EUR", ""),
@@ -83,15 +75,23 @@ export default function TripPage({ trip }) {
         },
         "location": {
             "@type": "Place",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": trip.content.details.location,
-            },
+            "name": trip.content.details.location,
         },
-        "duration": "P4D", // ISO 8601 format for 4 days
-        "keywords": trip.content.details.features.join(", "),
-        "touristType": "Luxury",
+        "itinerary": {
+            "@type": "ItemList",
+            "itemListElement": trip.content.details.itinerary.map((item, index) => ({
+                "@type": "ListItem",
+                "position": index + 1,
+                "name": item,
+            })),
+        },
+        "additionalProperty": trip.content.details.features.map((feature) => ({
+            "@type": "PropertyValue",
+            "name": feature,
+            "value": true,
+        })),
     });
+    
     
     
 
@@ -99,13 +99,13 @@ return (
     <>
         {/* Metadata */}
         <Head>
-            <title>{typeof trip.title === "string" ? `${trip.title} | Trip Agency` : "Trip | Trip Agency"}</title>
-            <meta name="description" content={trip.content.description.join(" ")} />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateJsonLd()) }}
-            />
-        </Head>
+                <title>{trip.title}</title>
+                <meta name="description" content={trip.content.description.join(" ")} />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(generateJsonLd()) }}
+                />
+            </Head>
 
             {/* Top Navbar */}
             <header className="navbar">
