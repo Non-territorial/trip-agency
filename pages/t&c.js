@@ -9,11 +9,14 @@ export default function TermsAndConditions() {
     return (
         <>
             <Head>
-                <link rel="canonical" href="https://www.trip-agency.net/t&c" />
-                <title>Trip Agency | Terms and Conditions</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
+    <link rel="canonical" href="https://www.trip-agency.net/t&c" />
+    <title>Trip Agency | Terms and Conditions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Read the Terms and Conditions of TRIP Agency, outlining the policies, rules, and responsibilities for participating in our retreats and experiences." />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="/favicon.ico" />
+</Head>
+
 
             {/* Navbar */}
             <header className="navbar">
