@@ -97,6 +97,10 @@ export default function TripPage({ trip }) {
             <title>{typeof trip.title === "string" ? `${trip.title} | Trip Agency` : "Trip | Trip Agency"}</title>
 
                 <meta name="description" content={trip.description || "Description of the trip"} />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(generateJsonLd()) }}
+                />
             </Head>
 
             {/* Top Navbar */}
