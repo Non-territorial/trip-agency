@@ -61,43 +61,39 @@ export default function TripPage({ trip }) {
     useMenu(); // Hook for menu functionality
 
     // Generate JSON-LD for structured data
-const generateJsonLd = () => ({
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": trip.title,
-    "description": trip.content.description.join(" "),
-    "itinerary": {
-        "@type": "ItemList",
-        "itemListElement": trip.content.details.itinerary.map((item, index) => ({
-            "@type": "ListItem",
-            "position": index + 1,
-            "name": item,
-        })),
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": trip.content.details.price.replace(",", "").replace(" EUR", ""), // Removes commas and currency for proper parsing
-        "priceCurrency": "EUR",
-        "availability": "https://schema.org/InStock",
-        "validFrom": new Date().toISOString(), // Use current date/time
-    },
-    "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "38.561", // Example latitude for Sicily; replace with actual data if available
-        "longitude": "14.862", // Example longitude for Sicily; replace with actual data if available
-    },
-    "location": {
-        "@type": "Place",
-        "name": trip.content.details.location,
-    },
-    "additionalProperty": trip.content.details.features.map((feature) => ({
-        "@type": "PropertyValue",
-        "name": feature,
-        "value": true,
-    })),
-    "touristType": "Luxury", // Explicit tourist type
-    "duration": trip.content.details.duration, // Duration in natural language format
-});
+    const generateJsonLd = () => ({
+        "@context": "https://schema.org",
+        "@type": "TouristTrip",
+        "name": trip.title,
+        "description": trip.content.description.join(" "),
+        "itinerary": {
+            "@type": "ItemList",
+            "itemListElement": trip.content.details.itinerary.map((item, index) => ({
+                "@type": "ListItem",
+                "position": index + 1,
+                "name": item,
+            })),
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": trip.content.details.price.replace(",", "").replace(" EUR", ""),
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "validFrom": new Date().toISOString(),
+        },
+        "location": {
+            "@type": "Place",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": trip.content.details.location,
+            },
+        },
+        "duration": "P4D", // ISO 8601 format for 4 days
+        "keywords": trip.content.details.features.join(", "),
+        "touristType": "Luxury",
+    });
+    
+    
 
 return (
     <>
