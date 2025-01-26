@@ -36,6 +36,7 @@ export default function Home() {
     <meta property="og:image" content="https://www.trip-agency.net/images/og-image.jpg" /> {/* Ensure the URL is absolute */}
     <meta property="og:image:alt" content="TRIP Agency's Hedonistic Retreats banner showcasing scenic landscapes." />
     <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="TRIP Agency" />
 
 
     {/* Additional Verification and SEO Meta Tags */}
