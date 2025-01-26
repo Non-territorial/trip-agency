@@ -1,15 +1,18 @@
-import Script from "next/script";
+import { Analytics } from "@vercel/analytics/react"; // Vercel Analytics
+import Script from "next/script"; // Google Analytics
 import "../styles/style.css";
 import Head from "next/head";
-
-
 
 export default function MyApp({ Component, pageProps }) {
     return (
         <>
-        <Head>
+            {/* Head Section */}
+            <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <title>Hedonistic Retreats | Transformative Travel Experiences</title> {/* Optional: Add a default title */}
             </Head>
+
+            {/* Google Analytics Scripts */}
             <Script
                 src="https://www.googletagmanager.com/gtag/js?id=G-NBVLCF33EK"
                 strategy="afterInteractive"
@@ -24,7 +27,12 @@ export default function MyApp({ Component, pageProps }) {
                     });
                 `}
             </Script>
+
+            {/* Main Component */}
             <Component {...pageProps} />
+
+            {/* Vercel Analytics */}
+            <Analytics />
         </>
     );
 }
