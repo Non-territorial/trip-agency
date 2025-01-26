@@ -23,7 +23,7 @@ export default function Home() {
     <link rel="canonical" href="https://www.trip-agency.net/" />
 
     {/* SEO Title */}
-    <title>Hedonistic Retreats | Transformative Travel Experiences - Trip Agency</title>
+    <title>Hedonistic Retreats | Transformative Travel Experiences - TRIP Agency</title>
 
     {/* Meta Description */}
     <meta name="description" content="Explore luxury hedonistic retreats with TRIP Agency. Indulge in art, wine, and fine cuisine in breathtaking locations across Italy, Sweden, and Japan." />
