@@ -51,6 +51,20 @@ export default function Home() {
 
     {/* Preload Key Assets */}
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap" as="style" />
+
+    <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "Organization",
+                            "name": "Hedonistic Retreats | Transformative Travel Experiences",
+                            "url": "https://www.trip-agency.net",
+                            "logo": "https://www.trip-agency.net/images/logo.png",
+                            "description": "TRIP Agency's Hedonistic Retreats combine art, wine, and cuisine into transformative experiences in Italy, Sweden, and Japan."
+                        })
+                    }}
+                />
 </Head>
 
 
