@@ -31,7 +31,7 @@ export default function Home() {
     {/* Open Graph (OG) for Social Media */}
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.trip-agency.net/" />
-    <meta property="og:title" content="Hedonistic Retreats | Transformative Travel Experiences" />
+    <meta property="og:title" content="Hedonistic Retreats | Art, Wine & Cuisine" />
     <meta property="og:description" content="Discover transformative travel experiences blending art, culture, and gastronomy with TRIP Agency. Perfect for discerning travelers seeking luxury retreats." />
     <meta property="og:image" content="https://www.trip-agency.net/images/og-image.jpg" /> {/* Ensure the URL is absolute */}
     <meta property="og:image:alt" content="TRIP Agency's Hedonistic Retreats banner showcasing scenic landscapes." />
@@ -59,7 +59,7 @@ export default function Home() {
                         __html: JSON.stringify({
                             "@context": "https://schema.org",
                             "@type": "Organization",
-                            "name": "Hedonistic Retreats | Transformative Travel Experiences",
+                            "name": "Hedonistic Retreats | Art, Wine & Cuisine",
                             "url": "https://www.trip-agency.net",
                             "logo": "https://www.trip-agency.net/images/logo.png",
                             "description": "TRIP Agency's Hedonistic Retreats turn art, cuisine and stunning locations into transformative experiences. Discover our trips in Italy, Sweden, and Japan."
