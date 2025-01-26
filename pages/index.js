@@ -62,7 +62,7 @@ export default function Home() {
                             "name": "Hedonistic Retreats | Transformative Travel Experiences",
                             "url": "https://www.trip-agency.net",
                             "logo": "https://www.trip-agency.net/images/logo.png",
-                            "description": "TRIP Agency's Hedonistic Retreats combine art, wine, and cuisine into transformative experiences in Italy, Sweden, and Japan."
+                            "description": "TRIP Agency's Hedonistic Retreats turn art, cuisine and stunning locations into transformative experiences. Discover our trips in Italy, Sweden, and Japan."
                         })
                     }}
                 />
