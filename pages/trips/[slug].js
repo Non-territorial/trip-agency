@@ -100,7 +100,8 @@ return (
         {/* Metadata */}
         <Head>
     {/* Dynamic Page Title */}
-    <title>{trip.title} | Trip Agency</title>
+    <title>{trip.title ? `${trip.title} | TRIP Agency` : "Hedonistic Retreats | TRIP Agency"}</title>
+
 
     {/* Meta Description */}
     <meta name="description" content={trip.content.description.join(" ")} />

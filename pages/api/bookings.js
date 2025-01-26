@@ -1,13 +1,9 @@
 import db from "../../db";
-import NextCors from "nextjs-cors";
+import { applyCors } from "../../lib/cors"; // Import custom CORS utility
 
 export default async function handler(req, res) {
-    // Run CORS middleware
-    await NextCors(req, res, {
-        methods: ["POST"],
-        origin: "*", // Adjust for production
-        optionsSuccessStatus: 200,
-    });
+    // Run custom CORS middleware
+    if (applyCors(req, res)) return; // Handle preflight requests (OPTIONS)
 
     if (req.method === "POST") {
         const { name, email, trip, guests, message } = req.body;

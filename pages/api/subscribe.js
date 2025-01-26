@@ -1,13 +1,9 @@
 import db from "../../db";
-import NextCors from "nextjs-cors";
+import { applyCors } from "../../lib/cors";
 
 export default async function handler(req, res) {
-    // Run CORS middleware
-    await NextCors(req, res, {
-        methods: ["POST"],
-        origin: "*", // Adjust for production for better security
-        optionsSuccessStatus: 200,
-    });
+    // Run custom CORS middleware
+    if (applyCors(req, res)) return; // Handle preflight requests (OPTIONS)
 
     // Only handle POST requests
     if (req.method === "POST") {
@@ -33,7 +29,6 @@ export default async function handler(req, res) {
             }
             return res.status(500).json({ error: "Internal server error" });
         }
-        
     } else {
         // Respond with 405 for unsupported methods
         res.setHeader("Allow", ["POST"]);
