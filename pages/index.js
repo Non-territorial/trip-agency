@@ -23,7 +23,7 @@ export default function Home() {
     <link rel="canonical" href="https://www.trip-agency.net/" />
 
     {/* SEO Title */}
-    <title>Hedonistic Retreats | Transformative Travel Experiences - TRIP Agency</title>
+    <title>Hedonistic Retreats | Art, Wine and Cuisine </title>
 
     {/* Meta Description */}
     <meta name="description" content="Explore luxury hedonistic retreats with TRIP Agency. Indulge in art, wine, and fine cuisine in breathtaking locations across Italy, Sweden, and Japan." />
@@ -31,7 +31,7 @@ export default function Home() {
     {/* Open Graph (OG) for Social Media */}
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.trip-agency.net/" />
-    <meta property="og:title" content="Hedonistic Retreats | Art, Wine & Cuisine" />
+    <meta property="og:title" content="Hedonistic Retreats | Art, Wine and Cuisine" />
     <meta property="og:description" content="Discover transformative travel experiences blending art, culture, and gastronomy with TRIP Agency. Perfect for discerning travelers seeking luxury retreats." />
     <meta property="og:image" content="https://www.trip-agency.net/images/og-image.jpg" /> {/* Ensure the URL is absolute */}
     <meta property="og:image:alt" content="TRIP Agency's Hedonistic Retreats banner showcasing scenic landscapes." />
