@@ -9,7 +9,7 @@ export default function MyApp({ Component, pageProps }) {
             {/* Head Section */}
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <title>Hedonistic Retreats | Art, Wine & Cuisine</title> {/* Optional: Add a default title */}
+                <title>Hedonistic Retreats | Art, Wine and Cuisine</title> {/* Optional: Add a default title */}
             </Head>
 
             {/* Google Analytics Scripts */}

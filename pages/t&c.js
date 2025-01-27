@@ -10,7 +10,7 @@ export default function TermsAndConditions() {
         <>
             <Head>
     <link rel="canonical" href="https://www.trip-agency.net/t&c" />
-    <title>TRIP Agency | Art, Wine & Cuisine</title>
+    <title>TRIP Agency | Art, Wine and Cuisine</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Read the Terms and Conditions of TRIP Agency, outlining the policies, rules, and responsibilities for participating in our retreats and experiences." />
     <meta name="robots" content="index, follow" />
