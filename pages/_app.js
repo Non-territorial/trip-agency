@@ -6,10 +6,6 @@ import Head from "next/head";
 export default function MyApp({ Component, pageProps }) {
     return (
         <>
-        <div className="vpn-warning">
-                If you're experiencing issues accessing this site, please check your VPN settings.
-                Some VPNs may block access. Try disabling your VPN or using a different region.
-            </div>
             {/* Head Section */}
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
