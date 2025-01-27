@@ -62,7 +62,24 @@ export default function Home() {
                             "name": "Hedonistic Retreats | Art, Wine & Cuisine",
                             "url": "https://www.trip-agency.net",
                             "logo": "https://www.trip-agency.net/images/logo.png",
-                            "description": "TRIP Agency's Hedonistic Retreats turn art, cuisine and stunning locations into transformative experiences. Discover our trips in Italy, Sweden, and Japan."
+                            "description": "TRIP Agency's Hedonistic Retreats turn art, cuisine and stunning locations into transformative experiences. Discover our trips in Italy, Sweden, and Japan.",
+                            "sameAs": [
+        "https://www.trip-agency.net/booking",
+        "https://www.trip-agency.net/t&c",
+        "https://www.trip-agency.net/undisclosed",
+        "https://www.trip-agency.net/silence-ventures",
+        "https://www.trip-agency.net/magic-mountain",
+        "https://www.trip-agency.net/monastero",       
+        "https://www.trip-agency.net/upcoming",
+        "https://www.trip-agency.net/#about",
+        "https://www.trip-agency.net/#eolie"
+
+    ],
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "i@trip-agency.net",
+        "url": "https://www.trip-agency.net/contact",
+    }
                         })
                     }}
                 />
@@ -133,7 +150,9 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         <p className="description">
                         TRIP Agency’s experiences are four-day retreats, inviting visitors to fully embrace a single, carefully selected location.<br />
                             <br />
-                            Each site is chosen according its unique features, and then transformed into a living art installation.
+                            Each site is chosen according its unique features, and then transformed into a living art installation.<br />
+                            <br />
+                            Four days to sink in a timeless dimension of wonder and insight.
                         </p>
                     </div>
                 </section>

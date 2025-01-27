@@ -90,6 +90,53 @@ export default function TripPage({ trip }) {
             "name": feature,
             "value": true,
         })),
+        "relatedLink": [
+        {
+            "@type": "WebPage",
+            "name": "Explore Our Trips",
+            "url": "https://www.trip-agency.net/#eolie",
+        },
+        {
+            "@type": "WebPage",
+            "name": "Contact Us",
+            "url": "https://www.trip-agency.net/contact",
+        },
+        {
+            "@type": "WebPage",
+            "name": "Book your Trip",
+            "url": "https://www.trip-agency.net/booking",
+        },
+        {
+            "@type": "WebPage",
+            "name": "About TRIP Agency",
+            "url": "https://www.trip-agency.net/#about",
+        },
+        {
+            "@type": "WebPage",
+            "name": "Sweden Sonic Resort",
+            "url": "https://www.trip-agency.net/silence-ventures",
+        },
+        {
+            "@type": "WebPage",
+            "name": "Japan Discovery",
+            "url": "https://www.trip-agency.net/upcoming",
+        },
+        {
+            "@type": "WebPage",
+            "name": "Coastal Tuscany Itinerary",
+            "url": "https://www.trip-agency.net/magic-mountain",
+        },
+        {
+            "@type": "WebPage",
+            "name": "Aeolian Island Exploration",
+            "url": "https://www.trip-agency.net/undisclosed",
+        },
+        {
+            "@type": "WebPage",
+            "name": "Mystical Pantelleria",
+            "url": "https://www.trip-agency.net/monastero",
+        }
+    ],
     });
     
     

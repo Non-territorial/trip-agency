@@ -7,7 +7,8 @@ export default function MyApp({ Component, pageProps }) {
     return (
         <>
         <div className="vpn-warning">
-                If you're experiencing issues accessing this site, please check your VPN settings. Some VPNs may block access. Try disabling your VPN or using a different region.
+                If you're experiencing issues accessing this site, please check your VPN settings.
+                Some VPNs may block access. Try disabling your VPN or using a different region.
             </div>
             {/* Head Section */}
             <Head>
