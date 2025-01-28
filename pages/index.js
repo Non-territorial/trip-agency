@@ -189,7 +189,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-label">Experience</span>
-                            <span className="details-value">4 nights</span>
+                            <span className="details-value">4 days/3 nights</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Guests</span>
@@ -235,7 +235,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-label">Experience</span>
-                            <span className="details-value">4 nights</span>
+                            <span className="details-value">4 days/3 nights</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Guests</span>
@@ -280,7 +280,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-label">Experience</span>
-                            <span className="details-value">4 nights</span>
+                            <span className="details-value">4 days/3 nights</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Guests</span>
@@ -324,7 +324,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-label">Experience</span>
-                            <span className="details-value">4 nights</span>
+                            <span className="details-value">4 days/3 nights</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Guests</span>
@@ -369,7 +369,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-label">Experience</span>
-                            <span className="details-value">4 nights</span>
+                            <span className="details-value">4 days/3 nights</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Guests</span>
