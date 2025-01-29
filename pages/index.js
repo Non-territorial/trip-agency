@@ -363,7 +363,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                 <section id="pantelleria" className="vertical-section-img">
                     <div className="image-container">
                     <Image
-  src="/images/pantelleria.webp"
+  src="/images/monastero.webp"
   alt="capers"
   width={2550}
   height={3300}
