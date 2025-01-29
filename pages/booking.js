@@ -77,7 +77,7 @@ export default function Booking() {
 
             <section className="book-section">
                 <div id="book">
-                    <h2>INQUIRE</h2>
+                    <h1>INQUIRE</h1>
                     <form id="book-form" className="book-form" onSubmit={handleSubmit}>
                         <input
                             type="text"

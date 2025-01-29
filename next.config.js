@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    domains: ['gateway.pinata.cloud'], // Add this to allow external images from Pinata
-  },
   async redirects() {
     return [
       {

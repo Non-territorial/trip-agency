@@ -4,6 +4,9 @@ import AboutSection from "../components/AboutSection";
 import Link from "next/link";
 import VideoSection from '../components/VideoSection';
 import { useMenu } from "../hooks/useMenu";
+import Image from 'next/image';
+
+
 
 export default function Home() {
     useMenu(); 
@@ -59,7 +62,7 @@ export default function Home() {
                         __html: JSON.stringify({
                             "@context": "https://schema.org",
                             "@type": "Organization",
-                            "name": "Hedonistic Retreats | Art, Wine and Cuisine",
+                            "name": "TRIP Agency",
                             "url": "https://www.trip-agency.net",
                             "logo": "https://www.trip-agency.net/images/logo.png",
                             "description": "TRIP Agency's Hedonistic Retreats turn art, cuisine and stunning locations into transformative experiences. Discover our trips in Italy, Sweden, and Japan.",
@@ -67,9 +70,10 @@ export default function Home() {
         "https://www.trip-agency.net/booking",
         "https://www.trip-agency.net/t&c",
         "https://www.trip-agency.net/undisclosed",
+        "https://www.trip-agency.net/dolcevita", 
         "https://www.trip-agency.net/silence-ventures",
         "https://www.trip-agency.net/magic-mountain",
-        "https://www.trip-agency.net/monastero",       
+        "https://www.trip-agency.net/monastero",          
         "https://www.trip-agency.net/upcoming",
         "https://www.trip-agency.net/#about",
         "https://www.trip-agency.net/#eolie"
@@ -123,7 +127,7 @@ export default function Home() {
 TRIP Agency's Hedonistic Retreats turn <b>art</b>, <b>cuisine</b> and stunning <b>locations</b> into <b>transformative</b> travel experiences. Discover our trips in Italy, Sweden, and Japan.
 </p>
 <p className="description">
-    These <b>retreats</b> are designed to provide an <b>escape</b>, offering an <b>environment</b> for indulging in <b>unexpected</b> moments. Each retreat is crafted using a Sonic Canvas, a <b>sound</b> ambiance inviting moments of reflection.
+    These <b>retreats</b> are designed to provide an <b>escape</b>, offering an <b>environment</b> for indulging in <b>unexpected</b> moments. Each retreat is crafted using a Sonic Canvas, an ambiance inviting for an aethetic <b>contemplation of sound</b>.
 </p>
 <p className="description">
 Imagine spending several nights in a <b>museum</b> or <b>gallery</b> within an atmosphere of <b>poetic dimension</b>, in an unfamiliar environment, or conversely, one that feels deeply familiar.
@@ -173,11 +177,12 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                     <div className="image-container">
                         
                        
-          <img
-  src="https://gateway.pinata.cloud/ipfs/bafybeieovzcko4tsmgkldpdncsl2x5hf2z3d2vi5h7k6m3t44ezrwlqhl4"
-  alt="invitation"
-  width="2550"
-  height="3300"
+                    <Image
+  src="/images/undisclosed.webp"
+  alt="island landscape"
+  width={2550}
+  height={3300}
+  priority
 />
                     </div>
                     <div className="details-block">
@@ -214,16 +219,64 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                     </div>
                 </section>
 
+                          {/* Rome */}
+                <section id="roma" className="vertical-section-img">
+                    <div className="image-container">
+                        
+                       
+                    <Image
+  src="/images/roma.webp"
+  alt="sunrise"
+  width={2550}
+  height={3300}
+  priority
+/>
+                    </div>
+                    <div className="details-block">
+                        <div className="details-heading">DETAILS</div>
+                        <div className="details-title">LA DOLCE VITA</div>
+                        <div className="details-item">
+                            <span className="details-label">Location</span>
+                            <span className="details-value">Rome, Italy</span>
+                        </div>
+                        <div className="details-item">
+                            <span className="details-label">Experience</span>
+                            <span className="details-value">4 days/3 nights</span>
+                        </div>
+                        <div className="details-item">
+                            <span className="details-label">Guests</span>
+                            <span className="details-value">10 to 15</span>
+                        </div>
+                        <div className="details-item">
+                            <span className="details-label">Features</span>
+                            <span className="details-value">Audiovisual installation, ancient gastronomy, listening sessions, infinite bar, cultural excursions</span>
+                        </div>
+                        <div className="details-item">
+                            <span className="details-label">Dates</span>
+                            <span className="details-value">30 October-02 November, 06-09 November 2025</span>
+                        </div>
+                        <div className="details-item">
+                            <span className="details-info">
+                            This retreat is an invitation to experience Rome not through sights alone, but through sound, space, and sensation. Over four days, a private villa becomes both sanctuary and stage, where curated sounds, artistic atmospheres, and the textures of Roman life intertwine. 
+                            </span>
+                        </div>
+                        <div className="details-link">
+    <a href="/trips/dolcevita" className="view-more-link">View more</a>
+</div>
+                    </div>
+                </section>
+
                 {/* Sweden */}
                 <section id="sweden" className="vertical-section-img">
                     <div className="image-container">
                     
                        
-          <img
-  src="https://gateway.pinata.cloud/ipfs/bafybeihgthpatsdkpshkznaq5vpgyo26plmwy5kmalxgcitrntzos54cs4"
-  alt="invitation"
-  width="2550"
-  height="3300"
+                    <Image
+  src="/images/sweden.webp"
+  alt="northern snow landscape"
+  width={2550}
+  height={3300}
+  priority
 />
                     </div>
                     <div className="details-block">
@@ -264,11 +317,12 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                 <section id="monte-argentario" className="vertical-section-img">
                     <div className="image-container">
                     
-          <img
-  src="https://gateway.pinata.cloud/ipfs/bafybeiawxtrvj5ma4hovmbdwpmob6627gjed4qkfp3bzzp7nilpjz6z674"
-  alt="invitation"
-  width="2550"
-  height="3300"
+                    <Image
+  src="/images/magicmountain.webp"
+  alt="abstract image"
+  width={2550}
+  height={3300}
+  priority
 />
                     </div>
                     <div className="details-block">
@@ -308,11 +362,12 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                 {/* Pantelleria */}
                 <section id="pantelleria" className="vertical-section-img">
                     <div className="image-container">
-                    <img
-  src="https://gateway.pinata.cloud/ipfs/bafybeifi4bbluuvqogbcbqvx6fayxzdbuph6xvyuivc7lmtdafjzfkz3se"
-  alt="invitation"
-  width="2550"
-  height="3300"
+                    <Image
+  src="/images/pantelleria.webp"
+  alt="capers"
+  width={2550}
+  height={3300}
+  priority
 />
                     </div>
                     <div className="details-block">
@@ -353,11 +408,12 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                 {/* Japan */}
                 <section id="japan" className="vertical-section-img">
                     <div className="image-container">
-           <img
-  src="https://gateway.pinata.cloud/ipfs/bafybeiepr7g7uyl3yjs7chasq6kons6brisltdb4ztqrmidyw2afadyo5i"
-  alt="invitation"
-  width="2550"
-  height="3300"
+                    <Image
+  src="/images/japan.webp"
+  alt="japanese forest temple"
+  width={2550}
+  height={3300}
+  priority
 />
                     </div>
                     <div className="details-block">

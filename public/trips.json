@@ -22,7 +22,7 @@
                     "NOT_INCLUDED:",
                     "Airfare: Flights to and from Messina Airport are not included.",
                     "Personal Expenses: Personal purchases or incidental expenses.",
-                    "Travel Insurance: Guests are responsible for their own travel insurance.",
+                    "Travel Insurance: Guests are responsible for their own travel insurance, including medical and trip cancellation coverage.",
                     "Additional On-Demand Services: Any extra not listed, private tours, or special requests.",
                     "Gratuities: Tips for drivers, guides, and villa staff are not included.",
 
@@ -32,11 +32,54 @@
             "details": {
                 "location": "Salina, Aeolian Islands, Italy",
                 "duration": "4 days",
-                "guests": "40",
+                "guests": "30 to 40",
                 "price": "5,000 EUR",
                 "dates": "02-05, 09-12 October 2025",
                 "features": ["Distributed Audiovisual Installations", "Experience as Exhibition", "Eno-gastronomic Itineraries", "Sonic Bath", "Local Excursions"],
                 "itinerary": ["Arrival and Welcome", "Island Exploration", "Gastronomic Itinerary", "Hotel Activities", "Leisure", "Sunrise and Sunset Witnessing"]
+            }
+            
+        }
+    },
+    {
+        "slug": "dolcevita",
+        "title": "La Dolce Vita | Listening to the Eternal City",
+        "video": "N7AjI00zR00hIStWLom83F402yBQn2dem2sCHH6pxJ012js",
+        "content": {
+            "heading": "INVITATION",
+            "description": [
+                "For four days, a private villa in the heart of the ancient city becomes the center of an unfolding journey, a place where sound and space are curated with intent. The whisper of the city filters in through open windows, blending with immersive sounds designed to heighten perception. ",
+                "Time in Rome moves differently here. The rush of the outside world dissolves into something slower, more deliberate. In this space, the city reveals itself through texture and vibration.",
+                "The gastronomic experience is curated at the same level as the rest. From the start till the end of a day.",
+                "It’s an experience with aesthetically cinematic twists, and great dedication to the art of sound.",
+
+                "INCLUDED:",
+                    "Private Transportation: Round-trip transfers from Rome Fiumicino Airpost to the villa, local transportation for optional excursions and activities.",
+                    "Accommodation: 4-day, 3-night stay in a luxury villa in the heart of the city.",
+                    "Culinary Experiences: Daily breakfast, lunch, and dinner with menus crafted around authentic local cuisine. Carefully curated wine pairings featuring top local selections with each meal.",
+                    "Audiovisual Experience:  Permanent audiovisual installation in the villa, active throughout the stay, creating an immersive sensory atmosphere, and Sonic Bath sessions.",
+                    " Leisure and Activity Options: Free access to Rome city center, optional cultural excursions: Roman Forum (Colosseo included), Ancient Ostia visit, Vatican Museum.",
+                    "Concierge Services:  24/7 concierge assistance to cater to guests' needs and preferences.",
+
+                    
+                    "NOT_INCLUDED:",
+                    "Airfare: Flights to and from Rome Fiumicino Airport are not included.",
+                    "Personal Expenses:  Any personal purchases, souvenirs, or incidental expenses.",
+                    "Travel Insurance: Guests are responsible for their own travel insurance, including medical and trip cancellation coverage.",
+                    "Additional On-Demand Services: Any extra not listed, private tours, or special requests.",
+                    "Gratuities: Tips for drivers, guides, and villa staff are not included.",
+
+                    "Price per person: 7.000 EUR"
+
+            ],
+            "details": {
+                "location": "Rome, Italy",
+                "duration": "4 days",
+                "guests": "10 to 15",
+                "price": "EUR",
+                "dates": "30 October-02 November, 06-09 November 2025",
+                "features": ["Audiovisual Installation", "Ancient Rome Discoveries", "Ancient Gastronomy", "Sonic Bath", "Cultural Excursions"],
+                "itinerary": ["Arrival and Welcome", "Walk in Rome", "Discovery of Ancient Cuisine", "Rome by Night", "Leisure", "Listening Sessions", "Farewell Breakfast"]
             }
             
         }
@@ -66,8 +109,8 @@
                     
                 "NOT_INCLUDED:",
                     "Airfare: Flights to and from Åre/Östersund Airport are not included.",
-                    "Personal Expenses: Personal purchases or incidental expenses.",
-                    "Travel Insurance: Guests are responsible for their own travel insurance.",
+                    "Personal Expenses:  Any personal purchases, souvenirs, or incidental expenses.",
+                    "Travel Insurance: Guests are responsible for their own travel insurance, including medical and trip cancellation coverage.",
                     "Additional On-Demand Services: Any extra not listed, private tours, or special requests.",
                     "Gratuities: Tips for drivers, guides, and villa staff are not included.",
 
@@ -78,11 +121,11 @@
             "details": {
                 "location": "Edsåsdalen, Sweden",
                 "duration": "4 days",
-                "guests": "12",
+                "guests": "08 to 12",
                 "price": "5,000 EUR",
                 "dates": "03-06, 10-13, 17-20, 24-27 July 2025",
                 "features": ["Audiovisual installation", "Infinite Bar", "Luxury Cabin", "Gourmet Nordic Cuisine", "Listening Sessions", "Natural Excursions"],
-                "itinerary": ["Arrival and Welcome Dinner", "Sonic Exhibition","Traditional Smörgåsbordet", "Rock Climbing", "Lake Kayaking", "Departure Breakfast"]
+                "itinerary": ["Arrival and Welcome Dinner", "Sonic Exhibition", "Traditional Smörgåsbordet", "Rock Climbing", "Lake Kayaking", "Departure Breakfast"]
             }
             
         }
@@ -114,8 +157,8 @@
                     "NOT_INCLUDED:",
                     "Airfare: Flights to and from Rome Fiumicino Airport are not included.",
                     "Diving Certification: Scuba diving certifications are not provided for the Submarine Museum experience.",
-                    "Personal Expenses: Personal purchases or incidental expenses.",
-                    "Travel Insurance: Guests are responsible for their own travel insurance.",
+                    "Personal Expenses:  Any personal purchases, souvenirs, or incidental expenses.",
+                    "Travel Insurance: Guests are responsible for their own travel insurance, including medical and trip cancellation coverage.",
                     "Additional On-Demand Services: Any extra not listed, private tours, or special requests.",
                     "Gratuities: Tips for drivers, guides, and villa staff are not included.",
 
@@ -125,7 +168,7 @@
                 "details": {
                 "location": "Italy",
                 "duration": "4 days",
-                "guests": "14",
+                "guests": "10 to 14",
                 "price": "6,000 EUR",
                 "dates": "03-06, 10-13 April 2025",
                 "features": ["Direct Beach Access", "Sonic Baths", "Audiovisual Installation", "Local Wines", "Mediterranean Coastal Cuisine", "Cultural Excursions"],
@@ -160,8 +203,8 @@
                     
                     "NOT_INCLUDED:",
                     "Airfare: Flights to and from Pantelleria Airport are not included.",
-                    "Personal Expenses: Personal purchases or incidental expenses.",
-                    "Travel Insurance: Guests are responsible for their own travel insurance.",
+                    "Personal Expenses:  Any personal purchases, souvenirs, or incidental expenses.",
+                    "Travel Insurance: Guests are responsible for their own travel insurance, including medical and trip cancellation coverage.",
                     "Additional On-Demand Services: Any extra not listed, private tours, or special requests.",
                     "Gratuities: Tips for drivers, guides, and villa staff are not included.",
 
@@ -170,7 +213,7 @@
             "details": {
                 "location": "Pantelleria Island, Italy",
                 "duration": "4 days",
-                "guests": "10",
+                "guests": "06 to 10",
                 "price": "7,500 EUR",
                 "dates": "11-14, 18-21 September 2025",
                 "features": ["Private Park", "Spa Treatments", "Listening Sessions", "Mediterranean Cuisine", "Mineral Excursions"],

@@ -249,7 +249,7 @@ mux-player {
     align-items: center; /* Vertically centers the content */
     color: white; /* Text color */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
-    url('https://gateway.pinata.cloud/ipfs/bafybeidetmcqw7gkx7v2l5xr7kxwapq2w3t2brpxuoffcd6nefgr4feh5u');
+    url('/images/room.webp');
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -271,7 +271,7 @@ mux-player {
     align-items: center; /* Vertically centers the content */
     color: white; /* Text color */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
-    url('https://gateway.pinata.cloud/ipfs/bafybeicwelqumn77frzr6lgd66lhifcvisjmmjksot6o6npfuplggcv6su');
+    url('/images/monteverde.webp');
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -290,7 +290,7 @@ mux-player {
     align-items: center; /* Vertically centers the content */
     color: white; /* Text color */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
-    url('https://gateway.pinata.cloud/ipfs/bafybeicwya6ts4oizaqbpmp4njrxmy6m5lkteb3af3rc4fgf3wfmxlw3wm');
+    url('/images/cuisine.webp');
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -474,7 +474,7 @@ mux-player {
     justify-content: center; /* Vertically center all content */
     color: white;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
-        url('https://gateway.pinata.cloud/ipfs/bafybeicckymxobq6kwqe62ty6pbtrvvtnt65udbqcejlz55rc63yu3h7qm');
+        url('https://gateway.pinata.cloud/ipfs/bafkreiedffmd3ap57h43ztkt6uqk35lc5amk5hh2pkck4e24vxtkoegc64');
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -678,7 +678,7 @@ mux-player {
     text-align: left;
 }
 
-.terms-content h3 {
+.terms-content h1 {
     font-size: 30px;
     margin-bottom: 20px;
 }
@@ -706,7 +706,7 @@ mux-player {
     font-family: 'IBM Plex Mono', monospace;
 }
 
-.book-section h2 {
+.book-section h1 {
     font-size: 30px;
     margin: 50px 0 10px;
     text-align: center;

@@ -35,7 +35,7 @@ export default function TermsAndConditions() {
             {/* Main Content */}
             <div id="app" className="terms-content">
             <section>
-                    <h3>TERMS AND CONDITIONS FOR TRIP Agency SERVICES</h3>
+                    <h1>TERMS AND CONDITIONS FOR TRIP Agency SERVICES</h1>
                     <p>
                         Welcome to TRIP Agency. Please read these terms and conditions carefully before using our
                         website and services.

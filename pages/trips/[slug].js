@@ -135,6 +135,11 @@ export default function TripPage({ trip }) {
             "@type": "WebPage",
             "name": "Mystical Pantelleria",
             "url": "https://www.trip-agency.net/monastero",
+        },
+        {
+            "@type": "WebPage",
+            "name": "Ancient Rome",
+            "url": "https://www.trip-agency.net/dolcevita",
         }
     ],
     });
