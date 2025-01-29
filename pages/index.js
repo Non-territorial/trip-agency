@@ -124,7 +124,7 @@ export default function Home() {
                         Hedonistic Retreats: <br />Art and Culinary Experiences
 </h1>
 <p className="description">
-TRIP Agency's Hedonistic Retreats turn <b>art</b>, <b>cuisine</b> and stunning <b>locations</b> into <b>transformative</b> travel experiences. Discover our trips in Italy, Sweden, and Japan.
+TRIP Agency's Hedonistic Retreats turn <b>art</b>, <b>cuisine</b> and stunning <b>locations</b> into <b>transformative</b> experiences. Discover our trips in Italy, Sweden, and Japan.
 </p>
 <p className="description">
     These <b>retreats</b> are designed to provide an <b>escape</b>, offering an <b>environment</b> for indulging in <b>unexpected</b> moments. Each retreat is crafted using a Sonic Canvas, an ambiance inviting for an aethetic <b>contemplation of sound</b>.
