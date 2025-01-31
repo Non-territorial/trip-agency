@@ -59,95 +59,105 @@ export async function getStaticProps({ params }) {
 
 export default function TripPage({ trip }) {
     useMenu(); // Hook for menu functionality
+    
 
-    // Generate JSON-LD for structured data
-    const generateJsonLd = () => ({
-        "@context": "https://schema.org",
-        "@type": "Trip",
-        "name": trip.title,
-        "description": trip.content.description.join(" "),
-        "offers": {
-            "@type": "Offer",
-            "price": trip.content.details.price.replace(",", "").replace(" EUR", ""),
-            "priceCurrency": "EUR",
-            "availability": "https://schema.org/InStock",
-            "validFrom": new Date().toISOString(),
-        },
-        "tripOrigin": {
-            "@type": "Place",
-            "name": trip.content.details.location,
-        },
-        "itinerary": {
-            "@type": "ItemList",
-            "itemListElement": trip.content.details.itinerary.map((item, index) => ({
-                "@type": "ListItem",
-                "position": index + 1,
-                "name": item,
+    const generateJsonLd = () => {
+        const videoJsonLd = {
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": trip.title || "Trip Video",
+            "description": trip.content.description.join(" "),
+            "thumbnailUrl": trip.videoThumbnail || "https://yourdomain.com/default-thumbnail.jpg",
+            "uploadDate": new Date(trip.uploadDate || Date.now()).toISOString(),
+            "contentUrl": `https://yourcdn.com/${trip.video}`, // Stable video URL
+            "embedUrl": `https://www.trip-agency.net/trips/${trip.slug}`, // Embed URL for the video
+        };
+    
+        return {
+            "@context": "https://schema.org",
+            "@type": "Trip",
+            "name": trip.title,
+            "description": trip.content.description.join(" "),
+            "offers": {
+                "@type": "Offer",
+                "price": trip.content.details.price.replace(",", "").replace(" EUR", ""),
+                "priceCurrency": "EUR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": new Date().toISOString(),
+            },
+            "tripOrigin": {
+                "@type": "Place",
+                "name": trip.content.details.location,
+            },
+            "itinerary": {
+                "@type": "ItemList",
+                "itemListElement": trip.content.details.itinerary.map((item, index) => ({
+                    "@type": "ListItem",
+                    "position": index + 1,
+                    "name": item,
+                })),
+            },
+            "additionalProperty": trip.content.details.features.map((feature) => ({
+                "@type": "PropertyValue",
+                "name": feature,
+                "value": true,
             })),
-        },
-        "additionalProperty": trip.content.details.features.map((feature) => ({
-            "@type": "PropertyValue",
-            "name": feature,
-            "value": true,
-        })),
-        "relatedLink": [
-        {
-            "@type": "WebPage",
-            "name": "Explore Our Trips",
-            "url": "https://www.trip-agency.net/#eolie",
-        },
-        {
-            "@type": "WebPage",
-            "name": "Contact Us",
-            "url": "https://www.trip-agency.net/contact",
-        },
-        {
-            "@type": "WebPage",
-            "name": "Book your Trip",
-            "url": "https://www.trip-agency.net/booking",
-        },
-        {
-            "@type": "WebPage",
-            "name": "About TRIP Agency",
-            "url": "https://www.trip-agency.net/#about",
-        },
-        {
-            "@type": "WebPage",
-            "name": "Sweden Sonic Resort",
-            "url": "https://www.trip-agency.net/silence-ventures",
-        },
-        {
-            "@type": "WebPage",
-            "name": "Japan Discovery",
-            "url": "https://www.trip-agency.net/upcoming",
-        },
-        {
-            "@type": "WebPage",
-            "name": "Coastal Tuscany Itinerary",
-            "url": "https://www.trip-agency.net/magic-mountain",
-        },
-        {
-            "@type": "WebPage",
-            "name": "Aeolian Island Exploration",
-            "url": "https://www.trip-agency.net/undisclosed",
-        },
-        {
-            "@type": "WebPage",
-            "name": "Mystical Pantelleria",
-            "url": "https://www.trip-agency.net/monastero",
-        },
-        {
-            "@type": "WebPage",
-            "name": "Ancient Rome",
-            "url": "https://www.trip-agency.net/dolcevita",
-        }
-    ],
-    });
-    
-    
-    
-
-return (
+            "relatedLink": [
+                {
+                    "@type": "WebPage",
+                    "name": "Explore Our Trips",
+                    "url": "https://www.trip-agency.net/#eolie",
+                },
+                {
+                    "@type": "WebPage",
+                    "name": "Contact Us",
+                    "url": "https://www.trip-agency.net/contact",
+                },
+                {
+                    "@type": "WebPage",
+                    "name": "Book your Trip",
+                    "url": "https://www.trip-agency.net/booking",
+                },
+                {
+                    "@type": "WebPage",
+                    "name": "About TRIP Agency",
+                    "url": "https://www.trip-agency.net/#about",
+                },
+                {
+                    "@type": "WebPage",
+                    "name": "Sweden Sonic Resort",
+                    "url": "https://www.trip-agency.net/silence-ventures",
+                },
+                {
+                    "@type": "WebPage",
+                    "name": "Japan Discovery",
+                    "url": "https://www.trip-agency.net/upcoming",
+                },
+                {
+                    "@type": "WebPage",
+                    "name": "Coastal Tuscany Itinerary",
+                    "url": "https://www.trip-agency.net/magic-mountain",
+                },
+                {
+                    "@type": "WebPage",
+                    "name": "Aeolian Island Exploration",
+                    "url": "https://www.trip-agency.net/undisclosed",
+                },
+                {
+                    "@type": "WebPage",
+                    "name": "Mystical Pantelleria",
+                    "url": "https://www.trip-agency.net/monastero",
+                },
+                {
+                    "@type": "WebPage",
+                    "name": "Ancient Rome",
+                    "url": "https://www.trip-agency.net/dolcevita",
+                },
+            ],
+            "video": videoJsonLd // Embed the VideoObject into the Trip data
+        };
+    };
+    return (
     <>
         {/* Metadata */}
         <Head>
@@ -171,8 +181,8 @@ return (
     <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(generateJsonLd()) }}
-    />
-</Head>
+        />
+       </Head>
 
 
             {/* Top Navbar */}
@@ -319,4 +329,5 @@ return (
             </footer>
         </>
     );
+
 }
