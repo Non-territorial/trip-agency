@@ -7,4 +7,5 @@ Host: https://www.trip-agency.net
 
 # Sitemaps
 Sitemap: https://www.trip-agency.net/sitemap.xml
+Sitemap: https://www.trip-agency.net/sitemap-0.xml
 Sitemap: https://www.trip-agency.net/video-sitemap.xml
