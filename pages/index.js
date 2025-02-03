@@ -249,7 +249,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-label">Features</span>
-                            <span className="details-value">Audiovisual installation, ancient gastronomy, listening sessions, infinite bar, cultural excursions</span>
+                            <span className="details-value">Distributed audiovisual installations, ancient gastronomy, listening sessions, infinite bar, cultural excursions</span>
                         </div>
                         <div className="details-item">
                             <span className="details-label">Dates</span>
