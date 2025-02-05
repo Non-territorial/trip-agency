@@ -162,7 +162,7 @@ export default function TripPage({ trip }) {
         {/* Metadata */}
         <Head>
     {/* Dynamic Page Title */}
-    <title>{trip.title ? `${trip.title} | TRIP Agency` : "Hedonistic Retreats | TRIP Agency"}</title>
+    <title>{trip.title ? `${trip.title} | TRIP Agency` : "Hedonistic Retreats"}</title>
 
 
     {/* Meta Description */}
