@@ -219,52 +219,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                     </div>
                 </section>
 
-                          {/* Rome */}
-                <section id="roma" className="vertical-section-img">
-                    <div className="image-container">
-                        
-                       
-                    <Image
-  src="/images/roma.webp"
-  alt="sunrise"
-  width={2550}
-  height={3300}
-  priority
-/>
-                    </div>
-                    <div className="details-block">
-                        <div className="details-heading">DETAILS</div>
-                        <div className="details-title">LA DOLCE VITA</div>
-                        <div className="details-item">
-                            <span className="details-label">Location</span>
-                            <span className="details-value">Rome, Italy</span>
-                        </div>
-                        <div className="details-item">
-                            <span className="details-label">Experience</span>
-                            <span className="details-value">4 days/3 nights</span>
-                        </div>
-                        <div className="details-item">
-                            <span className="details-label">Guests</span>
-                            <span className="details-value">10 to 15</span>
-                        </div>
-                        <div className="details-item">
-                            <span className="details-label">Features</span>
-                            <span className="details-value">Distributed audiovisual installations, ancient gastronomy, listening sessions, infinite bar, cultural excursions</span>
-                        </div>
-                        <div className="details-item">
-                            <span className="details-label">Dates</span>
-                            <span className="details-value">30 October-02 November, 06-09 November 2025</span>
-                        </div>
-                        <div className="details-item">
-                            <span className="details-info">
-                            This retreat is an invitation to experience Rome not through sights alone, but through sound, space, and sensation. Over four days, a private villa becomes both sanctuary and stage, where curated sounds, artistic atmospheres, and the textures of Roman life intertwine. 
-                            </span>
-                        </div>
-                        <div className="details-link">
-    <a href="/trips/dolcevita" className="view-more-link">View more</a>
-</div>
-                    </div>
-                </section>
+                         
 
                 {/* Sweden */}
                 <section id="sweden" className="vertical-section-img">
