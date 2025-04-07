@@ -53,9 +53,9 @@ export default function Booking() {
     <link rel="canonical" href="https://www.trip-agency.net/booking" />
     <title>Trip Agency | Booking Inquiry</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Submit your booking inquiry for TRIP Agency's hedonistic retreats. Transformative art, luxury, and gastronomy await in Italy, Sweden, and Japan." />
+    <meta name="description" content="Submit your booking inquiry for TRIP Agency's sonic retreats. Transformative sound, luxury, and gastronomy await in Italy, Sweden, and Japan." />
     <meta property="og:title" content="TRIP Agency | Booking Inquiry" />
-    <meta property="og:description" content="Book your spot for transformative retreats in Italy, Sweden, and Japan. Experience art, luxury, and fine dining in absolutely unprecedented way." />
+    <meta property="og:description" content="Book your spot for transformative retreats in Italy, Sweden, and Japan. Experience sound, luxury, and fine dining in absolutely unprecedented way." />
     <meta property="og:url" content="https://www.trip-agency.net/booking" />
     <meta name="robots" content="index, follow" />
     <link rel="icon" href="/favicon.ico" />

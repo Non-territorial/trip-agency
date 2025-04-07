@@ -15,7 +15,7 @@ export default function Home() {
     const homepageVideos = [
         {
             src: "qUggBqQ34mPlNtoSzBlYal02XBvdKRGX00pp2011Z5OXz4", // Mux playback ID
-            title: "Discover TRIP Agency - Hedonistic Retreats",
+            title: "Discover TRIP Agency - Sonic Retreats",
         },
     ];
 
@@ -26,25 +26,25 @@ export default function Home() {
     <link rel="canonical" href="https://www.trip-agency.net/" />
 
     {/* SEO Title */}
-    <title>Hedonistic Retreats | Art, Wine and Cuisine </title>
+    <title>Sonic Retreats | Sound, Wine and Cuisine </title>
 
     {/* Meta Description */}
-    <meta name="description" content="Explore luxury hedonistic retreats with TRIP Agency. Indulge in art, wine, and fine cuisine in breathtaking locations across Italy, Sweden, and Japan." />
+    <meta name="description" content="Explore luxury sonic retreats with TRIP Agency. Indulge in sound, wine, and fine cuisine in breathtaking locations across Italy, Sweden, and Japan." />
 
     {/* Open Graph (OG) for Social Media */}
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.trip-agency.net/" />
-    <meta property="og:title" content="Hedonistic Retreats | Art, Wine and Cuisine" />
-    <meta property="og:description" content="Discover transformative travel experiences blending art, culture, and gastronomy with TRIP Agency. Perfect for discerning travelers seeking luxury retreats." />
+    <meta property="og:title" content="Sonic Retreats | Sound, Wine and Cuisine" />
+    <meta property="og:description" content="Discover transformative travel experiences blending sound, culture, and gastronomy with TRIP Agency. Perfect for discerning travelers seeking luxury retreats." />
     <meta property="og:image" content="https://www.trip-agency.net/images/og-image.jpg" /> {/* Ensure the URL is absolute */}
-    <meta property="og:image:alt" content="TRIP Agency's Hedonistic Retreats banner showcasing scenic landscapes." />
+    <meta property="og:image:alt" content="TRIP Agency's Sonic Retreats banner showcasing scenic landscapes." />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="TRIP Agency" />
 
 
     {/* Additional Verification and SEO Meta Tags */}
     <meta name="p:domain_verify" content="223d43cdd0380d3fe3e34270be7281dd" /> {/* Pinterest domain verification */}
-    <meta name="keywords" content="luxury travel, transformative experiences, hedonistic retreats, art travel, audiovisual installations, gastronomic discoveries, quality wines, sonic baths, sonic exhibitions, infinite bar, Sweden retreats, Italy travel, Japan luxury tours, cultural excursions, natural excursions, TRIP Agency" />
+    <meta name="keywords" content="luxury travel, transformative experiences, sonic retreats, art travel, audiovisual installations, gastronomic discoveries, quality wines, sonic baths, sonic exhibitions, infinite bar, Sweden retreats, Italy travel, Japan luxury tours, cultural excursions, natural excursions, TRIP Agency" />
     <meta name="author" content="TRIP Agency" />
     <meta name="robots" content="index, follow" />
 
@@ -65,7 +65,7 @@ export default function Home() {
                             "name": "TRIP Agency",
                             "url": "https://www.trip-agency.net",
                             "logo": "https://www.trip-agency.net/images/logo.png",
-                            "description": "TRIP Agency's Hedonistic Retreats turn art, cuisine and stunning locations into transformative experiences. Discover our trips in Italy, Sweden, and Japan.",
+                            "description": "TRIP Agency's Sonic Retreats turn sound, cuisine and stunning locations into transformative experiences. Discover our trips in Italy, Sweden, and Japan.",
                             "sameAs": [
         "https://www.trip-agency.net/booking",
         "https://www.trip-agency.net/t&c",
@@ -121,19 +121,16 @@ export default function Home() {
                     <div className="content-wrapper">
                         <span className="jp-text">ヘドニスティック・リトリート</span>
                         <h1 className="heading">
-                        Hedonistic Retreats: <br />Art and Culinary Experiences
+                        Sonic Retreats: <br />Sound and Culinary Experiences
 </h1>
 <p className="description">
-TRIP Agency's Hedonistic Retreats turn <b>art</b>, <b>cuisine</b> and stunning <b>locations</b> into <b>transformative</b> experiences. Discover our trips in Italy, Sweden, and Japan.
+TRIP Agency's Sonic Retreats turn <b>sound</b>, <b>cuisine</b> and stunning <b>locations</b> into <b>transformative</b> experiences. Discover our trips in Italy, Sweden, and Japan.
 </p>
 <p className="description">
     These <b>retreats</b> are designed to provide an <b>escape</b>, offering an <b>environment</b> for indulging in <b>unexpected</b> moments. Each retreat is crafted using a Sonic Canvas, an ambiance inviting for an aesthetic <b>contemplation of sound</b>.
 </p>
 <p className="description">
 Imagine spending several nights in a <b>museum</b> or <b>gallery</b> within an atmosphere of <b>poetic dimension</b>, in an unfamiliar environment, or conversely, one that feels deeply familiar.
-</p>
-<p className="description">
-It’s about <b>reducing</b> the distance between <b>art and life</b>.
 </p>
 
                     </div>
@@ -154,7 +151,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         <p className="description">
                         TRIP Agency’s experiences are four-day retreats, inviting visitors to fully embrace a single, carefully selected location.<br />
                             <br />
-                            Each site is chosen according its unique features, and then transformed into a living art installation.<br />
+                            Each site is chosen according its unique features, and then transformed into a living sonic installation.<br />
                             <br />
                             Four days to sink in a timeless dimension of wonder and insight.
                         </p>
@@ -210,7 +207,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-info">
-                            (UN)DISCLOSED is a travel experience in the form of an exhibition. It is an art experience set on Salina, a remote Sicilian island of the Mediterranean Sea, comprised of several distributed exhibitions throughout the island. (UN)DISCLOSED will turn your stay into a live art experience, in an absolutely unprecedented way. 
+                            (UN)DISCLOSED is a travel experience in the form of an exhibition. It is a sonic experience set on Salina, a remote Sicilian island of the Mediterranean Sea, comprised of several distributed exhibitions throughout the island. (UN)DISCLOSED will turn your stay into a live sonic experience, in an absolutely unprecedented way. 
                             </span>
                         </div>
                         <div className="details-link">
@@ -305,7 +302,7 @@ It’s about <b>reducing</b> the distance between <b>art and life</b>.
                         </div>
                         <div className="details-item">
                             <span className="details-info">
-                            Tuscany. A contemporary seaside villa transformed into an art installation, offering a holistic experience that combines active and passive listening, a fully curated gastronomic journey, a bar, and the surrounding nature. Sounds shape the ambiance, seamlessly blending with the Mediterranean setting and the rugged beauty of the rocky ledges surrounding the villa, shaping the atmosphere and connecting deeply with the natural beauty of the Mediterranean.
+                            Tuscany. A contemporary seaside villa transformed into a sonic installation, offering a holistic experience that combines active and passive listening, a fully curated gastronomic journey, a bar, and the surrounding nature. Sounds shape the ambiance, seamlessly blending with the Mediterranean setting and the rugged beauty of the rocky ledges surrounding the villa, shaping the atmosphere and connecting deeply with the natural beauty of the Mediterranean.
                             </span>
                         </div>
                         <div className="details-link">

@@ -10,7 +10,7 @@ export default function TermsAndConditions() {
         <>
             <Head>
     <link rel="canonical" href="https://www.trip-agency.net/t&c" />
-    <title>TRIP Agency | Art, Wine and Cuisine</title>
+    <title>TRIP Agency | Sound, Wine and Cuisine</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Read the Terms and Conditions of TRIP Agency, outlining the policies, rules, and responsibilities for participating in our retreats and experiences." />
     <meta name="robots" content="index, follow" />
@@ -42,7 +42,7 @@ export default function TermsAndConditions() {
                     </p>
                     <h2>1. Introduction</h2>
                     <p>
-                        Welcome to TRIP Agency, an ultra-high-quality provider of personal art and travel experiences.
+                        Welcome to TRIP Agency, an ultra-high-quality provider of personal sound and travel experiences.
                         These Terms and Conditions outline the rules and regulations for the use of TRIP Agency's
                         website and services. By booking a service or using our website, you agree to be bound by
                         these Terms and Conditions.
@@ -55,8 +55,8 @@ export default function TermsAndConditions() {
                     </p>
                     <h2>3. Services</h2>
                     <p>
-                        TRIP Agency provides personalized luxury art and travel experiences in unique locations. The
-                        services offered include, but are not limited to, curated events, immersive art installations,
+                        TRIP Agency provides personalized luxury sound and travel experiences in unique locations. The
+                        services offered include, but are not limited to, curated events, immersive sonic installations,
                         and bespoke travel arrangements.
                     </p>
                     <h2>4. Booking and Payments</h2>

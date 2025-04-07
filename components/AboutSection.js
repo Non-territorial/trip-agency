@@ -16,7 +16,7 @@ export default function AboutSection() {
       content: (
         <>
           <p>
-            TRIP Agency is a hybrid concept at the intersection of art and travel.
+            TRIP Agency is a hybrid concept at the intersection of sound and travel.
             Centered around unique private locations, art of sound, and cuisine.
             The term ‘TRIP’ goes beyond the idea of travel — it represents a
             transformative and immersive experience.
@@ -85,8 +85,8 @@ export default function AboutSection() {
       content: (
         <>
           <p>
-            FEES vary depending on multiple factors, they range between 3.500 and
-            10.000 EUR. Once your date is secured, you will receive an email with
+            FEES vary depending on multiple factors, they range between 2.500 and
+            5.000 EUR. Once your date is secured, you will receive an email with
             payment instructions and confirmation details.
           </p>
           <p>
